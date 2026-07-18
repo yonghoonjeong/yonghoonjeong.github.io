@@ -22,13 +22,13 @@ sidebar:
   # bitbucket:
   # bluesky: '@jekyllrb.bsky.social' # Specify your full Bluesky handle
   # twitter: '@jekyllrb'
-  stack-overflow: # Number/Username, e.g. 123456/alandoe
-  codewars:
+  #stack-overflow: # Number/Username, e.g. 123456/alandoe
+  #codewars:
   goodreads: https://scholar.google.co.kr/citations?hl=ko&user=ai69N2AAAAAJ&view_op=list_works&authuser=1&sortby=pubdate
   # goodreads: # Number-Username, e.g. 123456-alandoe
-  mastodon: # Please include your full Mastodon link here.
-  hackerrank: # Please provide your HackerRank username.
-  leetcode: # Please provide your LeetCode username.
+  #mastodon: # Please include your full Mastodon link here.
+  #hackerrank: # Please provide your HackerRank username.
+  #leetcode: # Please provide your LeetCode username.
   pdf: # Add a PDF link here if you want to include a PDF custom version in your resume.
 
   languages:
