@@ -16,16 +16,16 @@ sidebar:
   email: yhjeong@navy.ac.kr
   website: https://yonghoonjeong.github.io/ # Include the full website URL, including "http://" or "https://".
   linkedin: alandoe
-  xing: alandoe
-  github: jekyll
-  telegram: # add your nickname without '@' sign
-  gitlab:
-  bitbucket:
-  bluesky: '@jekyllrb.bsky.social' # Specify your full Bluesky handle
-  twitter: '@jekyllrb'
+  # github: jekyll
+  # telegram: # add your nickname without '@' sign
+  # gitlab:
+  # bitbucket:
+  # bluesky: '@jekyllrb.bsky.social' # Specify your full Bluesky handle
+  # twitter: '@jekyllrb'
   stack-overflow: # Number/Username, e.g. 123456/alandoe
   codewars:
-  goodreads: # Number-Username, e.g. 123456-alandoe
+  goodreads: https://scholar.google.co.kr/citations?hl=ko&user=ai69N2AAAAAJ&view_op=list_works&authuser=1&sortby=pubdate
+  # goodreads: # Number-Username, e.g. 123456-alandoe
   mastodon: # Please include your full Mastodon link here.
   hackerrank: # Please provide your HackerRank username.
   leetcode: # Please provide your LeetCode username.
