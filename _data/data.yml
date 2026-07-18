@@ -9,11 +9,11 @@ sidebar:
 
   # Profile information
   name: Yonghoon Jeong
-  tagline: Full-time Lecturer
+  tagline: Full-time Lecturer, R.O.K. Naval Academy
   avatar: profile.png #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
   # Sidebar links
-  email: example@email.com
+  email: yhjeong@navy.ac.kr
   phone: 012 345 6789
   timezone: America/Cancun # Enter your timezone, e.g., America/Havana, Africa/Casablanca, America/North_Dakota/Center
   citizenship:
