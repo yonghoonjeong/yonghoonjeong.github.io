@@ -34,19 +34,16 @@ sidebar:
   languages:
     title: Languages
     info:
-    - idiom: English
+    - idiom: Korean
       level: Native
 
-    - idiom: French
-      level: Professional
-
-    - idiom: Spanish
+    - idiom: English
       level: Professional
 
   interests:
     title: Interests
     info:
-    - item: Climbing
+    - item: Running
       link:
 
 
@@ -54,7 +51,7 @@ sidebar:
       link:
 
 
-    - item: Cooking
+    - item: Weight-training
       link:
 
 
