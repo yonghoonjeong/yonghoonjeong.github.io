@@ -44,14 +44,12 @@ sidebar:
   interests:
     title: Research Interests
     info:
-    - item: Ocean IoT
+    - item: Low-power Wide Area Network (LPWAN)
       link:
 
+    - item: Wireless Communication Systems
+      link:
       
-    - item: Wireless Networks
-      link:
-
-
     - item: Wireless Sensing
       link:
 
