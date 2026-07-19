@@ -10,13 +10,13 @@
     {{ skills.title }}
   </h2>
 
-  <ul style="font-size: 16px; line-height: 1.5; padding-left: 0px; margin-left: 0;">
+  <ul style="list-style: none; font-size: 16px; line-height: 1.5; padding-left: 0; margin-left: 0;">
     {% for skill in skills.info %}
-    <li style="margin-bottom: 6px;">
+    <li style="list-style: none; margin-bottom: 6px;">
       <strong>{{ skill.label }}</strong>
-      <ul style="margin-top: 2px; padding-left: 22px;">
-        <li>{{ skill.details }}</li>
-      </ul>
+      <div style="font-size: 15px; margin-top: 2px; padding-left: 22px;">
+        {{ skill.details }}
+      </div>
     </li>
     {% endfor %}
   </ul>
