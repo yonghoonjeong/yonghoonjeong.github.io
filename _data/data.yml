@@ -16,6 +16,7 @@ sidebar:
   email: yhjeong@navy.ac.kr
   website: https://yonghoonjeong.github.io/ # Include the full website URL, including "http://" or "https://".
   linkedin: https://www.linkedin.com/in/yonghoon-jeong-20a358200/
+  github: yonghoonjeong
   # github: jekyll
   # telegram: # add your nickname without '@' sign
   # gitlab:
@@ -56,7 +57,7 @@ sidebar:
 
 
 career-profile:
-  title: Career Profile
+  title: About
   summary: |
     Summarise your career here lorem ipsum dolor sit amet, consectetuer
     adipiscing elit. You can [download this free resume/CV template here]().
