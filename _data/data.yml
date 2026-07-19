@@ -103,12 +103,10 @@ education:
         university: Seoul National University 
         time: 2024 - 2026
         details: |
-            - Advisor: Prof. Saewoong Bahk (currently President, ETRI)
+            - Advisor: Prof. Saewoong Bahk (currently the President of ETRI)
       - degree: "<b>B.S. in Electrical and Computer Engineering</b>"
         university: Kwangwoon University
         time: 2018 - 2023
-        details: |
-            - Graduated cum laude with B.S. Major in ECE
 
 certifications:
   title: Certifications
