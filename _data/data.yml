@@ -149,14 +149,20 @@ recommendations:
 
       He is a great employee!
 
-projects:
-    title: Awards &amp; Scholarship
-    #intro: >
-    assignments:
-      - title: "<em>Paper Excellence Award</em>"
-        time: 2024 - 2026
-        link: 
-        tagline: from SNU-Samsung DS SSSP Scholarship, Aug. 2020.
+awards:
+  title: Awards & Scholarships
+  info:
+    - title: Paper Excellence Award
+      time: 2024
+      organization: Seoul National University
+      details: |
+        Awarded for outstanding research performance.
+
+    - title: SNU–Samsung DS SSSP Scholarship
+      time: 2024 - 2026
+      organization: Samsung Electronics
+      details: |
+        Scholarship recipient.
 
       
 #footer: >
