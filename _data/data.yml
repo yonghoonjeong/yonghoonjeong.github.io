@@ -116,10 +116,10 @@ publications:
         authors: "<u>Yonghoon Jeong</u>, Youngwook Son, and Saewoong Bahk"
         conference: "<em><b>IEEE Communications Letters</b></em>, vol. 30, pp. 2238-2242, June 2026."
 
-      - title: "<em><b>On the Interference Resilience of Non-Linear Chirp Modulation for LoRa: An Analytical Insight into Energy Scattering Effect</b></em>"
-        link: "https://ieeexplore.ieee.org/document/11550153"
-        authors: "<u>Yonghoon Jeong</u>, Youngwook Son, and Saewoong Bahk"
-        conference: "<em><b>IEEE Communications Letters</b></em>, vol. 30, pp. 2238-2242, June 2026."
+      - title: "<em><b>Diffusion-Phys: Noise-Robust Heart Rate Estimation from Facial Videos via Diffusion Models</b></em>"
+        link: "https://link.springer.com/article/10.1007/s13534-025-00472-w"
+        authors: "<u>Yonghoon Jeong</u> and Youngseok Choi"
+        conference: "<em><b>Biomedical Engineering Letters</b></em>, vol. 15, pp. 575–585, Apr, 2025."
 
       - title: "<em><b>On the Interference Resilience of Non-Linear Chirp Modulation for LoRa: An Analytical Insight into Energy Scattering Effect</b></em>"
         link: "https://ieeexplore.ieee.org/document/11550153"
