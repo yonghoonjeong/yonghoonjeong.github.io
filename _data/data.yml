@@ -97,30 +97,18 @@ experiences:
           Unmanned Systems Research Group. (Prof. "David" Hyunchul Shim) <br>
     
 education:
-  title: Education
-  info:
-  - degree: MSc in Computer Science
-    university: University of London
-    time: 2011 - 2012
-    details: |
-      Describe your study here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-      sociis natoque penatibus et magnis dis parturient montes, nascetur
-      ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-      pretium quis, sem.
-        - Bullet point
-        - Bullet point
-  - degree: BSc in Applied Mathematics
-    university: Bristol University
-    time: 2007 - 2011
-    details: |
-      Describe your study here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-      sociis natoque penatibus et magnis dis parturient montes, nascetur
-      ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-      pretium quis, sem.
-        - Bullet point
-        - Bullet point
+    title: Education
+    info:
+      - degree: "<b>M.S. in Electrical and Computer Engineering</b>"
+        university: Seoul National University 
+        time: 2025 - 2026
+        details: |
+            - Advisor: Prof. Saewoong Bahk (currently President, ETRI)
+      - degree: "<b>B.S. in Electrical and Computer Engineering</b>"
+        university: Kwangwoon University
+        time: 2018 - 2023
+        details: |
+            - Graduated cum laude with B.S. Major in ECE
 
 certifications:
   title: Certifications
