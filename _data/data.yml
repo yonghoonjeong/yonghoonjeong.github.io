@@ -75,20 +75,22 @@ experiences:
       - role: "<b>Full-time Lecturer</b>"
         time: 2026 - 
         company: CS, Republic of Korea Naval Academy, South Korea
-      
+        details: |
+          Faculty Member · Ensign, Republic of Korea Navy
+          
       - role: "<b>Researcher</b>"
         time: 2024 - 2026
         company: ECE, Seoul National University, South Korea
         details: |
-          Institute of New Media and Communications (INMC) <br>
+          Network Laboratory (NETLAB), Institute of New Media and Communications (INMC) <br>
           
-      - role: "<b>Researcher</b>"
+      - role: "<b>Research Intern</b>"
         time: 2023 
         company: Electronics and Telecommunications Research Institute (ETRI), South Korea
         details: |
-          Connectivity Development Team of System LSI Business
+          Smart Manufacturing Application Laboratory
         
-      - role: "<b>Internship</b>"
+      - role: "<b>Research Intern</b>"
         time: 2022
         company: EE, Korea Advanced Institute of Science and Technology (KAIST), South Korea
         details: |
