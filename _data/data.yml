@@ -149,27 +149,28 @@ recommendations:
 
       He is a great employee!
 
-skills:
-  title: Skills &amp; Proficiency
+projects:
+    title: Awards &amp; Scholarship
+    #intro: >
+    assignments:
+      - title: "<em>Paper Excellence Award</em>"
+        link: 
+        tagline: from SNU-Samsung DS SSSP Scholarship, Aug. 2020.
 
-  toolset:
-  - name: Python & Django
-    level: 98%
+      - title: "<em>Gold Prize (1st prize in Communications & Network division)</em>" 
+        link: 
+        tagline: from Samsung HumanTech Paper Awards, Feb. 2016.
 
-  - name: Javascript & jQuery
-    level: 98%
+      - title: "<em>Industrial Scholarship</em>"
+        link: 
+        tagline: from Samsung Electronics, Mar. 2017 to Aug. 2020.
 
-  - name: Angular
-    level: 98%
+      - title: "<em>Graduate Student Scholarship</em>" 
+        link: 
+        tagline: from Korea Education For Advanced Studies (KFAS), Mar. 2014 to Feb. 2019.
 
-  - name: HTML5 & CSS
-    level: 95%
-
-  - name: Ruby on Rails
-    level: 85%
-
-  - name: Sketch & Photoshop
-    level: 60%
-
+      - title: "<em>National Science and Technology Scholarship</em>" 
+        link: 
+        tagline: from Korea Student Aid Foundation (KOSAF), Mar. 2009 to Feb. 2013.
 footer: >
   Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
