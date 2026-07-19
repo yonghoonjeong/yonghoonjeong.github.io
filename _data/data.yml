@@ -42,17 +42,21 @@ sidebar:
       level: Professional
 
   interests:
-    title: Interests
+    title: Research Interests
     info:
-    - item: Running
+    - item: Ocean IoT
+      link:
+
+      
+    - item: Wireless Networks
       link:
 
 
-    - item: Snowboarding
+    - item: Wireless Sensing
       link:
 
 
-    - item: Weight-training
+    - item: Signal Processing
       link:
 
 
