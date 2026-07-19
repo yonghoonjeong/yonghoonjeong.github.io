@@ -64,12 +64,11 @@ sidebar:
 career-profile:
   title: About
   summary: |
-    Summarise your career here lorem ipsum dolor sit amet, consectetuer
-    adipiscing elit. You can [download this free resume/CV template here]().
-    Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque
-    penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-    Donec quam felis, ultricies nec, pellentesque eu.
-    Second paragraph if required.
+    Yonghoon Jeong is a full-time lecturer in the Department of Cyber Science at the Republic of Korea Naval Academy, where he is completing his mandatory military service. He received his M.S. degree in Electrical and Computer Engineering from Seoul National University, specializing in wireless communication systems.
+
+Building on his background in wireless communications, his research focuses on extending communication and networking technologies to challenging underwater environments. He is particularly interested in addressing the fundamental limitations of underwater connectivity, including limited bandwidth, long propagation delays, severe attenuation, and highly variable channels.
+
+By combining communication theory with practical system design, he aims to advance reliable and efficient underwater wireless systems for ocean sensing, maritime operations, and emerging underwater Internet-of-Things applications.
 education:
   title: Education
   info:
