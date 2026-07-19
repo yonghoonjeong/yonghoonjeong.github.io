@@ -116,6 +116,11 @@ publications:
         authors: "<u>Yonghoon Jeong</u>, Youngwook Son, and Saewoong Bahk"
         conference: "<em><b>IEEE Communications Letters</b></em>, vol. 30, pp. 2238-2242, Jun. 2026."
 
+      - title: "<em><b>Demo: A Programmable High-Throughput Duplex DC-PLC Testbed for Power and Data Integration</b></em>"
+        link: "https://ieeexplore.ieee.org/document/11192329"
+        authors: "Dongrack Choi, <u>Yonghoon Jeong</u>, Yubin Choi, and Saewoong Bahk"
+        conference: "<em><b>IEEE ICNP 2025</b></em>, , Seoul, South Korea, Oct. 19-22, 2025."
+
       - title: "<em><b>D²-PLC: Holistic Design and Implementation of High-Datarate Duplex DC Power Line Communication Network</b></em>"
         link: "https://ieeexplore.ieee.org/document/11127183"
         authors: "Dongrack Choi, Yubin Choi, <u>Yonghoon Jeong</u>, Jeongyeup Paek, and Saewoong Bahk"
