@@ -68,6 +68,31 @@ career-profile:
     He received his M.S. degree in Electrical and Computer Engineering from Seoul National University, specializing in wireless communication systems. 
     Building on his expertise in the physical layer of low-power wide-area networks, particularly LoRa, his research explores energy-efficient underwater communication systems that address limited bandwidth, long propagation delays, severe attenuation, Doppler effects, and highly variable channels. 
     His goal is to enable reliable low-power connectivity for ocean sensing, climate monitoring, and underwater Internet-of-Things applications.
+
+experiences:
+    title: Experiences
+    info:
+      - role: "<b>Full-time Lecturer</b>"
+        time: 2026 - 
+        company: CS, Republic of Korea Naval Academy, South Korea
+      
+      - role: "<b>Researcher</b>"
+        time: 2024 - 2026
+        company: ECE, Seoul National University, South Korea
+        details: |
+          Network Lab. (Prof. Saewoong Bahk) <br>
+          Institute of New Media and Communications (INMC)
+      - role: "<b>Researcher</b>"
+        time: 2023 
+        company: Electronics and Telecommunications Research Institute (ETRI), South Korea
+        details: |
+          Connectivity Development Team of System LSI Business
+        
+      - role: "<b>Internship</b>"
+        time: 2022
+        company: EE, Korea Advanced Institute of Science and Technology (KAIST), South Korea
+        details: |
+          Unmanned Systems Research Group. (Prof. "David" Hyunchul Shim) <br>
     
 education:
   title: Education
@@ -92,47 +117,6 @@ education:
       sociis natoque penatibus et magnis dis parturient montes, nascetur
       ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
       pretium quis, sem.
-        - Bullet point
-        - Bullet point
-
-experiences:
-  title: Experiences
-  info:
-  - role: Lead Developer
-    time: 2015 - Present
-    company: Startup Hubs, San Francisco
-    details: |
-      Describe your role here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-      Cum sociis natoque penatibus et magnis dis parturient montes,
-      nascetur ridiculus mus. Donec quam felis, ultricies nec,
-      pellentesque eu, pretium quis, sem. Nulla consequat massa quis
-      enim. Donec pede justo. Sed ut perspiciatis unde omnis iste natus
-      error sit voluptatem accusantium doloremque laudantium, totam rem
-      aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-      architecto beatae vitae dicta sunt explicabo.
-        - Bullet point
-        - Bullet point
-  - role: Senior Software Engineer
-    time: 2014 - 2015
-    company: Google, London
-    details: |
-      Describe your role here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-      Cum sociis natoque penatibus et magnis dis parturient montes,
-      nascetur ridiculus mus. Donec quam felis, ultricies nec,
-      pellentesque eu, pretium quis, sem.
-        - Bullet point
-        - Bullet point
-  - role: UI Developer
-    time: 2012 - 2014
-    company: Amazon, London
-    details: |
-      Describe your role here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-      Cum sociis natoque penatibus et magnis dis parturient montes,
-      nascetur ridiculus mus. Donec quam felis, ultricies nec,
-      pellentesque eu, pretium quis, sem.
         - Bullet point
         - Bullet point
 
