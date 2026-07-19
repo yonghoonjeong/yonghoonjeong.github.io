@@ -150,19 +150,27 @@ recommendations:
       He is a great employee!
 
 awards:
-  title: Awards & Scholarships
+  title: Awards / Scholarships
   info:
-    - title: Paper Excellence Award
-      time: 2024
-      organization: Seoul National University
-      details: |
-        Awarded for outstanding research performance.
+    - title: Scholarship Recipient
+      time: 2022–2023
+      organization: Korea Scholarship Foundation for the Future Leaders (KOSFFL, 52nd)
 
-    - title: SNU–Samsung DS SSSP Scholarship
-      time: 2024 - 2026
-      organization: Samsung Electronics
-      details: |
-        Scholarship recipient.
+    - title: Excellence Prize
+      time: Jul. 2021
+      organization: Undergraduate Division, 2021 Korea Computer Conference (KCC 2021)
+
+    - title: Top Prize (University President's Award)
+      time: Nov. 2020
+      organization: Regional-Focused Capstone Design, organized by Nowon, Seoul
+
+    - title: Scholarship Recipient
+      time: 2020
+      organization: Samsong Scholarship Foundation
+
+    - title: Dean's List
+      time: Apr. 2020
+      organization: Highest GPA in the Fall 2019 semester
 
       
 #footer: >
