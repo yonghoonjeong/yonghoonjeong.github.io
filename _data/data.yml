@@ -43,12 +43,11 @@ sidebar:
 
     - item: Wireless Communication Systems
       link:
+    
+    - item: Signal Processing
+      link:
       
     - item: Wireless Networks and Sensing
-      link:
-
-
-    - item: Signal Processing
       link:
 
   languages:
