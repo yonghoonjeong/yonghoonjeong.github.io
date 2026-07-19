@@ -32,15 +32,6 @@ sidebar:
   #leetcode: # Please provide your LeetCode username.
   pdf: https://yonghoonjeong.github.io/Curriculum_Vitae_yhjeong_260316.pdf # Add a PDF link here if you want to include a PDF custom version in your resume.
 
-  languages:
-    title: Languages
-    info:
-    - idiom: Korean
-      level: Native
-
-    - idiom: English
-      level: Professional
-
   interests:
     title: Research Interests
     info:
@@ -59,6 +50,15 @@ sidebar:
 
     - item: Signal Processing
       link:
+
+  languages:
+    title: Languages
+    info:
+    - idiom: Korean
+      level: Native
+
+    - idiom: English
+      level: Professional
 
 
 career-profile:
