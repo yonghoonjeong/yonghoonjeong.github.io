@@ -19,16 +19,24 @@
   {% for publication in publications.papers %}
   <div class="item">
     {% if publication.link %}
-      <li style="font-size: 16px;">
-        <a href="{{ publication.link }}">{{ publication.title }}</a>
+      <li style="font-size: 16px; font-style: normal;">
+        <a href="{{ publication.link }}" style="font-style: normal;">
+          {{ publication.title }}
+        </a>
       </li>
     {% else %}
-      <li style="font-size: 16px;">{{ publication.title }}</li>
+      <li style="font-size: 16px; font-style: normal;">
+        {{ publication.title }}
+      </li>
     {% endif %}
+
     <div class="publication-authors" style="font-style: normal;">
       {{ publication.authors }}
     </div>
-    <div class="publication-conference">{{ publication.conference }}</div>
+
+    <div class="publication-conference">
+      {{ publication.conference }}
+    </div>
   </div><!--//item-->
   {% endfor %}
 
