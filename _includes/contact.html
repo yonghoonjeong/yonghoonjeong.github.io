@@ -12,6 +12,12 @@
       <a href="{{ sidebar.goodreads }}" target="_blank">Google Scholar</a>
     </li>
     {% endif %}
+
+    {% if sidebar.linkedin %}
+    <li class="linkedin"><i class="fab fa-linkedin"></i>
+      <a href="https://linkedin.com/in/{{ sidebar.linkedin }}" target="_blank">LinkedIn</a>
+    </li>
+    {% endif %}
     
     {% if sidebar.phone %}
     <li class="phone"><i class="fas fa-phone"></i>
@@ -40,12 +46,6 @@
     {% if sidebar.website %}
     <li class="website"><i class="fas fa-globe-americas"></i>
       <a href="{{ sidebar.website }}" target="_blank">Homepage</a>
-    </li>
-    {% endif %}
-
-    {% if sidebar.linkedin %}
-    <li class="linkedin"><i class="fab fa-linkedin"></i>
-      <a href="https://linkedin.com/in/{{ sidebar.linkedin }}" target="_blank">LinkedIn</a>
     </li>
     {% endif %}
 
