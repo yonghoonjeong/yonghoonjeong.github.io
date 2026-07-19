@@ -172,6 +172,21 @@ awards:
       time: 2020
       organization: Highest GPA in the Fall 2019 semester
 
+skills:
+  title: Programming Skills
+  info:
+    - label: Programming Languages
+      details: C, C++, Python, MATLAB
+
+    - label: Frameworks & Libraries
+      details: ROS, ROS2, TensorFlow, PyTorch
+
+    - label: Simulation Tools
+      details: ns-3, MATLAB/Simulink
+
+    - label: Development Tools
+      details: Linux, Git, Docker
+
       
 #footer: >
 #  Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
