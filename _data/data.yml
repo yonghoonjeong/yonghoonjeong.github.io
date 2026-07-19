@@ -66,9 +66,8 @@ career-profile:
   summary: |
     Yonghoon Jeong is a full-time lecturer in the Department of Cyber Science at the Republic of Korea Naval Academy, where he is completing his mandatory military service as an Ensign in the Republic of Korea Navy. 
     He received his M.S. degree in Electrical and Computer Engineering from Seoul National University, specializing in wireless communication systems. 
-    Building on his expertise in the physical layer of low-power wide-area networks, particularly LoRa-based communication, his research focuses on extending energy-efficient wireless communication and networking technologies to challenging underwater environments. 
-    He is particularly interested in addressing the fundamental limitations of underwater connectivity, including limited bandwidth, long propagation delays, severe attenuation, significant Doppler effects, and highly variable channels. 
-    His work seeks to translate the principles of robust, long-range, and low-power terrestrial communication into underwater systems, with the goal of enabling reliable and sustainable connectivity for applications such as ocean sensing, climate monitoring, maritime operations, and emerging underwater Internet-of-Things networks.
+    Building on his expertise in the physical layer of low-power wide-area networks, particularly LoRa, his research explores energy-efficient underwater communication systems that address limited bandwidth, long propagation delays, severe attenuation, Doppler effects, and highly variable channels. 
+    His goal is to enable reliable low-power connectivity for ocean sensing, climate monitoring, and underwater Internet-of-Things applications.
     
 education:
   title: Education
