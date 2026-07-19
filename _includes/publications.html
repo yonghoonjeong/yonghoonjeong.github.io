@@ -19,11 +19,11 @@
   {% for publication in publications.papers %}
   <div class="item">
     {% if publication.link %}
-      <li style="font-size: 17px;">
+      <li style="font-size: 16px;">
         <a href="{{ publication.link }}">{{ publication.title }}</a>
       </li>
     {% else %}
-      <li style="font-size: 17px;">{{ publication.title }}</li>
+      <li style="font-size: 16px;">{{ publication.title }}</li>
     {% endif %}
     <div class="publication-authors" style="font-style: normal;">
       {{ publication.authors }}
