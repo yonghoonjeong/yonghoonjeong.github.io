@@ -118,7 +118,7 @@ publications:
 
       - title: "<em><b>D²-PLC: Holistic Design and Implementation of High-Datarate Duplex DC Power Line Communication Network</b></em>"
         link: "https://ieeexplore.ieee.org/document/11127183"
-        authors: "<u>Yonghoon Jeong</u>, Youngwook Son, and Saewoong Bahk"
+        authors: "Dongrack Choi, Yubin Choi, <u>Yonghoon Jeong</u>, Jeongyeup Paek, and Saewoong Bahk"
         conference: "<em><b>IEEE Internet of Things Journal</b></em>, vol. 12, pp. 45325-45340, 1 Nov. 2025"
 
       - title: "<em><b>Diffusion-Phys: Noise-Robust Heart Rate Estimation from Facial Videos via Diffusion Models</b></em>"
