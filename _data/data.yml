@@ -176,16 +176,19 @@ skills:
   title: Programming Skills
   info:
     - label: Programming Languages
-      details: C, C++, Python, MATLAB
+      details: MATLAB, C, C++, Python
 
     - label: Frameworks & Libraries
       details: ROS, ROS2, TensorFlow, PyTorch
 
     - label: Simulation Tools
-      details: ns-3, MATLAB/Simulink
+      details: MATLAB/Simulink, ns-3
 
     - label: Development Tools
       details: Linux, Git, Docker
+
+    - label: Technical Writing
+      details: LaTeX, Overleaf
 
       
 #footer: >
