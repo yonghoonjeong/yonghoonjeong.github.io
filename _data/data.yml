@@ -80,13 +80,8 @@ experiences:
       - role: "<b>Researcher</b>"
         time: 2024 - 2026
         company: ECE, Seoul National University, South Korea
-        details: |
-          <a href="https://sites.google.com/netlab.snu.ac.kr/netlabhome"
-             target="_blank"
-             rel="noopener noreferrer"
-             style="color:#0563C1; text-decoration:underline;">
-            Network Laboratory (NETLAB)
-          </a>, Institute of New Media and Communications (INMC) <br>
+        details: | 
+          [Network Laboratory (NETLAB)](https://sites.google.com/netlab.snu.ac.kr/netlabhome), Institute of New Media and Communications (INMC) <br>
           
       - role: "<b>Research Intern</b>"
         time: 2023 
