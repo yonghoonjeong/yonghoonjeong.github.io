@@ -71,15 +71,16 @@ career-profile:
 experiences:
     title: Experiences
     info:
-      - role: "<b>Full-time Lecturer</b>"
+      - role: "<b>Lecturer</b>"
         time: 2026 - 
-        company: CS, Republic of Korea Naval Academy, South Korea
+        company: Republic of Korea Naval Academy, South Korea
         details: |
-          Faculty Member · Ensign, Republic of Korea Navy
+          Faculty Member, Department of Cyber Science, Republic of Korea Naval Academy <br>
+          Officer (Ensign), Republic of Korea Navy
           
       - role: "<b>Researcher</b>"
         time: 2024 - 2026
-        company: ECE, Seoul National University, South Korea
+        company: Seoul National University, South Korea
         details: | 
           Institute of New Media and Communications (INMC) <br>
           
