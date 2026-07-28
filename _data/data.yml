@@ -75,9 +75,9 @@ experiences:
         time: 2026 - 
         company: Republic of Korea Naval Academy, South Korea
         details: |
-          Faculty Member, Department of Cyber Science, [Republic of Korea Naval Academy](https://www.navy.ac.kr:4443/sites/english/index.do) <br>
-          Officer (Ensign), [Republic of Korea Navy](https://www.navy.mil.kr/mbshome/mbs/eng/index.do) <br>
-          Assigned as part of mandatory military service, through May 2029
+          - Faculty Member, Department of Cyber Science, [Republic of Korea Naval Academy](https://www.navy.ac.kr:4443/sites/english/index.do) <br>
+          - Officer (Ensign), [Republic of Korea Navy](https://www.navy.mil.kr/mbshome/mbs/eng/index.do) <br>
+          - Assigned as part of mandatory military service, through May 2029
           
       - role: "<b>Researcher</b>"
         time: 2024 - 2026
@@ -104,8 +104,8 @@ education:
         university: Seoul National University 
         time: 2024 - 2026
         details: |
-            Advisor: [Prof. Saewoong Bahk](https://sites.google.com/netlab.snu.ac.kr/netlabhome/people/faculty?authuser=0) (currently the President of ETRI) <br>
-            [Network Laboratory (NETLAB)](https://sites.google.com/netlab.snu.ac.kr/netlabhome)
+            - Advisor: [Prof. Saewoong Bahk](https://sites.google.com/netlab.snu.ac.kr/netlabhome/people/faculty?authuser=0) (currently the President of ETRI) <br>
+            - [Network Laboratory (NETLAB)](https://sites.google.com/netlab.snu.ac.kr/netlabhome)
       - degree: "<b>B.S. in Electronics and Communications Engineering</b>"
         university: Kwangwoon University
         time: 2018 - 2023
