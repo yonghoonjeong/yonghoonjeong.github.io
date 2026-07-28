@@ -80,11 +80,11 @@ experiences:
           
       - role: "<b>Researcher</b>"
         time: 2024 - 2026
-        company: Seoul National University, South Korea
+        company: Seoul National University (SNU), South Korea
         details: | 
           Institute of New Media and Communications (INMC) <br>
           
-      - role: "<b>Research Intern</b>"
+      - role: "<b>Researcher</b>"
         time: 2023 
         company: Electronics and Telecommunications Research Institute (ETRI), South Korea
         details: |
@@ -92,7 +92,7 @@ experiences:
         
       - role: "<b>Research Intern</b>"
         time: 2022
-        company: EE, Korea Advanced Institute of Science and Technology (KAIST), South Korea
+        company: Korea Advanced Institute of Science and Technology (KAIST), South Korea
         details: |
           Unmanned Systems Research Group. (Prof. Hyunchul (David) Shim) <br>
     
