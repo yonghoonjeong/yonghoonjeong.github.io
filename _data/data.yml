@@ -114,17 +114,17 @@ publications:
       - title: "<b>On the Interference Resilience of Non-Linear Chirp Modulation for LoRa: An Analytical Insight into Energy Scattering Effect</b>"
         link: "https://ieeexplore.ieee.org/document/11550153"
         authors: "<u>Yonghoon Jeong</u>, Youngwook Son, and Saewoong Bahk"
-        conference: "<em><b>IEEE Communications Letters (COMML)</b></em>, vol. 30, pp. 2238-2242, Jun. 2026."
+        conference: "<em><b>IEEE Communications Letters</b></em>, vol. 30, pp. 2238-2242, Jun. 2026."
         
       - title: "<b>D²-PLC: Holistic Design and Implementation of High-Datarate Duplex DC Power Line Communication Network</b>"
         link: "https://ieeexplore.ieee.org/document/11127183"
         authors: "Dongrack Choi, Yubin Choi, <u>Yonghoon Jeong</u>, Jeongyeup Paek, and Saewoong Bahk"
-        conference: "<em><b>IEEE Internet of Things Journal (IoT-J)</b></em>, vol. 12, pp. 45325-45340, 1 Nov. 2025"
+        conference: "<em><b>IEEE Internet of Things Journal</b></em>, vol. 12, pp. 45325-45340, 1 Nov. 2025"
 
       - title: "<b>Demo: A Programmable High-Throughput Duplex DC-PLC Testbed for Power and Data Integration</b>"
         link: "https://ieeexplore.ieee.org/document/11192329"
         authors: "Dongrack Choi, <u>Yonghoon Jeong</u>, Yubin Choi, and Saewoong Bahk"
-        conference: "<em><b>IEEE International Conference on Network Protocols (ICNP)</b></em>, Seoul, South Korea, Oct. 19-22, 2025."
+        conference: "<em><b>IEEE International Conference on Network Protocols</b></em>, Seoul, South Korea, Oct. 19-22, 2025."
 
       - title: "<b>Diffusion-Phys: Noise-Robust Heart Rate Estimation from Facial Videos via Diffusion Models</b>"
         link: "https://link.springer.com/article/10.1007/s13534-025-00472-w"
