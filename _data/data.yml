@@ -71,11 +71,11 @@ career-profile:
 experiences:
     title: Experiences
     info:
-      - role: "<b>Lecturer</b>"
-        time: 2026 - Present
+      - role: "<b>Lecturer, Faculty Member</b>"
+        time: 2026 - 
         company: Republic of Korea Naval Academy, South Korea
         details: |
-          Faculty Member, Department of Cyber Science, [Republic of Korea Naval Academy](https://www.navy.ac.kr:4443/sites/english/index.do) <br>
+          Department of Cyber Science, [Republic of Korea Naval Academy](https://www.navy.ac.kr:4443/sites/english/index.do) <br>
           Officer (Ensign), [Republic of Korea Navy](https://www.navy.mil.kr/mbshome/mbs/eng/index.do) (Mandatory Military Service through May 2029)
           
       - role: "<b>Researcher</b>"
