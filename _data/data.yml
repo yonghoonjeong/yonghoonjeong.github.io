@@ -35,19 +35,19 @@ sidebar:
   interests:
     title: Research Interests
     info:
-    - item: Low-power Wide Area Network 
+    - item: Wireless Communication Systems 
       link:
     
-    - item: Ocean IoT
+    - item: Waveform Design and Signal Processing
       link:
 
-    - item: Wireless Communication Systems
+    - item: Low-Power Wide-Area Networks (LPWANs)
       link:
     
-    - item: Signal Processing
+    - item: Underwater Backscatter Systems
       link:
       
-    - item: Wireless Networks and Sensing
+    - item: Ocean IoT
       link:
 
   languages:
