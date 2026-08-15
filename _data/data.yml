@@ -73,8 +73,9 @@ experiences:
     info:
       - role: "<b>Researcher</b>"
           time: 2026 - 
-          company: Institute of Naval Research, Republic of Korea Naval Academy, South Korea
+          company: Institute of Naval Research, [Republic of Korea Naval Academy](https://en.wikipedia.org/wiki/Korea_Naval_Academy), South Korea
           details: |
+          
       - role: "<b>Full-time Lecturer</b>"
         time: 2026 - 
         company: Department of Cyber Science, [Republic of Korea Naval Academy](https://en.wikipedia.org/wiki/Korea_Naval_Academy), South Korea
