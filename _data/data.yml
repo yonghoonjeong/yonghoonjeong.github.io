@@ -9,7 +9,7 @@ sidebar:
 
   # Profile information
   name: Yonghoon Jeong
-  tagline: Full-time Lecturer & Researcher Korea Naval Academy
+  tagline: Full-time Lecturer & Researcher R.O.K. Naval Academy
   avatar: yhjeong_cv2.jpg #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
   # Sidebar links
@@ -91,13 +91,13 @@ experiences:
         time: 2023 
         company: Electronics and Telecommunications Research Institute (ETRI), South Korea
         details: |
-          Smart Manufacturing Application Laboratory
+          AI-SoC Infrastructure Research Section
         
       - role: "<b>Research Intern</b>"
         time: 2022
         company: Korea Advanced Institute of Science and Technology (KAIST), South Korea
         details: |
-          [Unmanned Systems Research Group](https://unmanned.kaist.ac.kr/) 
+          [Unmanned Systems Research Group](https://unmanned.kaist.ac.kr/), School of Electrical Engineering (EE) 
     
 education:
     title: Education
