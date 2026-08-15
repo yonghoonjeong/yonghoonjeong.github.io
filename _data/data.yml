@@ -111,17 +111,20 @@ education:
         time: 2018 - 2023
 
 publications:
-    title: Publications
+  title: Publications
+
+  international:
+    title: International
     papers:
       - title: "<b>On the Interference Resilience of Non-Linear Chirp Modulation for LoRa: An Analytical Insight into Energy Scattering Effect</b>"
         link: "https://ieeexplore.ieee.org/document/11550153"
         authors: "<u>Yonghoon Jeong</u>, Youngwook Son, and Saewoong Bahk"
         conference: "<em><b>IEEE Communications Letters</b></em>, vol. 30, pp. 2238-2242, Jun. 2026."
-        
+
       - title: "<b>D²-PLC: Holistic Design and Implementation of High-Datarate Duplex DC Power Line Communication Network</b>"
         link: "https://ieeexplore.ieee.org/document/11127183"
         authors: "Dongrack Choi, Yubin Choi, <u>Yonghoon Jeong</u>, Jeongyeup Paek, and Saewoong Bahk"
-        conference: "<em><b>IEEE Internet of Things Journal</b></em>, vol. 12, pp. 45325-45340, 1 Nov. 2025"
+        conference: "<em><b>IEEE Internet of Things Journal</b></em>, vol. 12, pp. 45325-45340, Nov. 2025."
 
       - title: "<b>A Programmable High-Throughput Duplex DC-PLC Testbed for Power and Data Integration</b>"
         link: "https://ieeexplore.ieee.org/document/11192329"
@@ -131,8 +134,18 @@ publications:
       - title: "<b>Diffusion-Phys: Noise-Robust Heart Rate Estimation from Facial Videos via Diffusion Models</b>"
         link: "https://link.springer.com/article/10.1007/s13534-025-00472-w"
         authors: "<u>Yonghoon Jeong</u> and Youngseok Choi"
-        conference: "<em><b>Biomedical Engineering Letters</b></em>, vol. 15, pp. 575–585, Apr, 2025."
-    
+        conference: "<em><b>Biomedical Engineering Letters</b></em>, vol. 15, pp. 575-585, Apr. 2025."
+
+  domestic:
+    title: Domestic
+    papers:
+      - title: "<b>A Study on Direct Current Power Line Communication (DC-PLC) with Applications in Automotive, Maritime, and Aviation</b>"
+        authors: "<u>Yonghoon Jeong</u> and Saewoong Bahk"
+        conference: "<em><b>The Fall Conference of the Korea Institute of Communications and Information Sciences (KICS)</b></em>, Gyeongju, South Korea, Nov. 20-22, 2024."
+
+      - title: "<b>Development of Non-contact Heart Rate Measurement Technology Based on Facial Video</b>"
+        authors: "<u>Yonghoon Jeong</u>"
+        conference: "<em><b>The Conference of the Korean Institute of Information Scientists and Engineers (KIISE)</b></em>, Jeju, South Korea, Jun. 23-25, 2021."
 
 recommendations:
   title: Recommendations
