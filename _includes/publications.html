@@ -16,7 +16,12 @@
   </div><!--//intro-->
   {% endif %}
 
-  {% for publication in publications.papers %}
+  {% if publications.international %}
+  <h3 class="publication-subtitle">
+    {{ publications.international.title }}
+  </h3>
+
+  {% for publication in publications.international.papers %}
   <div class="item">
     {% if publication.link %}
       <li style="font-size: 16px; font-style: normal;">
@@ -39,6 +44,37 @@
     </div>
   </div><!--//item-->
   {% endfor %}
+  {% endif %}
+
+  {% if publications.domestic %}
+  <h3 class="publication-subtitle">
+    {{ publications.domestic.title }}
+  </h3>
+
+  {% for publication in publications.domestic.papers %}
+  <div class="item">
+    {% if publication.link %}
+      <li style="font-size: 16px; font-style: normal;">
+        <a href="{{ publication.link }}" style="font-style: normal;">
+          {{ publication.title }}
+        </a>
+      </li>
+    {% else %}
+      <li style="font-size: 15px; font-style: normal;">
+        {{ publication.title }}
+      </li>
+    {% endif %}
+
+    <div class="publication-authors" style="font-style: normal;">
+      {{ publication.authors }}
+    </div>
+
+    <div class="publication-conference">
+      {{ publication.conference }}
+    </div>
+  </div><!--//item-->
+  {% endfor %}
+  {% endif %}
 
 </section><!--//section-->
 {% endif %}
