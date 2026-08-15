@@ -71,12 +71,15 @@ career-profile:
 experiences:
     title: Experiences
     info:
+      - role: "<b>Researcher</b>"
+          time: 2026 - 
+          company: Institute of Naval Research, Republic of Korea Naval Academy, South Korea
+          details: |
       - role: "<b>Full-time Lecturer</b>"
         time: 2026 - 
-        company: Republic of Korea Naval Academy, South Korea
+        company: Department of Cyber Science, [Republic of Korea Naval Academy](https://en.wikipedia.org/wiki/Korea_Naval_Academy), South Korea
         details: |
-          Faculty, Department of Cyber Science, [Republic of Korea Naval Academy](https://en.wikipedia.org/wiki/Korea_Naval_Academy) <br>
-          Officer (Ensign), [Republic of Korea Navy](https://www.navy.mil.kr/mbshome/mbs/eng/index.do) (Mandatory Military Service through May 2029)
+          Mandatory Military Service through May 2029
           
       - role: "<b>Researcher</b>"
         time: 2024 - 2026
