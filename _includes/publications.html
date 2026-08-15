@@ -25,15 +25,15 @@
   {% for publication in publications.international.papers %}
   <div class="item">
     {% if publication.link %}
-      <li style="font-size: 15px; font-style: normal;">
+      <div style="font-size: 15px; font-style: normal;">
         <a href="{{ publication.link }}" style="font-style: normal;">
           {{ publication.title }}
         </a>
-      </li>
+      </div>
     {% else %}
-      <li style="font-size: 15px; font-style: normal;">
+      <div style="font-size: 15px; font-style: normal;">
         {{ publication.title }}
-      </li>
+      </div>
     {% endif %}
 
     <div class="publication-authors" style="font-style: normal;">
@@ -56,15 +56,15 @@
   {% for publication in publications.domestic.papers %}
   <div class="item">
     {% if publication.link %}
-      <li style="font-size: 15px; font-style: normal;">
+      <div style="font-size: 15px; font-style: normal;">
         <a href="{{ publication.link }}" style="font-style: normal;">
           {{ publication.title }}
         </a>
-      </li>
+      </div>
     {% else %}
-      <li style="font-size: 15px; font-style: normal;">
+      <div style="font-size: 15px; font-style: normal;">
         {{ publication.title }}
-      </li>
+      </div>
     {% endif %}
 
     <div class="publication-authors" style="font-style: normal;">
