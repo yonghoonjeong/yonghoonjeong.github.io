@@ -108,16 +108,16 @@ publications:
   international:
     title: International Papers
     papers:
-      - title: "<b>On the Symbol Error Rate of Non-Linear Chirp Modulation for LoRa Under Asynchronous Interference</b>"
-        conference: "submitted, 2026."
-
       - title: "<b>Receiver-Aware Chirp Waveform Optimization for Mobile Underwater LoRa Communications</b>"
-        conference: "in preparation, 2026."
+        conference: "in preparation."
+
+      - title: "<b>On the Symbol Error Rate of Non-Linear Chirp Modulation for LoRa Under Asynchronous Interference</b>"
+        conference: "under review, <em><b>IEEE Wireless Communications Letters</b></em>. (SCIE, IF: 5.5)"
 
       - title: "<b>On the Interference Resilience of Non-Linear Chirp Modulation for LoRa: An Analytical Insight into Energy Scattering Effect</b>"
         link: "https://ieeexplore.ieee.org/document/11550153"
         authors: "<u>Yonghoon Jeong</u>, Youngwook Son, and Saewoong Bahk"
-        conference: "<em><b>IEEE Communications Letters</b></em>, vol. 30, pp. 2238-2242, Jun. 2026. (SCIE, IF: 4.4)"
+        conference: "<em><b>IEEE Communications Letters</b></em>, vol. 30, pp. 2238-2242, Jun. 2026. (SCIE, IF: 4.5)"
 
       - title: "<b>D²-PLC: Holistic Design and Implementation of High-Data-Rate Duplex DC Power Line Communication Network</b>"
         link: "https://ieeexplore.ieee.org/document/11127183"
@@ -139,7 +139,7 @@ publications:
     papers:
       - title: "<b>A Study on Direct Current Power Line Communication (DC-PLC) with Applications in Automotive, Maritime, and Aviation</b>"
         authors: "<u>Yonghoon Jeong</u> and Saewoong Bahk"
-        conference: "<em><b>The Fall Conference of the Korea Institute of Communications and Information Sciences (KICS)</b></em>, Gyeongju, South Korea, Nov. 20-22, 2024."
+        conference: "<em><b>The Conference of the Korea Institute of Communications and Information Sciences (KICS)</b></em>, Gyeongju, South Korea, Nov. 20-22, 2024."
 
       - title: "<b>Development of Non-contact Heart Rate Measurement Technology Based on Facial Video</b>"
         authors: "<u>Yonghoon Jeong</u>"
