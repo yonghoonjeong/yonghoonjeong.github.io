@@ -41,9 +41,7 @@ sidebar:
         link:
       - item: Low-Power Wide-Area Networks (LPWANs)
         link:
-      - item: Ocean Internet of Things (IoT)
-        link:
-      - item: Satellite Communications
+      - item: Ocean Internet of Things
         link:
 
   languages:
