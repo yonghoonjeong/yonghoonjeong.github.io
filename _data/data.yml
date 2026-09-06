@@ -9,7 +9,7 @@ sidebar:
 
   # Profile information
   name: Yonghoon Jeong
-  tagline: Lecturer & Researcher<br> Republic of Korea Naval Academy
+  tagline: Lecturer (Assistant Professor-track) & Researcher<br> Republic of Korea Naval Academy
   avatar: yhjeong_cv2.jpg #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
   # Sidebar links
@@ -30,7 +30,7 @@ sidebar:
   #mastodon: # Please include your full Mastodon link here.
   #hackerrank: # Please provide your HackerRank username.
   #leetcode: # Please provide your LeetCode username.
-  pdf: https://yonghoonjeong.github.io/Yonghoon_Jeong_CV_Overleaf_260906.pdf # Add a PDF link here if you want to include a PDF custom version in your resume.
+  pdf: https://yonghoonjeong.github.io/Yonghoon_Jeong_CV_Overleaf_260906.pdf?v=260906-underline # Add a PDF link here if you want to include a PDF custom version in your resume.
 
   interests:
     title: Research Interests
@@ -57,7 +57,7 @@ sidebar:
 career-profile:
   title: About
   summary: |
-    Yonghoon Jeong is a lecturer in the Department of Cyber Science and a researcher at the Institute of Naval Research, Republic of Korea Naval Academy, fulfilling his mandatory military service through May 2029. His research interests include wireless communication systems, physical-layer wireless sensing and networking, low-power wide-area networks (LPWANs), and underwater acoustic communications and ocean IoT. He is particularly interested in extending reliable wireless communications beyond conventional terrestrial networks to challenging satellite and underwater communication channels.
+    Yonghoon Jeong is a lecturer (Assistant Professor-track) in the Department of Cyber Science and a researcher at the Institute of Naval Research, Republic of Korea Naval Academy, fulfilling his mandatory military service through May 2029. His research interests include wireless communication systems, physical-layer wireless sensing and networking, low-power wide-area networks (LPWANs), and underwater acoustic communications and ocean IoT. He is particularly interested in extending reliable wireless communications beyond conventional terrestrial networks to challenging satellite and underwater communication channels.
 
 experiences:
     title: Professional Experiences
@@ -66,7 +66,7 @@ experiences:
         time: "2026 - Present"
         company: Jinhae-gu, Changwon, South Korea
         details: |
-          Lecturer, Department of Cyber Science <br>
+          Lecturer (Assistant Professor-track), Department of Cyber Science <br>
           Researcher, Institute of Naval Research
           
       - role: "<b>Seoul National University (SNU)</b>"
@@ -77,7 +77,7 @@ experiences:
           
       - role: "<b>Electronics and Telecommunications Research Institute (ETRI)</b>"
         time: 2023 
-        company: Seongnam, South Korea
+        company: Pangyo, Seongnam, South Korea
         details: |
           Researcher, AI-SoC Infrastructure Research Section
         
