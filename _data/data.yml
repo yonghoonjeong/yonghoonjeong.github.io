@@ -30,7 +30,7 @@ sidebar:
   #mastodon: # Please include your full Mastodon link here.
   #hackerrank: # Please provide your HackerRank username.
   #leetcode: # Please provide your LeetCode username.
-  pdf: https://yonghoonjeong.github.io/Yonghoon_Jeong_CV_Overleaf_260906.pdf?v=260906-bold-dash # Add a PDF link here if you want to include a PDF custom version in your resume.
+  pdf: https://yonghoonjeong.github.io/Yonghoon_Jeong_CV_Overleaf_260906.pdf?v=260906-indented-plain # Add a PDF link here if you want to include a PDF custom version in your resume.
 
   interests:
     title: Research Interests
@@ -41,7 +41,9 @@ sidebar:
         link:
       - item: Low-Power Wide-Area Networks (LPWANs)
         link:
-      - item: Underwater Acoustic Communications and Ocean IoT
+      - item: Underwater Acoustic Communications
+        link:
+      - item: Ocean IoT
         link:
 
   languages:
@@ -57,7 +59,7 @@ sidebar:
 career-profile:
   title: About
   summary: |
-    Yonghoon Jeong is a lecturer (Assistant Professor-track) in the Department of Cyber Science and a researcher at the Institute of Naval Research, Republic of Korea Naval Academy, fulfilling his mandatory military service through May 2029. His research interests include wireless communication systems, physical-layer wireless sensing and networking, low-power wide-area networks (LPWANs), and underwater acoustic communications and ocean IoT. He is particularly interested in extending reliable wireless communications beyond conventional terrestrial networks to challenging satellite and underwater communication channels.
+    Yonghoon Jeong is a lecturer (Assistant Professor-track) in the Department of Cyber Science and a researcher at the Institute of Naval Research, Republic of Korea Naval Academy, fulfilling his mandatory military service through May 2029. His research interests include wireless communication systems, physical-layer wireless sensing and networking, low-power wide-area networks, underwater acoustic communications, and ocean IoT. He is particularly interested in extending reliable wireless communications beyond conventional terrestrial networks to challenging satellite and underwater communication channels.
 
 experiences:
     title: Professional Experiences
