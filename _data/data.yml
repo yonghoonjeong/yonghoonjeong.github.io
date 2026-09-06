@@ -57,7 +57,7 @@ sidebar:
 career-profile:
   title: About
   summary: |
-    Yonghoon Jeong is a lecturer in the Department of Cyber Science and a researcher at the Institute of Naval Research, Republic of Korea Naval Academy. His research focuses on wireless communication systems, communication theory, error-rate analysis, and waveform optimization. He develops analytical and receiver-aware methods for reliable low-power communications, with particular interests in LoRa, underwater acoustic communications, and ocean IoT. He is currently fulfilling his mandatory military service at the Republic of Korea Naval Academy.
+    Yonghoon Jeong is a lecturer in the Department of Cyber Science and a researcher at the Institute of Naval Research, Republic of Korea Naval Academy, fulfilling his mandatory military service through May 2029. His research interests include wireless communication systems, physical-layer wireless sensing and networking, low-power wide-area networks (LPWANs), and underwater acoustic communications and ocean IoT. He is particularly interested in extending reliable wireless communications beyond conventional terrestrial networks to challenging satellite and underwater communication channels.
 
 experiences:
     title: Professional Experiences
@@ -67,8 +67,7 @@ experiences:
         company: Changwon, South Korea
         details: |
           Lecturer, Department of Cyber Science <br>
-          Researcher, Institute of Naval Research <br>
-          Mandatory Military Service through May 2029
+          Researcher, Institute of Naval Research
           
       - role: "<b>Seoul National University (SNU)</b>"
         time: 2024 - 2026
