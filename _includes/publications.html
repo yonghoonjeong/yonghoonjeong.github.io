@@ -15,7 +15,7 @@
   </div><!--//intro-->
   {% endif %}
 
-  {% assign publication_groups = "submitted,journals,international,domestic" | split: "," %}
+  {% assign publication_groups = "international,domestic" | split: "," %}
   {% for group_name in publication_groups %}
     {% assign publication_group = publications[group_name] %}
     {% if publication_group %}
@@ -27,13 +27,15 @@
     {% for publication in publication_group.papers %}
     <div class="item">
       <div style="font-size: 15px; font-style: normal;">
-        {{ publication.title }}
+        {{ publication.title }}{% if publication.link %} <a href="{{ publication.link }}" style="font-size: 12px; font-weight: 400; margin-left: 3px;">Link</a>{% endif %}
       </div>
+      {% if publication.authors %}
       <div class="publication-authors" style="font-style: normal;">
         {{ publication.authors }}
       </div>
+      {% endif %}
       <div class="publication-conference">
-        {{ publication.conference }}{% if publication.link %} <a href="{{ publication.link }}">Link</a>{% endif %}
+        {{ publication.conference }}
       </div>
     </div><!--//item-->
     {% endfor %}
