@@ -9,7 +9,7 @@ sidebar:
 
   # Profile information
   name: Yonghoon Jeong
-  tagline: Lecturer (Assistant Professor-track) & Researcher<br> Republic of Korea Naval Academy
+  tagline: Lecturer & Researcher<br> R.O.K. Naval Academy
   avatar: yhjeong_cv2.jpg #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
   # Sidebar links
@@ -30,7 +30,7 @@ sidebar:
   #mastodon: # Please include your full Mastodon link here.
   #hackerrank: # Please provide your HackerRank username.
   #leetcode: # Please provide your LeetCode username.
-  pdf: https://yonghoonjeong.github.io/Yonghoon_Jeong_CV_Overleaf_260906.pdf?v=260906-indented-plain # Add a PDF link here if you want to include a PDF custom version in your resume.
+  pdf: https://yonghoonjeong.github.io/Yonghoon_Jeong_CV_Overleaf_260906.pdf?v=260907-hyphen-satellite # Add a PDF link here if you want to include a PDF custom version in your resume.
 
   interests:
     title: Research Interests
@@ -41,9 +41,9 @@ sidebar:
         link:
       - item: Low-Power Wide-Area Networks (LPWANs)
         link:
-      - item: Underwater Acoustic Communications
-        link:
       - item: Ocean IoT
+        link:
+      - item: Satellite Communications
         link:
 
   languages:
@@ -59,7 +59,7 @@ sidebar:
 career-profile:
   title: About
   summary: |
-    Yonghoon Jeong is a lecturer (Assistant Professor-track) in the Department of Cyber Science and a researcher at the Institute of Naval Research, Republic of Korea Naval Academy, fulfilling his mandatory military service through May 2029. His research interests include wireless communication systems, physical-layer wireless sensing and networking, low-power wide-area networks, underwater acoustic communications, and ocean IoT. He is particularly interested in extending reliable wireless communications beyond conventional terrestrial networks to challenging satellite and underwater communication channels.
+    Yonghoon Jeong is a lecturer (Assistant Professor-track) in the Department of Cyber Science and a researcher at the Institute of Naval Research, Republic of Korea Naval Academy, fulfilling his mandatory military service through May 2029. His research interests include wireless communication systems, physical-layer wireless sensing and networking, low-power wide-area networks, ocean IoT, and satellite communications. He is particularly interested in extending reliable wireless communications beyond conventional terrestrial networks to challenging maritime and satellite environments.
 
 experiences:
     title: Professional Experiences
