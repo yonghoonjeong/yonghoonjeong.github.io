@@ -26,22 +26,14 @@
 
     {% for publication in publication_group.papers %}
     <div class="item">
-      {% if publication.link %}
-      <div style="font-size: 15px; font-style: normal;">
-        <a href="{{ publication.link }}" style="font-style: normal;">
-          {{ publication.title }}
-        </a>
-      </div>
-      {% else %}
       <div style="font-size: 15px; font-style: normal;">
         {{ publication.title }}
       </div>
-      {% endif %}
       <div class="publication-authors" style="font-style: normal;">
         {{ publication.authors }}
       </div>
       <div class="publication-conference">
-        {{ publication.conference }}
+        {{ publication.conference }}{% if publication.link %} <a href="{{ publication.link }}">Link</a>{% endif %}
       </div>
     </div><!--//item-->
     {% endfor %}
