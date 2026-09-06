@@ -30,6 +30,214 @@ sidebar:
   #mastodon: # Please include your full Mastodon link here.
   #hackerrank: # Please provide your HackerRank username.
   #leetcode: # Please provide your LeetCode username.
+  pdf: https://yonghoonjeong.github.io/Yonghoon_Jeong_CV_Overleaf_260906.pdf # Add a PDF link here if you want to include a PDF custom version in your resume.
+
+  interests:
+    title: Research Interests
+    info:
+      - item: Wireless Communication Systems
+        link:
+      - item: Physical-Layer Wireless Sensing and Communications
+        link:
+      - item: Low-Power Wide-Area Networks (LPWANs)
+        link:
+      - item: Underwater Acoustic Communications and Ocean IoT
+        link:
+
+  languages:
+    title: Languages
+    info:
+    - idiom: Korean
+      level: Native
+
+    - idiom: English
+      level: Professional
+
+
+career-profile:
+  title: About
+  summary: |
+    Yonghoon Jeong is a lecturer in the Department of Cyber Science and a researcher at the Institute of Naval Research, Republic of Korea Naval Academy. His research focuses on wireless communication systems, communication theory, error-rate analysis, and waveform optimization. He develops analytical and receiver-aware methods for reliable low-power communications, with particular interests in LoRa, underwater acoustic communications, and ocean IoT. He is currently fulfilling his mandatory military service at the Republic of Korea Naval Academy.
+
+experiences:
+    title: Professional Experiences
+    info:
+      - role: "<b>Researcher</b>"
+        time: "2026 - Present"
+        company: "Institute of Naval Research, [Republic of Korea Naval Academy](https://en.wikipedia.org/wiki/Korea_Naval_Academy), South Korea"
+        details: |
+      
+      - role: "<b>Lecturer</b>"
+        time: "2026 - Present"
+        company: "Department of Cyber Science, [Republic of Korea Naval Academy](https://en.wikipedia.org/wiki/Korea_Naval_Academy), South Korea"
+        details: |
+          Mandatory Military Service through May 2029
+          
+      - role: "<b>Researcher</b>"
+        time: 2024 - 2026
+        company: Seoul National University (SNU), South Korea
+        details: | 
+          [Network Laboratory (NETLAB)](https://sites.google.com/netlab.snu.ac.kr/netlabhome), [Institute of New Media and Communications (INMC)](https://inmc.snu.ac.kr/en/) <br>
+          
+      - role: "<b>Researcher</b>"
+        time: 2023 
+        company: Electronics and Telecommunications Research Institute (ETRI), South Korea
+        details: |
+          AI-SoC Infrastructure Research Section
+        
+      - role: "<b>Research Intern</b>"
+        time: 2022
+        company: Korea Advanced Institute of Science and Technology (KAIST), South Korea
+        details: |
+          [Unmanned Systems Research Group](https://unmanned.kaist.ac.kr/), School of Electrical Engineering (EE) 
+    
+education:
+    title: Education
+    info:
+      - degree: "<b>M.S. in Electrical and Computer Engineering</b>"
+        university: Seoul National University, Seoul, South Korea
+        time: 2024 - 2026
+        details: |
+            Advisor: [Prof. Saewoong Bahk](https://sites.google.com/netlab.snu.ac.kr/netlabhome/people/faculty?authuser=0) <br>
+      - degree: "<b>B.S. in Electronics and Communications Engineering</b>"
+        university: Kwangwoon University, Seoul, South Korea
+        time: 2018 - 2023
+
+publications:
+  title: Publications
+  international:
+    title: International Papers
+    papers:
+      - title: "<b>On the Symbol Error Rate of Non-Linear Chirp Modulation for LoRa Under Asynchronous Interference</b>"
+        conference: "submitted, 2026."
+
+      - title: "<b>Receiver-Aware Chirp Waveform Optimization for Mobile Underwater LoRa Communications</b>"
+        conference: "in preparation, 2026."
+
+      - title: "<b>On the Interference Resilience of Non-Linear Chirp Modulation for LoRa: An Analytical Insight into Energy Scattering Effect</b>"
+        link: "https://ieeexplore.ieee.org/document/11550153"
+        authors: "<u>Yonghoon Jeong</u>, Youngwook Son, and Saewoong Bahk"
+        conference: "<em><b>IEEE Communications Letters</b></em>, vol. 30, pp. 2238-2242, Jun. 2026. (SCIE, IF: 4.4)"
+
+      - title: "<b>D²-PLC: Holistic Design and Implementation of High-Data-Rate Duplex DC Power Line Communication Network</b>"
+        link: "https://ieeexplore.ieee.org/document/11127183"
+        authors: "Dongrack Choi, Yubin Choi, <u>Yonghoon Jeong</u>, Jeongyeup Paek, and Saewoong Bahk"
+        conference: "<em><b>IEEE Internet of Things Journal</b></em>, vol. 12, pp. 45325-45340, Nov. 2025. (SCIE, IF: 8.9)"
+
+      - title: "<b>Diffusion-Phys: Noise-Robust Heart Rate Estimation from Facial Videos via Diffusion Models</b>"
+        link: "https://link.springer.com/article/10.1007/s13534-025-00472-w"
+        authors: "<u>Yonghoon Jeong</u> and Youngseok Choi"
+        conference: "<em><b>Biomedical Engineering Letters</b></em>, vol. 15, pp. 575-585, Apr. 2025. (SCIE, IF: 3.4)"
+
+      - title: "<b>A Programmable High-Throughput Duplex DC-PLC Testbed for Power and Data Integration</b>"
+        link: "https://ieeexplore.ieee.org/document/11192329"
+        authors: "Dongrack Choi, <u>Yonghoon Jeong</u>, Yubin Choi, and Saewoong Bahk"
+        conference: "<em><b>IEEE ICNP 2025</b></em>, Seoul, South Korea, Oct. 19-22, 2025."
+
+  domestic:
+    title: Domestic Conference Papers
+    papers:
+      - title: "<b>A Study on Direct Current Power Line Communication (DC-PLC) with Applications in Automotive, Maritime, and Aviation</b>"
+        authors: "<u>Yonghoon Jeong</u> and Saewoong Bahk"
+        conference: "<em><b>The Fall Conference of the Korea Institute of Communications and Information Sciences (KICS)</b></em>, Gyeongju, South Korea, Nov. 20-22, 2024."
+
+      - title: "<b>Development of Non-contact Heart Rate Measurement Technology Based on Facial Video</b>"
+        authors: "<u>Yonghoon Jeong</u>"
+        conference: "<em><b>The Conference of the Korean Institute of Information Scientists and Engineers (KIISE)</b></em>, Jeju, South Korea, Jun. 23-25, 2021."
+\nrecommendations:
+  title: Recommendations
+  list:
+  - person: Yareli Perez
+    email: perezyareli@example.com
+    phone: 012 345 6789
+    role: General Director at example.com
+    recommendation: |
+      Alan Doe is a super employee!
+  - person: Lara Henderson
+    email: larah@example.com
+    phone: 012 345 6789
+    role: General Director at example.com
+    recommendation: |
+      I would like to work with Alan Doe again!
+
+      He is a great employee!
+
+awards:
+  title: Awards & Scholarships
+  info:
+    - title: Scholarship Recipient
+      time: 2024–2025
+      organization: Brain Korea 21 (BK21), National Research Foundation of Korea
+
+    - title: Scholarship Recipient
+      time: 2022–2023
+      organization: Korea Scholarship Foundation for the Future Leaders (KOSFFL)
+
+    - title: Excellent Paper Award
+      time: 2021
+      organization: Korea Computer Conference 2021
+
+    - title: University President's Award
+      time: 2020
+      organization: Seoul Capstone Design, Seoul
+
+    - title: Scholarship Recipient
+      time: 2020
+      organization: Samsong Scholarship Foundation
+
+    - title: Dean's List
+      time: 2020
+      organization: Highest GPA
+
+skills:
+  title: Technical Skills
+  info:
+    - label: Programming Languages
+      details: C, C++, Python, MATLAB
+
+    - label: Frameworks & Libraries
+      details: ROS, ROS2, TensorFlow, PyTorch
+
+    - label: Simulation Tools
+      details: MATLAB/Simulink, ns-3
+
+    - label: Development Tools
+      details: Linux, Git, Docker
+
+#footer: >
+#  Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
+#
+# Be aware that even a small syntax error here can lead to failures in output.
+#
+
+sidebar:
+  position: right # position of the sidebar : left or right
+  about: False # set to False or comment line if you want to remove the "how to use?" in the sidebar
+  education: False # set to False if you want education in main section instead of in sidebar
+
+  # Profile information
+  name: Yonghoon Jeong
+  tagline: Lecturer & Researcher<br> Republic of Korea Naval Academy
+  avatar: yhjeong_cv2.jpg #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+
+  # Sidebar links
+  email: yhjeong@navy.ac.kr
+  goodreads: https://scholar.google.com/citations?user=ai69N2AAAAAJ
+  linkedin: yonghoon-jeong-20a358200
+  # github: yonghoonjeong
+  # website: https://yonghoonjeong.github.io/ # Include the full website URL, including "http://" or "https://".
+  # github: jekyll
+  # telegram: # add your nickname without '@' sign
+  # gitlab:
+  # bitbucket:
+  # bluesky: '@jekyllrb.bsky.social' # Specify your full Bluesky handle
+  # twitter: '@jekyllrb'
+  #stack-overflow: # Number/Username, e.g. 123456/alandoe
+  #codewars:
+  # goodreads: # Number-Username, e.g. 123456-alandoe
+  #mastodon: # Please include your full Mastodon link here.
+  #hackerrank: # Please provide your HackerRank username.
+  #leetcode: # Please provide your LeetCode username.
   pdf: https://yonghoonjeong.github.io/Yonghoon_Jeong_CV_Overleaf_260815.pdf # Add a PDF link here if you want to include a PDF custom version in your resume.
 
   interests:
