@@ -62,34 +62,31 @@ career-profile:
 experiences:
     title: Professional Experiences
     info:
-      - role: "<b>Researcher</b>"
+      - role: "<b>[Republic of Korea Naval Academy (ROKNA)](https://en.wikipedia.org/wiki/Korea_Naval_Academy)</b>"
         time: "2026 - Present"
-        company: "Institute of Naval Research, [Republic of Korea Naval Academy](https://en.wikipedia.org/wiki/Korea_Naval_Academy), South Korea"
+        company: Changwon, South Korea
         details: |
-      
-      - role: "<b>Lecturer</b>"
-        time: "2026 - Present"
-        company: "Department of Cyber Science, [Republic of Korea Naval Academy](https://en.wikipedia.org/wiki/Korea_Naval_Academy), South Korea"
-        details: |
+          Lecturer, Department of Cyber Science <br>
+          Researcher, Institute of Naval Research <br>
           Mandatory Military Service through May 2029
           
-      - role: "<b>Researcher</b>"
+      - role: "<b>Seoul National University (SNU)</b>"
         time: 2024 - 2026
-        company: Seoul National University (SNU), South Korea
+        company: Seoul, South Korea
         details: | 
-          [Network Laboratory (NETLAB)](https://sites.google.com/netlab.snu.ac.kr/netlabhome), [Institute of New Media and Communications (INMC)](https://inmc.snu.ac.kr/en/) <br>
+          Researcher, [Network Laboratory (NETLAB)](https://sites.google.com/netlab.snu.ac.kr/netlabhome), [Institute of New Media and Communications (INMC)](https://inmc.snu.ac.kr/en/) <br>
           
-      - role: "<b>Researcher</b>"
+      - role: "<b>Electronics and Telecommunications Research Institute (ETRI)</b>"
         time: 2023 
-        company: Electronics and Telecommunications Research Institute (ETRI), South Korea
+        company: Seongnam, South Korea
         details: |
-          AI-SoC Infrastructure Research Section
+          Researcher, AI-SoC Infrastructure Research Section
         
-      - role: "<b>Research Intern</b>"
+      - role: "<b>Korea Advanced Institute of Science and Technology (KAIST)</b>"
         time: 2022
-        company: Korea Advanced Institute of Science and Technology (KAIST), South Korea
+        company: Daejeon, South Korea
         details: |
-          [Unmanned Systems Research Group](https://unmanned.kaist.ac.kr/), School of Electrical Engineering (EE) 
+          Research Intern, [Unmanned Systems Research Group](https://unmanned.kaist.ac.kr/), School of Electrical Engineering (EE) 
     
 education:
     title: Education
