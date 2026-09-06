@@ -176,7 +176,8 @@ p {
     margin-bottom: 18px;
     padding-bottom: 8px;
     border-bottom: 1px solid $divider;
-    transform: none;
+    transform: translateX(-5px);
+    width: calc(100% + 5px);
   }
   .section {
     margin-bottom: 46px;
