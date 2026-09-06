@@ -1,7 +1,6 @@
 {% assign publications = site.data.data.publications %}
 {% if publications %}
 <section class="section publications-section">
-
   <h2 class="section-title">
     <span class="fa-stack fa-xs">
       <i class="fas fa-circle fa-stack-2x"></i>
@@ -16,67 +15,37 @@
   </div><!--//intro-->
   {% endif %}
 
-  {% if publications.international %}
-  <h3 class="publication-subtitle"
-      style="font-size: 18px; color: #222; margin-top: 18px; margin-bottom: 10px; font-weight: 700;">
-    {{ publications.international.title }}
-  </h3>
+  {% assign publication_groups = "submitted,journals,international,domestic" | split: "," %}
+  {% for group_name in publication_groups %}
+    {% assign publication_group = publications[group_name] %}
+    {% if publication_group %}
+    <h3 class="publication-subtitle"
+        style="font-size: 18px; color: #222; margin-top: 18px; margin-bottom: 10px; font-weight: 700;">
+      {{ publication_group.title }}
+    </h3>
 
-  {% for publication in publications.international.papers %}
-  <div class="item">
-    {% if publication.link %}
+    {% for publication in publication_group.papers %}
+    <div class="item">
+      {% if publication.link %}
       <div style="font-size: 15px; font-style: normal;">
         <a href="{{ publication.link }}" style="font-style: normal;">
           {{ publication.title }}
         </a>
       </div>
-    {% else %}
+      {% else %}
       <div style="font-size: 15px; font-style: normal;">
         {{ publication.title }}
       </div>
-    {% endif %}
-
-    <div class="publication-authors" style="font-style: normal;">
-      {{ publication.authors }}
-    </div>
-
-    <div class="publication-conference">
-      {{ publication.conference }}
-    </div>
-  </div><!--//item-->
-  {% endfor %}
-  {% endif %}
-
-  {% if publications.domestic %}
-  <h3 class="publication-subtitle"
-      style="font-size: 18px; color: #222; margin-top: 32px; margin-bottom: 10px; font-weight: 700;">
-    {{ publications.domestic.title }}
-  </h3>
-
-  {% for publication in publications.domestic.papers %}
-  <div class="item">
-    {% if publication.link %}
-      <div style="font-size: 15px; font-style: normal;">
-        <a href="{{ publication.link }}" style="font-style: normal;">
-          {{ publication.title }}
-        </a>
+      {% endif %}
+      <div class="publication-authors" style="font-style: normal;">
+        {{ publication.authors }}
       </div>
-    {% else %}
-      <div style="font-size: 15px; font-style: normal;">
-        {{ publication.title }}
+      <div class="publication-conference">
+        {{ publication.conference }}
       </div>
+    </div><!--//item-->
+    {% endfor %}
     {% endif %}
-
-    <div class="publication-authors" style="font-style: normal;">
-      {{ publication.authors }}
-    </div>
-
-    <div class="publication-conference">
-      {{ publication.conference }}
-    </div>
-  </div><!--//item-->
   {% endfor %}
-  {% endif %}
-
 </section><!--//section-->
 {% endif %}
