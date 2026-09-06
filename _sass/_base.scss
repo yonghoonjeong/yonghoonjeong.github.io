@@ -4,7 +4,7 @@ body {
   color: $text-color-secondary;
   background: $smoky-white;
   font-size: 14px;
-  padding: 30px;
+  padding: 36px 24px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -30,17 +30,19 @@ a {
 }
 
 p {
-  line-height: 1.5;
+  line-height: 1.58;
 }
 
 .wrapper {
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
+  grid-template-columns: repeat(12, 1fr);
   background: $theme-color;
-  max-width: 1000px;
+  max-width: 1120px;
   margin: 0 auto;
   position: relative;
-  @include box-shadow(0px 2px 4px rgba(0, 0, 0, 0.1));
+  border-radius: 10px;
+  overflow: hidden;
+  @include box-shadow(0px 10px 32px rgba(35, 55, 63, 0.14));
 }
 
 .sidebar-wrapper {
@@ -52,9 +54,9 @@ p {
     color: #fff;
   }
   .profile-container {
-    padding: 30px;
+    padding: 38px 26px 34px;
     //background: darken($theme-color, 10%);
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.12);
     text-align: center;
     color: #fff;
   }
@@ -65,8 +67,8 @@ p {
     margin-bottom: 10px;
   }
   .tagline {
-    color: rgba(256, 256, 256, 0.6);
-    font-size: 16px;
+    color: rgba(256, 256, 256, 0.78);
+    font-size: 15px;
     font-weight: 400;
     margin-top: 0;
     margin-bottom: 0;
@@ -77,11 +79,11 @@ p {
 
   .avatar {
     //used for profile image
-    max-width: 100px;
-    margin-bottom: 15px;
-    border: 0px solid #fff;
+    max-width: 112px;
+    margin-bottom: 17px;
+    border: 3px solid rgba(255, 255, 255, 0.85);
     border-radius: 100%;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.18);
   }
   .contact-list {
     .fas,
@@ -99,7 +101,7 @@ p {
     }
   }
   .container-block {
-    padding: 30px;
+    padding: 28px 26px;
   }
   .container-block-title {
     text-transform: none;
@@ -160,28 +162,30 @@ p {
 }
 
 .main-wrapper {
-  grid-column: span 7;
+  grid-column: span 9;
   order: $resume-order;
   background: #fff;
-  padding: 60px;
+  padding: 56px 64px;
   .section-title {
     text-transform: none;
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 21px;
+    font-weight: 700;
     color: darken($theme-color, 15%);
     position: relative;
     margin-top: 0;
-    margin-bottom: 20px;
-    transform: translateX(-5px);
+    margin-bottom: 18px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid $divider;
+    transform: none;
   }
   .section {
-    margin-bottom: 60px;
+    margin-bottom: 46px;
   }
   .experiences-section,
   .recommendations-section,
   .educations-section {
     .item {
-      margin-bottom: 30px;
+      margin-bottom: 24px;
     }
   }
   .upper-row,
