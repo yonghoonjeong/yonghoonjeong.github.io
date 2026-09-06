@@ -30,7 +30,7 @@ sidebar:
   #mastodon: # Please include your full Mastodon link here.
   #hackerrank: # Please provide your HackerRank username.
   #leetcode: # Please provide your LeetCode username.
-  pdf: https://yonghoonjeong.github.io/Yonghoon_Jeong_CV_Overleaf_260906.pdf?v=260907-chrono-font16 # Add a PDF link here if you want to include a PDF custom version in your resume.
+  pdf: https://yonghoonjeong.github.io/Yonghoon_Jeong_CV_Overleaf_260906.pdf?v=260907-header-clean # Add a PDF link here if you want to include a PDF custom version in your resume.
 
   interests:
     title: Research Interests
@@ -59,7 +59,7 @@ sidebar:
 career-profile:
   title: About
   summary: |
-    Yonghoon Jeong is a lecturer (Assistant Professor-track) in the Department of Cyber Science and a researcher at the Institute of Naval Research, Republic of Korea Naval Academy, fulfilling his mandatory military service through May 2029. His research interests include wireless communication systems, physical-layer wireless sensing and networking, and low-power wide-area networks. He is currently extending these research directions beyond conventional terrestrial networks toward communication systems for challenging naval and satellite environments.
+    Yonghoon Jeong is a lecturer in the Department of Cyber Science and a researcher at the Institute of Naval Research, Republic of Korea Naval Academy, fulfilling his mandatory military service through May 2029. His research interests include wireless communication systems, physical-layer wireless sensing and networking, and low-power wide-area networks. He is currently extending these research directions beyond conventional terrestrial networks toward communication systems for challenging naval and satellite environments.
 
 experiences:
     title: Professional Experiences
