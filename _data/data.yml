@@ -108,6 +108,12 @@ publications:
   international:
     title: International Papers
     papers:
+      - title: "<b>Receiver-Aware Chirp Waveform Optimization for Mobile Underwater LoRa Communications</b>"
+        conference: '<span class="publication-status publication-status--preparation">In preparation</span>'
+
+      - title: "<b>On the Symbol Error Rate of Non-Linear Chirp Modulation for LoRa Under Asynchronous Interference</b>"
+        conference: '<span class="publication-status publication-status--review">Under review</span> <em><b>IEEE Wireless Communications Letters</b></em>. (SCIE, IF: 5.5)'
+
       - title: "<b>On the Interference Resilience of Non-Linear Chirp Modulation for LoRa: An Analytical Insight into Energy Scattering Effect</b>"
         link: "https://ieeexplore.ieee.org/document/11550153"
         authors: "<strong><u>Yonghoon Jeong</u></strong>, Youngwook Son, and Saewoong Bahk"
@@ -127,12 +133,6 @@ publications:
         link: "https://link.springer.com/article/10.1007/s13534-025-00472-w"
         authors: "<strong><u>Yonghoon Jeong</u></strong> and Youngseok Choi"
         conference: "<span class='publication-status publication-status--published'>Published</span> <em><b>Biomedical Engineering Letters</b></em>, vol. 15, pp. 575-585, Apr. 2025. (SCIE, IF: 3.4)"
-
-      - title: "<b>On the Symbol Error Rate of Non-Linear Chirp Modulation for LoRa Under Asynchronous Interference</b>"
-        conference: '<span class="publication-status publication-status--review">Under review</span> <em><b>IEEE Wireless Communications Letters</b></em>. (SCIE, IF: 5.5)'
-
-      - title: "<b>Receiver-Aware Chirp Waveform Optimization for Mobile Underwater LoRa Communications</b>"
-        conference: '<span class="publication-status publication-status--preparation">In preparation</span>'
 
   domestic:
     title: Domestic Papers
@@ -193,10 +193,16 @@ skills:
   title: Technical Skills
   info:
     - label: Programming Languages
-      details: Python, C, C++
+      details: C, C++, Python, MATLAB
+
+    - label: Frameworks & Libraries
+      details: ROS, ROS2, TensorFlow, PyTorch
 
     - label: Simulation Tools
       details: MATLAB/Simulink, ns-3
+
+    - label: Development Tools
+      details: Linux, Git, Docker
 
 
 #footer: >
