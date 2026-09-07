@@ -105,6 +105,11 @@ p {
     li.pdf a {
       text-underline-offset: 5px;
     }
+    li.pdf .fas {
+      width: 16px;
+      margin-right: 7px;
+      text-align: center;
+    }
     .fas,
     .fab,
     .far {
@@ -300,6 +305,20 @@ p {
     font-weight: 500;
     line-height: 1.4;
     vertical-align: baseline;
+    white-space: nowrap;
+
+    &--published {
+      background: #e8f3ec;
+      color: #25613f;
+    }
+    &--review {
+      background: #eaf1fb;
+      color: #285b91;
+    }
+    &--preparation {
+      background: #eef0f2;
+      color: #525b65;
+    }
   }
   .publication-authors {
     font-style: italic;
