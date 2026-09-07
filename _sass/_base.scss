@@ -94,6 +94,13 @@ p {
     box-shadow: 0 5px 16px rgba(0, 0, 0, 0.18);
   }
   .contact-list {
+    li:not(.email) a {
+      color: #fff;
+      text-decoration-line: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+      text-decoration-skip-ink: auto;
+    }
     .fas,
     .fab,
     .far {
