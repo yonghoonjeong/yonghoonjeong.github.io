@@ -101,7 +101,8 @@ p {
       text-underline-offset: 3px;
       text-decoration-skip-ink: auto;
     }
-    li.goodreads-g a {
+    li.goodreads-g a,
+    li.pdf a {
       text-underline-offset: 5px;
     }
     .fas,
