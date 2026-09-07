@@ -308,12 +308,12 @@ p {
     white-space: nowrap;
 
     &--published {
-      background: #e8f3ec;
-      color: #25613f;
-    }
-    &--review {
       background: #eaf1fb;
       color: #285b91;
+    }
+    &--review {
+      background: #e8f3ec;
+      color: #25613f;
     }
     &--preparation {
       background: #eef0f2;
