@@ -27,7 +27,7 @@
     {% for publication in publication_group.papers %}
     <div class="item">
       <div style="font-size: 15px; font-style: normal;">
-        {{ publication.title }}{% if publication.link %} <a href="{{ publication.link }}" aria-label="Read article: {{ publication.title | strip_html | escape }}" style="display: inline-block; font-size: 15px; font-weight: 700; margin-left: 8px; color: #1a73e8; white-space: nowrap;">(Link)</a>{% endif %}
+        {{ publication.title }}{% if publication.link %} <a href="{{ publication.link }}" aria-label="Read article: {{ publication.title | strip_html | escape }}" style="display: inline-block; font-size: 15px; font-weight: 700; margin-left: 0; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; color: #1a73e8; white-space: nowrap;">(Link)</a>{% endif %}
       </div>
       {% if publication.authors %}
       <div class="publication-authors" style="font-style: normal;">
