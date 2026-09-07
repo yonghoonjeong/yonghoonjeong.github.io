@@ -30,7 +30,7 @@ sidebar:
   #mastodon: # Please include your full Mastodon link here.
   #hackerrank: # Please provide your HackerRank username.
   #leetcode: # Please provide your LeetCode username.
-  pdf: https://yonghoonjeong.github.io/Yonghoon_Jeong_CV_Overleaf_260906.pdf?v=260907-header-clean # Add a PDF link here if you want to include a PDF custom version in your resume.
+  pdf: https://yonghoonjeong.github.io/Yonghoon_Jeong_CV_260907.pdf # Add a PDF link here if you want to include a PDF custom version in your resume.
 
   interests:
     title: Research Interests
@@ -124,10 +124,10 @@ publications:
         authors: "Dongrack Choi, Yubin Choi, <strong><u>Yonghoon Jeong</u></strong>, Jeongyeup Paek, and Saewoong Bahk"
         conference: "<span class='publication-status publication-status--published'>Published</span> <em><b>IEEE Internet of Things Journal</b></em>, vol. 12, pp. 45325-45340, Nov. 2025. (SCIE, IF: 8.9)"
 
-      - title: "<b>A Programmable High-Throughput Duplex DC-PLC Testbed for Power and Data Integration</b>"
+      - title: "<b>Demo: A Programmable High-Throughput Duplex DC-PLC Testbed for Power and Data Integration</b>"
         link: "https://ieeexplore.ieee.org/document/11192329"
-        authors: "Dongrack Choi, <strong><u>Yonghoon Jeong</u></strong>, Yubin Choi, and Saewoong Bahk"
-        conference: "<span class='publication-status publication-status--published'>Published</span> <em><b>IEEE ICNP 2025</b></em>, Seoul, South Korea, Oct. 19-22, 2025."
+        authors: "Dongrak Choi, <strong><u>Yonghoon Jeong</u></strong>, Yubin Choi, and Saewoong Bahk"
+        conference: "<span class='publication-status publication-status--published'>Published</span> <em><b>IEEE ICNP 2025</b></em>, Seoul, South Korea, Sep. 22-25, 2025."
 
       - title: "<b>Diffusion-Phys: Noise-Robust Heart Rate Estimation from Facial Videos via Diffusion Models</b>"
         link: "https://link.springer.com/article/10.1007/s13534-025-00472-w"
