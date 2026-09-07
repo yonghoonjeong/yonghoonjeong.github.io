@@ -41,7 +41,9 @@ sidebar:
         link:
       - item: Low-Power Wide-Area Networks (LPWANs)
         link:
-      - item: Ocean Internet of Things
+      - item: Ocean Internet of Things (Ocean IoT)
+        link:
+      - item: Satellite Communications
         link:
 
   languages:
@@ -59,7 +61,7 @@ career-profile:
   summary: |
     Yonghoon Jeong is a lecturer in the Department of Cyber Science and a researcher at the Institute of Naval Research, Republic of Korea Naval Academy. He is fulfilling his mandatory military service through May 2029.
 
-    His research interests include wireless communication systems, physical-layer wireless sensing and networking, and low-power wide-area networks. He is currently extending these research directions beyond conventional terrestrial networks toward communication systems for challenging naval and satellite environments.
+    His research focuses on LoRa and chirp modulation for low-power wide-area networks, with an emphasis on interference analysis and resilient waveform design. He is extending this work toward underwater and maritime communication systems, with broader interests in Ocean IoT and satellite communications.
 
 experiences:
     title: Professional Experience
@@ -106,12 +108,6 @@ publications:
   international:
     title: International Papers
     papers:
-      - title: "<b>Receiver-Aware Chirp Waveform Optimization for Mobile Underwater LoRa Communications</b>"
-        conference: '<span class="publication-status publication-status--preparation">In preparation</span>'
-
-      - title: "<b>On the Symbol Error Rate of Non-Linear Chirp Modulation for LoRa Under Asynchronous Interference</b>"
-        conference: '<span class="publication-status publication-status--review">Under review</span> <em><b>IEEE Wireless Communications Letters</b></em>. (SCIE, IF: 5.5)'
-
       - title: "<b>On the Interference Resilience of Non-Linear Chirp Modulation for LoRa: An Analytical Insight into Energy Scattering Effect</b>"
         link: "https://ieeexplore.ieee.org/document/11550153"
         authors: "<strong><u>Yonghoon Jeong</u></strong>, Youngwook Son, and Saewoong Bahk"
@@ -126,11 +122,17 @@ publications:
         link: "https://ieeexplore.ieee.org/document/11192329"
         authors: "Dongrack Choi, <strong><u>Yonghoon Jeong</u></strong>, Yubin Choi, and Saewoong Bahk"
         conference: "<span class='publication-status publication-status--published'>Published</span> <em><b>IEEE ICNP 2025</b></em>, Seoul, South Korea, Oct. 19-22, 2025."
+
       - title: "<b>Diffusion-Phys: Noise-Robust Heart Rate Estimation from Facial Videos via Diffusion Models</b>"
         link: "https://link.springer.com/article/10.1007/s13534-025-00472-w"
         authors: "<strong><u>Yonghoon Jeong</u></strong> and Youngseok Choi"
         conference: "<span class='publication-status publication-status--published'>Published</span> <em><b>Biomedical Engineering Letters</b></em>, vol. 15, pp. 575-585, Apr. 2025. (SCIE, IF: 3.4)"
 
+      - title: "<b>On the Symbol Error Rate of Non-Linear Chirp Modulation for LoRa Under Asynchronous Interference</b>"
+        conference: '<span class="publication-status publication-status--review">Under review</span> <em><b>IEEE Wireless Communications Letters</b></em>. (SCIE, IF: 5.5)'
+
+      - title: "<b>Receiver-Aware Chirp Waveform Optimization for Mobile Underwater LoRa Communications</b>"
+        conference: '<span class="publication-status publication-status--preparation">In preparation</span>'
 
   domestic:
     title: Domestic Papers
@@ -191,16 +193,11 @@ skills:
   title: Technical Skills
   info:
     - label: Programming Languages
-      details: C, C++, Python, MATLAB
-
-    - label: Frameworks & Libraries
-      details: ROS, ROS2, TensorFlow, PyTorch
+      details: Python, C, C++
 
     - label: Simulation Tools
       details: MATLAB/Simulink, ns-3
 
-    - label: Development Tools
-      details: Linux, Git, Docker
 
 #footer: >
 #  Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
