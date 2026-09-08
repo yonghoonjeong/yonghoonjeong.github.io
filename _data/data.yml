@@ -107,21 +107,18 @@ publications:
   international:
     title: International Papers
     papers:
-      - title: "<b>Receiver-Aware Chirp Waveform Optimization for Mobile Underwater LoRa Communications</b>"
-        conference: '<span class="publication-status publication-status--preparation">In preparation</span>'
-
       - title: "<b>On the Symbol Error Rate of Non-Linear Chirp Modulation for LoRa Under Asynchronous Interference</b>"
-        conference: '<span class="publication-status publication-status--review">Under review</span> <em><b>IEEE Wireless Communications Letters</b></em>. (SCIE, IF: 5.5)'
+        conference: '<span class="publication-status publication-status--review">Under review</span> <em><b>IEEE Wireless Communications Letters</b></em>.'
 
       - title: "<b>On the Interference Resilience of Non-Linear Chirp Modulation for LoRa: An Analytical Insight into Energy Scattering Effect</b>"
         link: "https://ieeexplore.ieee.org/document/11550153"
         authors: "<strong><u>Yonghoon Jeong</u></strong>, Youngwook Son, and Saewoong Bahk"
-        conference: "<span class='publication-status publication-status--published'>Published</span> <em><b>IEEE Communications Letters</b></em>, vol. 30, pp. 2238-2242, Jun. 2026. (SCIE, IF: 4.5)"
+        conference: "<span class='publication-status publication-status--published'>Published</span> <em><b>IEEE Communications Letters</b></em>, vol. 30, pp. 2238-2242, Jun. 2026."
 
       - title: "<b>D²-PLC: Holistic Design and Implementation of High-Data-Rate Duplex DC Power Line Communication Network</b>"
         link: "https://ieeexplore.ieee.org/document/11127183"
         authors: "Dongrack Choi, Yubin Choi, <strong><u>Yonghoon Jeong</u></strong>, Jeongyeup Paek, and Saewoong Bahk"
-        conference: "<span class='publication-status publication-status--published'>Published</span> <em><b>IEEE Internet of Things Journal</b></em>, vol. 12, pp. 45325-45340, Nov. 2025. (SCIE, IF: 8.9)"
+        conference: "<span class='publication-status publication-status--published'>Published</span> <em><b>IEEE Internet of Things Journal</b></em>, vol. 12, pp. 45325-45340, Nov. 2025."
 
       - title: "<b>Demo: A Programmable High-Throughput Duplex DC-PLC Testbed for Power and Data Integration</b>"
         link: "https://ieeexplore.ieee.org/document/11192329"
@@ -131,7 +128,7 @@ publications:
       - title: "<b>Diffusion-Phys: Noise-Robust Heart Rate Estimation from Facial Videos via Diffusion Models</b>"
         link: "https://link.springer.com/article/10.1007/s13534-025-00472-w"
         authors: "<strong><u>Yonghoon Jeong</u></strong> and Youngseok Choi"
-        conference: "<span class='publication-status publication-status--published'>Published</span> <em><b>Biomedical Engineering Letters</b></em>, vol. 15, pp. 575-585, Apr. 2025. (SCIE, IF: 3.4)"
+        conference: "<span class='publication-status publication-status--published'>Published</span> <em><b>Biomedical Engineering Letters</b></em>, vol. 15, pp. 575-585, Apr. 2025."
 
   domestic:
     title: Domestic Papers
@@ -143,7 +140,16 @@ publications:
       - title: "<b>Development of Non-contact Heart Rate Measurement Technology Based on Facial Video</b>"
         authors: "<strong><u>Yonghoon Jeong</u></strong>"
         conference: "<span class='publication-status publication-status--published'>Published</span> <em><b>The Conference of the Korean Institute of Information Scientists and Engineers (KIISE)</b></em>, Jeju, Republic of Korea, Jun. 23-25, 2021."
-\nrecommendations:
+  work_in_progress:
+    title: In preparation
+    papers:
+      - title: "<b>Receiver-Aware Chirp Waveform Optimization for Mobile Underwater LoRa Communications</b>"
+        conference: '<span class="publication-status publication-status--preparation">In preparation</span>'
+
+      - title: "<b>SER-Driven Design of Non-Linear Chirps for LoRa Under Asynchronous Interference</b>"
+        conference: '<span class="publication-status publication-status--preparation">In preparation</span>'
+
+recommendations:
   title: Recommendations
   list:
   - person: Yareli Perez
