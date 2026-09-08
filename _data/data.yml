@@ -9,7 +9,7 @@ sidebar:
 
   # Profile information
   name: Yonghoon Jeong
-  tagline: Lecturer & Researcher<br> Republic of Korea Naval Academy
+  tagline: Republic of Korea Naval Academy
   avatar: yhjeong_cv2.jpg #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
   # Sidebar links
@@ -61,7 +61,6 @@ career-profile:
   summary: |
     My research focuses on reliable, low-power wireless communications, with an emphasis on LoRa, chirp modulation, and interference analysis. I am extending this work to underwater and maritime communication systems, with broader interests in Ocean IoT and satellite communications.
 
-    I am a lecturer in the Department of Cyber Science and a researcher at the Institute of Naval Research, Republic of Korea Naval Academy. I am fulfilling my mandatory military service through May 2029.
 
 experiences:
     title: Professional Experience
