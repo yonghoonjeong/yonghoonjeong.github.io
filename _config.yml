@@ -8,7 +8,7 @@ url: 'http://yonghoonjeong.github.io'
 # disabling since we are using a custom domain
 #baseurl: '/online-cv' 
 
-description: "Yonghoon Jeong — Lecturer and Researcher at the R.O.K. Naval Academy, working on wireless communication systems, wireless sensing, and low-power networks."
+description: "Yonghoon Jeong — Lecturer and Researcher at the Republic of Korea Naval Academy, working on wireless communication systems, wireless sensing, and low-power networks."
 # Style will be applied only after restarting the build or serve. Just choose one of the options.
 theme_skin: teal # blue turquoise green berry orange ceramic teal oceanstale
 chrome_mobile_color: #use hex colors (ex:#1976d2) or leave empty if you don't want a color for chrome mobile searchbar
