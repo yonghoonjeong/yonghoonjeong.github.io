@@ -136,6 +136,9 @@ publications:
       - title: "<b>SER-Driven Design of Non-Linear Chirps for LoRa Under Asynchronous Interference</b>"
         conference: '<span class="publication-status publication-status--preparation">In preparation</span>'
 
+      - title: "<b>SER Analysis of Nonlinear Chirp Modulation for Underwater Acoustic Backscatter</b>"
+        conference: '<span class="publication-status publication-status--preparation">In preparation</span>'
+
   domestic:
     title: Domestic Papers
     papers:
