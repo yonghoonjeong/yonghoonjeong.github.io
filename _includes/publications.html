@@ -1,5 +1,6 @@
 {% assign publications = site.data.data.publications %}
 {% if publications %}
+<style>.publications-section .publication-status { font-size: 13px; }</style>
 <section class="section publications-section">
   <h2 class="section-title">
     <span class="fa-stack fa-xs">
@@ -15,7 +16,7 @@
   </div><!--//intro-->
   {% endif %}
 
-  {% assign publication_groups = "international,domestic" | split: "," %}
+  {% assign publication_groups = "international,domestic,work_in_progress" | split: "," %}
   {% for group_name in publication_groups %}
     {% assign publication_group = publications[group_name] %}
     {% if publication_group %}
@@ -27,7 +28,7 @@
     {% for publication in publication_group.papers %}
     <div class="item">
       <div style="font-size: 15px; font-style: normal;">
-        {{ publication.title }}{% if publication.link %} <a href="{{ publication.link }}" aria-label="Read article: {{ publication.title | strip_html | escape }}" style="display: inline-block; font-size: 15px; font-weight: 700; margin-left: 0; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; color: #285b91; white-space: nowrap;">(Link)</a>{% endif %}
+        {{ publication.title }}{% if publication.link %} <a href="{{ publication.link }}" aria-label="Read article: {{ publication.title | strip_html | escape }}" style="display: inline-block; font-size: 15px; font-weight: 700; margin-left: 0; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; color: #285b91; white-space: nowrap;">(PDF)</a>{% endif %}
       </div>
       {% if publication.authors %}
       <div class="publication-authors" style="font-style: normal;">
