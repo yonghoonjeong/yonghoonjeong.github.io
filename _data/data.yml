@@ -59,8 +59,9 @@ sidebar:
 career-profile:
   title: About
   summary: |
-    My research focuses on reliable, low-power wireless communications, with an emphasis on LoRa, chirp modulation, and interference analysis. I am extending this work to underwater and maritime communication systems, with broader interests in Ocean IoT and satellite communications.
+    My research interests lie in wireless communication systems, physical-layer wireless sensing and networking, and low-power wide-area networks (LPWANs). I am particularly interested in how waveform design and receiver processing can improve communication reliability and efficiency under interference and challenging propagation conditions. My current work focuses on LoRa and non-linear chirp modulation, including symbol error rate analysis and interference-aware waveform design.
 
+    Building on this work, I am exploring underwater acoustic communications and backscatter systems, with the broader goal of enabling reliable, energy-efficient connectivity for Ocean IoT. I am also interested in satellite communications and the challenges of connecting devices across remote and maritime environments. Across these areas, I aim to connect analytical understanding with practical system design.
 
 experiences:
     title: Professional Experience
