@@ -130,6 +130,12 @@ publications:
         authors: "<strong><u>Yonghoon Jeong</u></strong> and Youngseok Choi"
         conference: "<span class='publication-status publication-status--published'>Published</span> <em><b>Biomedical Engineering Letters</b></em>, vol. 15, pp. 575-585, Apr. 2025."
 
+      - title: "<b>Receiver-Aware Chirp Waveform Optimization for Mobile Underwater LoRa Communications</b>"
+        conference: '<span class="publication-status publication-status--preparation">In preparation</span>'
+
+      - title: "<b>SER-Driven Design of Non-Linear Chirps for LoRa Under Asynchronous Interference</b>"
+        conference: '<span class="publication-status publication-status--preparation">In preparation</span>'
+
   domestic:
     title: Domestic Papers
     papers:
@@ -140,15 +146,6 @@ publications:
       - title: "<b>Development of Non-contact Heart Rate Measurement Technology Based on Facial Video</b>"
         authors: "<strong><u>Yonghoon Jeong</u></strong>"
         conference: "<span class='publication-status publication-status--published'>Published</span> <em><b>The Conference of the Korean Institute of Information Scientists and Engineers (KIISE)</b></em>, Jeju, Republic of Korea, Jun. 23-25, 2021."
-  work_in_progress:
-    title: In preparation
-    papers:
-      - title: "<b>Receiver-Aware Chirp Waveform Optimization for Mobile Underwater LoRa Communications</b>"
-        conference: '<span class="publication-status publication-status--preparation">In preparation</span>'
-
-      - title: "<b>SER-Driven Design of Non-Linear Chirps for LoRa Under Asynchronous Interference</b>"
-        conference: '<span class="publication-status publication-status--preparation">In preparation</span>'
-
 recommendations:
   title: Recommendations
   list:
