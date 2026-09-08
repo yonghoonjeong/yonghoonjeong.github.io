@@ -1,6 +1,15 @@
 {% assign publications = site.data.data.publications %}
 {% if publications %}
-<style>.publications-section .publication-status { font-size: 13px; }</style>
+<style>
+/* Outlined labels remain distinct when browsers automatically darken pages. */
+.main-wrapper .publications-section .publication-status {
+  font-size: 13px;
+  font-weight: 600;
+  background: transparent;
+  border: 1px solid currentColor;
+  padding: 2px 7px;
+}
+</style>
 <section class="section publications-section">
   <h2 class="section-title">
     <span class="fa-stack fa-xs">
