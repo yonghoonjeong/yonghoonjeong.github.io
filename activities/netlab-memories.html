@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Memories at NETLAB · Yonghoon Jeong</title><link rel="stylesheet" href="../assets/css/activities.css"></head>
+<body class="photo-page"><main class="photo-main"><a class="back-link" href="../index.html#activities">← Back to homepage</a>
+<header class="photo-header"><div class="eyebrow">Activities &amp; Photos</div><h1>Memories at NETLAB</h1><p class="activity-date">2024–2025</p><p>Moments shared with labmates, on campus and beyond.</p><p class="activity-date">Click any photo to enlarge.</p></header>
+<div class="graduation-gallery"><figure class="photo-figure graduation-photo"><button class="photo-open" aria-label="Enlarge lab photo 1" aria-haspopup="dialog"><img src="../assets/images/netlab-memories-1.jpg" width="1440" height="1081" alt="Lab group outdoors in front of a brick building" ></button></figure>
+<figure class="photo-figure graduation-photo"><button class="photo-open" aria-label="Enlarge lab photo 2" aria-haspopup="dialog"><img src="../assets/images/netlab-memories-2.jpg" width="4032" height="3024" alt="Labmates together on a football field" loading="lazy"></button></figure>
+<figure class="photo-figure graduation-photo"><button class="photo-open" aria-label="Enlarge lab photo 3" aria-haspopup="dialog"><img src="../assets/images/netlab-memories-3.jpg" width="1496" height="1496" alt="Labmates riding scooters" loading="lazy"></button></figure>
+<figure class="photo-figure graduation-photo"><button class="photo-open" aria-label="Enlarge lab photo 4" aria-haspopup="dialog"><img src="../assets/images/netlab-memories-4.jpg" width="5712" height="4284" alt="Lab group during an outdoor outing" loading="lazy"></button></figure>
+<figure class="photo-figure graduation-photo"><button class="photo-open" aria-label="Enlarge lab photo 5" aria-haspopup="dialog"><img src="../assets/images/netlab-memories-5.jpg" width="5712" height="4284" alt="Lab group on a winter trip" loading="lazy"></button></figure>
+<figure class="photo-figure graduation-photo"><button class="photo-open" aria-label="Enlarge lab photo 6" aria-haspopup="dialog"><img src="../assets/images/netlab-memories-6.jpg" width="4727" height="3858" alt="Labmates gathered on a sports field" loading="lazy"></button></figure>
+<figure class="photo-figure graduation-photo"><button class="photo-open" aria-label="Enlarge lab photo 7" aria-haspopup="dialog"><img src="../assets/images/netlab-memories-7.jpg" width="5712" height="3986" alt="Lab group gathered indoors at Seoul National University" loading="lazy"></button></figure>
+<figure class="photo-figure graduation-photo"><button class="photo-open" aria-label="Enlarge lab photo 8" aria-haspopup="dialog"><img src="../assets/images/netlab-memories-8.jpg" width="4692" height="1756" alt="Group photograph at a lab gathering" loading="lazy"></button></figure></div></main>
+<dialog class="photo-dialog" aria-label="Lab photo enlarged"><button class="photo-close" aria-label="Close enlarged photo">Close ×</button><img alt=""></dialog><script>
+const dialog=document.querySelector('dialog');
+document.querySelectorAll('.photo-open').forEach(button=>button.addEventListener('click',()=>{const source=button.querySelector('img');const image=dialog.querySelector('img');image.src=source.src;image.alt=source.alt;dialog.showModal();}));
+document.querySelector('.photo-close').addEventListener('click',()=>dialog.close());
+dialog.addEventListener('click',event=>{if(event.target===dialog){const r=dialog.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)dialog.close();}});
+</script></body></html>
+

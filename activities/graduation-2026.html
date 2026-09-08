@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Master&#8217;s Graduation Ceremony · Yonghoon Jeong</title><link rel="stylesheet" href="../assets/css/activities.css"></head>
+<body class="photo-page"><main class="photo-main">
+<a class="back-link" href="../index.html#activities">← Back to homepage</a>
+<header class="photo-header"><div class="eyebrow">Activities &amp; Photos</div><h1>Master&#8217;s Graduation Ceremony</h1><p>Department of Electrical and Computer Engineering (ECE)<br>Seoul National University</p><p class="activity-date">February 2026</p><p class="activity-date">Click any photo to enlarge.</p></header>
+<div class="graduation-gallery"><figure class="photo-figure graduation-photo"><button class="photo-open" aria-label="Enlarge graduation ceremony photo" aria-haspopup="dialog"><img src="../assets/images/graduation-2026-ceremony.jpg" width="1500" height="1000" alt="Graduation ceremony group photograph at Seoul National University"></button></figure><figure class="photo-figure graduation-photo"><button class="photo-open" aria-label="Enlarge graduation photo 1" aria-haspopup="dialog"><img src="../assets/images/graduation-2026-1.jpg" width="3840" height="5760" alt="Graduation portrait at Seoul National University" ></button></figure>
+<figure class="photo-figure graduation-photo"><button class="photo-open" aria-label="Enlarge graduation photo 2" aria-haspopup="dialog"><img src="../assets/images/graduation-2026-2.jpg" width="2992" height="2992" alt="Graduation portrait outside the Institute of New Media and Communications" loading="lazy"></button></figure>
+<figure class="photo-figure graduation-photo"><button class="photo-open" aria-label="Enlarge graduation photo 3" aria-haspopup="dialog"><img src="../assets/images/graduation-2026-3.jpg" width="6000" height="4000" alt="Graduation group photograph" loading="lazy"></button></figure><figure class="photo-figure graduation-photo"><button class="photo-open" aria-label="Enlarge graduation photo 4" aria-haspopup="dialog"><img src="../assets/images/graduation-2026-4.jpg" width="4000" height="3000" alt="Graduation portrait at the Seoul National University College of Engineering photo booth" loading="lazy"></button></figure></div></main>
+<dialog class="photo-dialog" aria-label="Graduation photo enlarged"><button class="photo-close" aria-label="Close enlarged photo">Close ×</button><img alt=""></dialog>
+<script>
+const dialog=document.querySelector('dialog');
+document.querySelectorAll('.photo-open').forEach(button=>button.addEventListener('click',()=>{const source=button.querySelector('img');const image=dialog.querySelector('img');image.src=source.src;image.alt=source.alt;dialog.showModal();}));
+document.querySelector('.photo-close').addEventListener('click',()=>dialog.close());
+dialog.addEventListener('click',event=>{if(event.target===dialog){const r=dialog.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)dialog.close();}});
+</script></body></html>
+
+
