@@ -1,14 +1,17 @@
 {% assign publications = site.data.data.publications %}
 {% if publications %}
 <style>
-/* Outlined labels remain distinct when browsers automatically darken pages. */
+/* Soft fills and outlines distinguish publication states. */
 .main-wrapper .publications-section .publication-status {
   font-size: 13px;
   font-weight: 600;
-  background: transparent;
+  background: #eef0f2;
   border: 1px solid currentColor;
   padding: 2px 7px;
 }
+.main-wrapper .publications-section .publication-status--published { background: #e4eefb; color: #285b91; }
+.main-wrapper .publications-section .publication-status--review { background: #e2f1e8; color: #25613f; }
+.main-wrapper .publications-section .publication-status--preparation { background: #eceff3; color: #525b65; }
 </style>
 <section class="section publications-section">
   <h2 class="section-title">
