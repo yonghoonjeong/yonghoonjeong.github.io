@@ -71,7 +71,8 @@ experiences:
         company: Jinhae-gu, Changwon, Republic of Korea
         details: |
           Lecturer (Assistant Professor-track), Department of Cyber Science <br>
-          Researcher, Institute of Naval Research
+          Researcher, Institute of Naval Research<br>
+          <span style="display: block; margin-top: 6px; font-size: 12px; color: #607079;">Mandatory military service scheduled to conclude in May 2029.</span>
           
       - role: "<b>Seoul National University (SNU)</b>"
         time: 2024 - 2026
