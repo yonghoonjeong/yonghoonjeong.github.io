@@ -109,6 +109,9 @@ publications:
   international:
     title: International Papers
     papers:
+      - title: "<b>Symbol Error Rate Analysis and Approximation for Arbitrary Chirp Modulation Under Multipath, Doppler, and Interference</b>"
+        conference: '<span class="publication-status publication-status--review">Under review</span> <em><b>IEEE Transactions on Communications</b></em>.'
+
       - title: "<b>On the Symbol Error Rate of Non-Linear Chirp Modulation for LoRa Under Asynchronous Interference</b>"
         conference: '<span class="publication-status publication-status--review">Under review</span> <em><b>IEEE Wireless Communications Letters</b></em>.'
 
@@ -138,8 +141,6 @@ publications:
       - title: "<b>SER-Driven Design of Non-Linear Chirps for LoRa Under Asynchronous Interference</b>"
         conference: '<span class="publication-status publication-status--preparation">In preparation</span>'
 
-      - title: "<b>Symbol Error Rate of Arbitrary Chirp Modulation Under Multipath, Doppler, and Interference</b>"
-        conference: '<span class="publication-status publication-status--preparation">In preparation</span>'
 
   domestic:
     title: Domestic Papers
