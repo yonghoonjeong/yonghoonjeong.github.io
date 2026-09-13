@@ -146,6 +146,9 @@ publications:
         conference: '<span class="publication-status publication-status--preparation">In preparation</span>'
 
 
+      - title: "<b>Doppler and Timing Precision Requirements for LoRa-Like Underwater Acoustic Communications</b>"
+        conference: '<span class="publication-status publication-status--preparation">In preparation</span>'
+
   domestic:
     title: Domestic Papers
     papers:
