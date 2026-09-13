@@ -112,12 +112,12 @@ publications:
       - title: "<b>Symbol Error Rate Analysis and Approximation for Arbitrary Chirp Modulation Under Multipath, Doppler, and Interference</b>"
         link: "https://drive.google.com/file/d/1n8RGicHe-MfK6Gy5KuoVlJAw3XWL4zk1/view?usp=sharing"
         link_color: "#25613f"
-        conference: '<span class="publication-status publication-status--review">Under review</span> <em><b>IEEE Transactions on Communications</b></em>. Submitted September 12, 2026.'
+        conference: '<span class="publication-status publication-status--review">Under review</span> <em><b>IEEE Transactions on Communications</b></em>, submitted Sep. 12, 2026.'
 
       - title: "<b>On the Symbol Error Rate of Non-Linear Chirp Modulation for LoRa Under Asynchronous Interference</b>"
         link: "https://drive.google.com/file/d/1ANgVNAGi1r2A5FPz7LfR41F6BUxAJlk5/view?usp=sharing"
         link_color: "#25613f"
-        conference: '<span class="publication-status publication-status--review">Under review</span> <em><b>IEEE Wireless Communications Letters</b></em>. Submitted September 4, 2026.'
+        conference: '<span class="publication-status publication-status--review">Under review</span> <em><b>IEEE Wireless Communications Letters</b></em>, submitted Sep. 4, 2026.'
 
       - title: "<b>On the Interference Resilience of Non-Linear Chirp Modulation for LoRa: An Analytical Insight into Energy Scattering Effect</b>"
         link: "https://ieeexplore.ieee.org/document/11550153"
