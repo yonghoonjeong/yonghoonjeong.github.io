@@ -30,7 +30,7 @@ sidebar:
   #mastodon: # Please include your full Mastodon link here.
   #hackerrank: # Please provide your HackerRank username.
   #leetcode: # Please provide your LeetCode username.
-  pdf: https://yonghoonjeong.github.io/Yonghoon_Jeong_CV_260907.pdf # Add a PDF link here if you want to include a PDF custom version in your resume.
+  pdf: https://yonghoonjeong.github.io/Yonghoon_Jeong_CV_260919.pdf # Current CV.
 
   interests:
     title: Research Interests
@@ -138,16 +138,6 @@ publications:
         link: "https://link.springer.com/article/10.1007/s13534-025-00472-w"
         authors: "<strong><u>Yonghoon Jeong</u></strong> and Youngseok Choi"
         conference: "<span class='publication-status publication-status--published'>Published</span> <em><b>Biomedical Engineering Letters</b></em>, vol. 15, pp. 575-585, Apr. 2025."
-
-      - title: "<b>Receiver-Aware Chirp Waveform Optimization for Mobile Underwater LoRa Communications</b>"
-        conference: '<span class="publication-status publication-status--preparation">In preparation</span>'
-
-      - title: "<b>SER-Driven Design of Non-Linear Chirps for LoRa Under Asynchronous Interference</b>"
-        conference: '<span class="publication-status publication-status--preparation">In preparation</span>'
-
-
-      - title: "<b>Doppler and Timing Precision Requirements for LoRa-Like Underwater Acoustic Communications</b>"
-        conference: '<span class="publication-status publication-status--preparation">In preparation</span>'
 
   domestic:
     title: Domestic Papers
