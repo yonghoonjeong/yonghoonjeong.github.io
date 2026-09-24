@@ -110,7 +110,7 @@ publications:
     title: International Papers
     papers:
       - title: "<b>Underwater Backscatter for Ocean Sensing: From Wireless Power to Data Collection</b>"
-        conference: '<span class="publication-status publication-status--review">Under review</span> <em><b>IEEE Wireless Communications</b></em>.'
+        conference: '<span class="publication-status publication-status--review">Under review</span> <em><b>IEEE Wireless Communications</b></em> (Magazine).'
 
       - title: "<b>Characterizing the Relation Between the Energy Scattering Effect and Symbol Error Rate in Non-Linear Chirp Modulation for LoRa</b>"
         conference: '<span class="publication-status publication-status--review">Under review</span> <em><b>IEEE Wireless Communications Letters</b></em>.'
