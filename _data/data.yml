@@ -30,7 +30,7 @@ sidebar:
   #mastodon: # Please include your full Mastodon link here.
   #hackerrank: # Please provide your HackerRank username.
   #leetcode: # Please provide your LeetCode username.
-  pdf: https://yonghoonjeong.github.io/Yonghoon_Jeong_CV_260920.pdf # Current CV.
+  pdf: https://yonghoonjeong.github.io/Yonghoon_Jeong_CV_260924.pdf # Current CV.
 
   interests:
     title: Research Interests
@@ -109,6 +109,9 @@ publications:
   international:
     title: International Papers
     papers:
+      - title: "<b>Underwater Backscatter for Ocean Sensing: From Wireless Power to Data Collection</b>"
+        conference: '<span class="publication-status publication-status--review">Under review</span> <em><b>IEEE Wireless Communications Magazine</b></em>.'
+
       - title: "<b>Characterizing the Relation Between the Energy Scattering Effect and Symbol Error Rate in Non-Linear Chirp Modulation for LoRa</b>"
         conference: '<span class="publication-status publication-status--review">Under review</span> <em><b>IEEE Wireless Communications Letters</b></em>.'
 
