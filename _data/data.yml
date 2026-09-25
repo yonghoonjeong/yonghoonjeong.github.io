@@ -59,9 +59,9 @@ sidebar:
 career-profile:
   title: About
   summary: |
-    My research interests lie in wireless communication systems, physical-layer wireless sensing and networking, and low-power wide-area networks (LPWANs). I am particularly interested in how waveform design and receiver processing can improve communication reliability and efficiency under interference and challenging propagation conditions. My current work focuses on LoRa and non-linear chirp modulation, including symbol error rate analysis and interference-aware waveform design.
+    My research focuses on understanding and improving the reliability and efficiency of wireless communication systems through performance analysis, mathematical modeling, and waveform design. My current work examines LoRa and non-linear chirp modulation, with an emphasis on symbol error rate analysis and the effects of interference and challenging propagation conditions. Through this work, I seek to translate analytical insights into practical guidance for waveform and receiver design.
 
-    Building on this work, I am exploring underwater acoustic communications and backscatter systems, with the broader goal of enabling reliable, energy-efficient connectivity for Ocean IoT. I am also interested in satellite communications and the challenges of connecting devices across remote and maritime environments. Across these areas, I aim to connect analytical understanding with practical system design.
+    Building on this foundation, I am extending my research toward underwater acoustic communications and backscatter systems for Ocean IoT. I am particularly interested in how these technologies can support reliable, energy-efficient sensing and data collection in underwater environments. My broader goal is to connect communication theory with the practical requirements of ocean sensing networks.
 
 experiences:
     title: Professional Experience
