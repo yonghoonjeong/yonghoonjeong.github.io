@@ -30,20 +30,20 @@ sidebar:
   #mastodon: # Please include your full Mastodon link here.
   #hackerrank: # Please provide your HackerRank username.
   #leetcode: # Please provide your LeetCode username.
-  pdf: https://yonghoonjeong.github.io/Yonghoon_Jeong_CV_260924.pdf # Current CV.
+  pdf: https://yonghoonjeong.github.io/Yonghoon_Jeong_CV_260925.pdf # Current CV.
 
   interests:
     title: Research Interests
     info:
       - item: Wireless Communication Systems
         link:
+      - item: Performance Analysis
+        link:
       - item: Physical-Layer Wireless Sensing and Networking
         link:
       - item: Low-Power Wide-Area Networks (LPWANs)
         link:
       - item: Ocean Internet of Things (Ocean IoT)
-        link:
-      - item: Satellite Communications
         link:
 
   languages:
