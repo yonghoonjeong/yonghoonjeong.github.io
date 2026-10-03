@@ -63,6 +63,8 @@ career-profile:
 
     Building on this foundation, I am extending my research toward underwater acoustic communications and backscatter systems for Ocean IoT. I am particularly interested in how these technologies can support reliable, energy-efficient sensing and data collection in underwater environments. My broader goal is to connect communication theory with the practical requirements of ocean sensing networks.
 
+    I plan to pursue a Ph.D. abroad after completing my mandatory military service in May 2029.
+
 experiences:
     title: Professional Experience
     info:
@@ -72,8 +74,7 @@ experiences:
         details: |
           Faculty Member, Department of Cyber Science <br>
           Researcher, Institute of Naval Research<br>
-          Commissioned as a Republic of Korea Navy officer on June 1, 2026.<br>
-          <span style="display: block; margin-top: 6px; font-size: 12px; color: #607079;">I plan to pursue a Ph.D. abroad after completing my mandatory military service, which is scheduled to conclude in May 2029.</span>
+          Commissioned as a Republic of Korea Navy officer on June 1, 2026.
           
       - role: "<b>Republic of Korea Navy</b>"
         time: "2026"
