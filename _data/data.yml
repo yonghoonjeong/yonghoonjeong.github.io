@@ -77,9 +77,9 @@ experiences:
           
       - role: "<b>Republic of Korea Navy</b>"
         time: "2026"
+        company: Jinhae-gu, Changwon, Republic of Korea
         details: |
-          Officer Candidate Training<br>
-          Completed an 11-week officer training program from March to May 2026.
+          Officer Candidate Training (11 weeks, March-May 2026)
 
       - role: "<b>Seoul National University (SNU)</b>"
         time: 2024 - 2026
