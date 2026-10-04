@@ -19,7 +19,10 @@
 .publications-section .review-disclosure summary { cursor: pointer; padding: 12px 14px; color: #25613f; font-weight: 600; background: #f1f7f3; border-radius: 8px; }
 .publications-section .review-disclosure summary:focus-visible { outline: 2px solid #25613f; outline-offset: 3px; }
 .publications-section .review-disclosure .review-content { padding: 18px 14px 0; }
-.publications-section .review-toggle { float: right; font-size: 12px; font-weight: 400; }
+.publications-section .review-toggle { float: right; display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 400; }
+.publications-section .review-chevron { flex-shrink: 0; transition: transform .18s ease; }
+.publications-section .review-disclosure[open] .review-chevron { transform: rotate(180deg); }
+@media (prefers-reduced-motion: reduce) { .publications-section .review-chevron { transition: none; } }
 .publications-section .review-disclosure[open] .review-show, .publications-section .review-disclosure:not([open]) .review-hide { display: none; }
 </style>
 <section class="section publications-section">
@@ -54,7 +57,7 @@
     {% endfor %}
     {% if review_count > 0 %}
     <details class="review-disclosure">
-      <summary>Under Review &amp; Revision ({{ review_count }})<span class="review-toggle"><span class="review-show">Show papers</span><span class="review-hide">Hide papers</span></span></summary>
+      <summary>Under Review &amp; Revision ({{ review_count }})<span class="review-toggle"><span class="review-show">Show papers</span><span class="review-hide">Hide papers</span><svg class="review-chevron" width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="m4 6 4 4 4-4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span></summary>
       <div class="review-content">
       {% for publication in publication_group.papers %}
         {% if publication.conference contains 'publication-status--review' or publication.conference contains 'publication-status--revision' %}
