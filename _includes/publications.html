@@ -12,6 +12,15 @@
 .main-wrapper .publications-section .publication-status--published { background: #e4eefb; color: #285b91; }
 .main-wrapper .publications-section .publication-status--review { background: #e2f1e8; color: #25613f; }
 .main-wrapper .publications-section .publication-status--preparation { background: #eceff3; color: #525b65; }
+
+.publications-section .publication-conference:has(.publication-status--published) em { color: #285b91; }
+.publications-section .publication-conference:has(.publication-status--review) em { color: #25613f; }
+.publications-section .review-disclosure { margin: 18px 0 24px; border: 1px solid #cbded2; border-radius: 8px; }
+.publications-section .review-disclosure summary { cursor: pointer; padding: 12px 14px; color: #25613f; font-weight: 600; background: #f1f7f3; border-radius: 8px; }
+.publications-section .review-disclosure summary:focus-visible { outline: 2px solid #25613f; outline-offset: 3px; }
+.publications-section .review-disclosure .review-content { padding: 18px 14px 0; }
+.publications-section .review-toggle { float: right; font-size: 12px; font-weight: 400; }
+.publications-section .review-disclosure[open] .review-show, .publications-section .review-disclosure:not([open]) .review-hide { display: none; }
 </style>
 <section class="section publications-section">
   <h2 class="section-title">
@@ -37,7 +46,12 @@
       {{ publication_group.title }}
     </h3>
 
+    {% assign review_count = 0 %}
     {% for publication in publication_group.papers %}
+      {% if publication.conference contains 'publication-status--review' %}
+        {% assign review_count = review_count | plus: 1 %}
+      {% else %}
+
     <div class="item">
       <div style="font-size: 15px; font-style: normal;">
         {{ publication.title }}{% if publication.link %} <a href="{{ publication.link }}" aria-label="Read article: {{ publication.title | strip_html | escape }}" style="display: inline-block; font-size: 15px; font-weight: 700; margin-left: 0; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; color: {{ publication.link_color | default: "#285b91" }}; white-space: nowrap;">(PDF)</a>{% endif %}
@@ -51,7 +65,33 @@
         {{ publication.conference }}
       </div>
     </div><!--//item-->
+          {% endif %}
     {% endfor %}
+    {% if review_count > 0 %}
+    <details class="review-disclosure">
+      <summary>Manuscripts under review ({{ review_count }})<span class="review-toggle"><span class="review-show">Show papers</span><span class="review-hide">Hide papers</span></span></summary>
+      <div class="review-content">
+      {% for publication in publication_group.papers %}
+        {% if publication.conference contains 'publication-status--review' %}
+
+    <div class="item">
+      <div style="font-size: 15px; font-style: normal;">
+        {{ publication.title }}{% if publication.link %} <a href="{{ publication.link }}" aria-label="Read article: {{ publication.title | strip_html | escape }}" style="display: inline-block; font-size: 15px; font-weight: 700; margin-left: 0; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; color: {{ publication.link_color | default: "#285b91" }}; white-space: nowrap;">(PDF)</a>{% endif %}
+      </div>
+      {% if publication.authors %}
+      <div class="publication-authors" style="font-style: normal;">
+        {{ publication.authors }}
+      </div>
+      {% endif %}
+      <div class="publication-conference">
+        {{ publication.conference }}
+      </div>
+    </div><!--//item-->
+            {% endif %}
+      {% endfor %}
+      </div>
+    </details>
+    {% endif %}
     {% endif %}
   {% endfor %}
 </section><!--//section-->
