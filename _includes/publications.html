@@ -48,31 +48,16 @@
 
     {% assign review_count = 0 %}
     {% for publication in publication_group.papers %}
-      {% if publication.conference contains 'publication-status--review' %}
+      {% if publication.conference contains 'publication-status--review' or publication.conference contains 'publication-status--revision' %}
         {% assign review_count = review_count | plus: 1 %}
-      {% else %}
-
-    <div class="item">
-      <div style="font-size: 15px; font-style: normal;">
-        {{ publication.title }}{% if publication.link %} <a href="{{ publication.link }}" aria-label="Read article: {{ publication.title | strip_html | escape }}" style="display: inline-block; font-size: 15px; font-weight: 700; margin-left: 0; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; color: {{ publication.link_color | default: "#285b91" }}; white-space: nowrap;">(PDF)</a>{% endif %}
-      </div>
-      {% if publication.authors %}
-      <div class="publication-authors" style="font-style: normal;">
-        {{ publication.authors }}
-      </div>
       {% endif %}
-      <div class="publication-conference">
-        {{ publication.conference }}
-      </div>
-    </div><!--//item-->
-          {% endif %}
     {% endfor %}
     {% if review_count > 0 %}
     <details class="review-disclosure">
-      <summary>Manuscripts under review ({{ review_count }})<span class="review-toggle"><span class="review-show">Show papers</span><span class="review-hide">Hide papers</span></span></summary>
+      <summary>Under Review &amp; Revision ({{ review_count }})<span class="review-toggle"><span class="review-show">Show papers</span><span class="review-hide">Hide papers</span></span></summary>
       <div class="review-content">
       {% for publication in publication_group.papers %}
-        {% if publication.conference contains 'publication-status--review' %}
+        {% if publication.conference contains 'publication-status--review' or publication.conference contains 'publication-status--revision' %}
 
     <div class="item">
       <div style="font-size: 15px; font-style: normal;">
@@ -92,6 +77,24 @@
       </div>
     </details>
     {% endif %}
+    {% for publication in publication_group.papers %}
+      {% unless publication.conference contains 'publication-status--review' or publication.conference contains 'publication-status--revision' %}
+    <div class="item">
+      <div style="font-size: 15px; font-style: normal;">
+        {{ publication.title }}{% if publication.link %} <a href="{{ publication.link }}" aria-label="Read article: {{ publication.title | strip_html | escape }}" style="display: inline-block; font-size: 15px; font-weight: 700; margin-left: 0; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; color: {{ publication.link_color | default: "#285b91" }}; white-space: nowrap;">(PDF)</a>{% endif %}
+      </div>
+      {% if publication.authors %}
+      <div class="publication-authors" style="font-style: normal;">
+        {{ publication.authors }}
+      </div>
+      {% endif %}
+      <div class="publication-conference">
+        {{ publication.conference }}
+      </div>
+    </div><!--//item-->
+      {% endunless %}
+    {% endfor %}
+
     {% endif %}
   {% endfor %}
 </section><!--//section-->
