@@ -57,7 +57,7 @@
     {% endfor %}
     {% if review_count > 0 %}
     <details class="review-disclosure">
-      <summary>Under Review &amp; Revision ({{ review_count }})<span class="review-toggle"><span class="review-show">Show papers</span><span class="review-hide">Hide papers</span><svg class="review-chevron" width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="m4 6 4 4 4-4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span></summary>
+      <summary>Under Review &amp; Revision<span class="review-toggle"><span class="review-show">Show papers</span><span class="review-hide">Hide papers</span><svg class="review-chevron" width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="m4 6 4 4 4-4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span></summary>
       <div class="review-content">
       {% for publication in publication_group.papers %}
         {% if publication.conference contains 'publication-status--review' or publication.conference contains 'publication-status--revision' %}
