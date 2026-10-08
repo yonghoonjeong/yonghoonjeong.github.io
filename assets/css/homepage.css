@@ -1,0 +1,105 @@
+/* Keep research near the top on small screens without duplicating sidebar content. */
+.mobile-supporting-info[hidden] {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .sidebar-wrapper .profile-container {
+    display: grid;
+    grid-template-columns: 112px minmax(0, 1fr);
+    column-gap: 20px;
+    row-gap: 8px;
+    align-items: center;
+    padding: 28px 24px 24px;
+    text-align: left;
+  }
+
+  .wrapper .sidebar-wrapper .profile-container .avatar {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    width: 112px;
+    max-width: 112px;
+    height: 112px;
+    margin: 0;
+  }
+
+  .sidebar-wrapper .profile-container .name {
+    align-self: end;
+    margin: 0;
+    font-size: 26px;
+    line-height: 1.12;
+  }
+
+  .sidebar-wrapper .profile-container .tagline {
+    align-self: start;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.45;
+  }
+
+  .sidebar-wrapper .contact-container {
+    padding: 20px 24px 22px;
+  }
+
+  .sidebar-wrapper .contact-container .container-block-title {
+    margin-bottom: 14px;
+  }
+
+  .sidebar-wrapper .contact-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
+    gap: 12px 16px;
+    margin: 0;
+  }
+
+  .sidebar-wrapper .contact-list li {
+    margin: 0;
+    min-width: 0;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .main-wrapper {
+    padding: 30px 24px;
+  }
+
+  .mobile-supporting-info {
+    padding: 26px 0 0;
+    margin-bottom: 42px;
+    border-top: 1px solid #dce5e8;
+    color: #50636b;
+  }
+
+  .mobile-supporting-info .container-block {
+    padding: 0;
+    margin: 0 0 28px;
+  }
+
+  .mobile-supporting-info .container-block:last-child {
+    margin-bottom: 0;
+  }
+
+  .mobile-supporting-info .container-block-title {
+    margin: 0 0 14px;
+    color: #193035;
+    font-size: 18px;
+    line-height: 1.35;
+  }
+
+  .mobile-supporting-info .interests-list {
+    margin: 0;
+  }
+
+  .mobile-supporting-info .interests-list li {
+    margin-bottom: 8px;
+    line-height: 1.55;
+  }
+
+  .mobile-supporting-info .interests-list li:last-child {
+    margin-bottom: 0;
+  }
+
+  .mobile-supporting-info .lang-desc {
+    color: #607079;
+  }
+}
