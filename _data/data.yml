@@ -10,7 +10,7 @@ sidebar:
   # Profile information
   name: Yonghoon Jeong
   tagline: Republic of Korea Naval Academy
-  avatar: yonghoon-jeong-profile-face.svg #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+  avatar: yonghoon-jeong-profile-display.webp # Optimized display portrait; full-resolution source is retained.
 
   # Sidebar links
   email: yhjeong@navy.ac.kr
@@ -126,11 +126,13 @@ publications:
 
       - title: "<b>On the Interference Resilience of Non-Linear Chirp Modulation for LoRa: An Analytical Insight into Energy Scattering Effect</b>"
         link: "https://ieeexplore.ieee.org/document/11550153"
+        contribution: "Introduces an energy-scattering metric and analytical interference model to explain the interference resilience of non-linear chirp modulation in LoRa."
         authors: "<strong><u>Yonghoon Jeong</u></strong>, Youngwook Son, and Saewoong Bahk"
         conference: "<span class='publication-status publication-status--published'>Published</span> <em><b>IEEE Communications Letters</b></em>, vol. 30, pp. 2238-2242, Jun. 2026."
 
       - title: "<b>D²-PLC: Holistic Design and Implementation of High-Data-Rate Duplex DC Power Line Communication Network</b>"
         link: "https://ieeexplore.ieee.org/document/11127183"
+        contribution: "Develops and validates a duplex DC power-line communication system with custom physical-layer modulation and MAC protocols for simultaneous power and data transfer."
         authors: "Dongrack Choi, Yubin Choi, <strong><u>Yonghoon Jeong</u></strong>, Jeongyeup Paek, and Saewoong Bahk"
         conference: "<span class='publication-status publication-status--published'>Published</span> <em><b>IEEE Internet of Things Journal</b></em>, vol. 12, pp. 45325-45340, Nov. 2025."
 
