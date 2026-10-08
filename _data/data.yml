@@ -59,9 +59,7 @@ sidebar:
 career-profile:
   title: About
   summary: |
-    My research focuses on understanding and improving the reliability and efficiency of wireless communication systems through performance analysis, mathematical modeling, and waveform design. My current work examines LoRa and non-linear chirp modulation, with an emphasis on symbol error rate analysis and the effects of interference and challenging propagation conditions. Through this work, I seek to translate analytical insights into practical guidance for waveform and receiver design.
-
-    Building on this foundation, I am extending my research toward underwater acoustic communications and backscatter systems for Ocean IoT. I am particularly interested in how these technologies can support reliable, energy-efficient sensing and data collection in underwater environments. My broader goal is to connect communication theory with the practical requirements of ocean sensing networks.
+    My research focuses on performance analysis and waveform design for wireless communication systems, particularly LoRa and non-linear chirp modulation. I am extending this work to underwater acoustic communications and backscatter systems for Ocean IoT.
 
     I plan to pursue a Ph.D. abroad after completing my mandatory military service in May 2029.
 
@@ -74,7 +72,7 @@ experiences:
         details: |
           Faculty Member, Department of Cyber Science <br>
           Researcher, Institute of Naval Research<br>
-          Commissioned as a Republic of Korea Navy officer following 11 weeks of officer candidate training.
+          Commissioned as a Republic of Korea Navy officer.
 
       - role: "<b>Seoul National University (SNU)</b>"
         time: 2024 - 2026
