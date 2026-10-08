@@ -15,6 +15,7 @@
 
 .publications-section .publication-conference:has(.publication-status--published) em { color: #285b91; }
 .publications-section .publication-conference:has(.publication-status--review) em { color: #25613f; }
+.publications-section .publication-contribution { margin: 7px 0 0; color: #596970; font-size: 13px; line-height: 1.6; }
 .publications-section .review-disclosure { margin: 18px 0 24px; border: 1px solid #cbded2; border-radius: 8px; }
 .publications-section .review-disclosure summary { cursor: pointer; padding: 12px 14px; color: #25613f; font-weight: 600; background: #f1f7f3; border-radius: 8px; }
 .publications-section .review-disclosure summary:focus-visible { outline: 2px solid #25613f; outline-offset: 3px; }
@@ -64,7 +65,7 @@
 
     <div class="item">
       <div style="font-size: 15px; font-style: normal;">
-        {{ publication.title }}{% if publication.link %} <a href="{{ publication.link }}" aria-label="Read article: {{ publication.title | strip_html | escape }}" style="display: inline-block; font-size: 15px; font-weight: 700; margin-left: 0; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; color: {{ publication.link_color | default: "#285b91" }}; white-space: nowrap;">(PDF)</a>{% endif %}
+        {{ publication.title }}{% if publication.link %} <a href="{{ publication.link }}" aria-label="Read article: {{ publication.title | strip_html | escape }}" style="display: inline-block; font-size: 15px; font-weight: 700; margin-left: 0; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; color: {{ publication.link_color | default: "#285b91" }}; white-space: nowrap;">(Article)</a>{% endif %}
       </div>
       {% if publication.authors %}
       <div class="publication-authors" style="font-style: normal;">
@@ -84,7 +85,7 @@
       {% unless publication.conference contains 'publication-status--review' or publication.conference contains 'publication-status--revision' %}
     <div class="item">
       <div style="font-size: 15px; font-style: normal;">
-        {{ publication.title }}{% if publication.link %} <a href="{{ publication.link }}" aria-label="Read article: {{ publication.title | strip_html | escape }}" style="display: inline-block; font-size: 15px; font-weight: 700; margin-left: 0; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; color: {{ publication.link_color | default: "#285b91" }}; white-space: nowrap;">(PDF)</a>{% endif %}
+        {{ publication.title }}{% if publication.link %} <a href="{{ publication.link }}" aria-label="Read article: {{ publication.title | strip_html | escape }}" style="display: inline-block; font-size: 15px; font-weight: 700; margin-left: 0; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; color: {{ publication.link_color | default: "#285b91" }}; white-space: nowrap;">(Article)</a>{% endif %}
       </div>
       {% if publication.authors %}
       <div class="publication-authors" style="font-style: normal;">
@@ -94,6 +95,9 @@
       <div class="publication-conference">
         {{ publication.conference }}
       </div>
+      {% if publication.contribution %}
+      <p class="publication-contribution">{{ publication.contribution }}</p>
+      {% endif %}
     </div><!--//item-->
       {% endunless %}
     {% endfor %}
