@@ -7,6 +7,7 @@
     <img class="avatar" src="{{ site.baseurl }}/assets/images/{{ sidebar.avatar }}" alt="profile picture" />
     {% endif %}
 
+    <div class="profile-info">
     {% if sidebar.name %}
     <h1 class="name">{{ sidebar.name }}</h1>
     {% endif %}
@@ -15,7 +16,7 @@
     <h3 class="tagline">{{ sidebar.tagline }}</h3>
     {% endif %}
 
-  </div><!--//profile-container-->
+
 
   {% include contact.html %}
 
@@ -29,4 +30,6 @@
     {% include about.html %}
   {% endif %}
 
+    </div><!--//profile-info-->
+  </div><!--//profile-container-->
 </div><!--//sidebar-wrapper-->
