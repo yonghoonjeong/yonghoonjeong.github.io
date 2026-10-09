@@ -86,6 +86,26 @@
 }
 
 @media screen and (max-width: 767px) {
+  /* Reserve the date's full width instead of squeezing it into 25%. */
+  .main-wrapper .upper-row {
+    gap: 12px;
+    align-items: baseline;
+  }
+
+  .main-wrapper .upper-row .job-title,
+  .main-wrapper .upper-row .degree {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+
+  .main-wrapper .upper-row .time {
+    position: static;
+    flex: 0 0 auto;
+    width: auto;
+    white-space: nowrap;
+    text-align: right;
+  }
+
   .publications-section .review-disclosure summary {
     display: flex;
     flex-wrap: wrap;
