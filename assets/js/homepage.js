@@ -14,10 +14,16 @@
   if (!supportingInfo) {
     supportingInfo = document.createElement('aside');
     supportingInfo.className = 'mobile-supporting-info';
-    supportingInfo.setAttribute('aria-label', 'Research interests and skills');
     supportingInfo.hidden = true;
     main.insertBefore(supportingInfo, main.querySelector('#activities'));
   }
+  supportingInfo.setAttribute('aria-label', 'Languages and technical skills');
+
+  const researchInfo = document.createElement('aside');
+  researchInfo.className = 'mobile-research-interests';
+  researchInfo.setAttribute('aria-label', 'Research interests');
+  researchInfo.hidden = true;
+  main.insertBefore(researchInfo, main.querySelector('.publications-section'));
 
   // Remember each block's original position so resizing restores the desktop sidebar.
   const blocks = supportingBlocks.map((element) => {
@@ -29,10 +35,15 @@
 
   const updateLayout = () => {
     if (mobile.matches) {
-      blocks.forEach(({ element }) => supportingInfo.appendChild(element));
+      blocks.forEach(({ element }) => {
+        const destination = element.matches('.interests-container') ? researchInfo : supportingInfo;
+        destination.appendChild(element);
+      });
+      researchInfo.hidden = false;
       supportingInfo.hidden = false;
     } else {
       blocks.forEach(({ element, placeholder }) => placeholder.after(element));
+      researchInfo.hidden = true;
       supportingInfo.hidden = true;
     }
   };
