@@ -26,11 +26,50 @@
     padding-right: 22px;
   }
   .sidebar-wrapper .profile-container .tagline {
-    font-size: calc(15px + 1pt);
+    font-size: calc(15px + 2pt);
   }
 }
 
 /* Keep research near the top on small screens without duplicating sidebar content. */
+.sidebar-wrapper .container-block {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.sidebar-wrapper .container-block-title {
+  font-size: 18px;
+  margin-bottom: 14px;
+}
+
+.sidebar-wrapper .contact-list,
+.sidebar-wrapper .interests-list {
+  margin-bottom: 0;
+}
+
+.sidebar-wrapper .contact-list li,
+.sidebar-wrapper .interests-list li {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.research-interests-section .research-interests-list {
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.research-interests-section .research-interests-list li {
+  margin-bottom: 7px;
+}
+
+.research-interests-section .research-interests-list li:last-child {
+  margin-bottom: 0;
+}
+
+.mobile-supporting-info .interests-list li {
+  font-size: 16px;
+}
+
 .email-copy {
   appearance: none;
   border: 0;
@@ -140,7 +179,7 @@
 
   .sidebar-wrapper .profile-container .tagline {
     margin: 8px 0 0;
-    font-size: calc(14px + 1pt);
+    font-size: calc(14px + 2pt);
     line-height: 1.45;
     text-align: center;
     white-space: nowrap;
@@ -181,7 +220,7 @@
   .sidebar-wrapper .contact-list li {
     margin: 0;
     min-width: 0;
-    font-size: 13px;
+    font-size: 14px;
     line-height: 1.5;
   }
 
