@@ -15,7 +15,6 @@
 
 .publications-section .publication-conference:has(.publication-status--published) em { color: #285b91; }
 .publications-section .publication-conference:has(.publication-status--review) em { color: #25613f; }
-.publications-section .publication-contribution { margin: 7px 0 0; color: #596970; font-size: 13px; line-height: 1.6; }
 .publications-section .review-disclosure { margin: 18px 0 24px; border: 1px solid #cbded2; border-radius: 8px; }
 .publications-section .review-disclosure summary { cursor: pointer; padding: 12px 14px; color: #25613f; font-weight: 600; background: #f1f7f3; border-radius: 8px; }
 .publications-section .review-disclosure summary:focus-visible { outline: 2px solid #25613f; outline-offset: 3px; }
@@ -95,9 +94,6 @@
       <div class="publication-conference">
         {{ publication.conference }}
       </div>
-      {% if publication.contribution %}
-      <p class="publication-contribution">{{ publication.contribution }}</p>
-      {% endif %}
     </div><!--//item-->
       {% endunless %}
     {% endfor %}
