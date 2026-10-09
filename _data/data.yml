@@ -59,11 +59,9 @@ sidebar:
 career-profile:
   title: About
   summary: |
-    Yonghoon Jeong is a faculty member and researcher at the Republic of Korea Naval Academy.
+    Yonghoon Jeong is a faculty member and researcher at the Republic of Korea Naval Academy. His research covers performance analysis and waveform design for wireless communications, with a growing focus on Ocean IoT.
 
-    His research focuses on performance analysis and waveform design for wireless communication systems, with an emphasis on LoRa and non-linear chirp modulation. He is extending this work to underwater acoustic communications and backscatter systems for Ocean IoT.
-
-    He plans to pursue Ph.D. studies abroad upon completion of his mandatory military service in May 2029.
+    He plans to pursue a Ph.D. abroad after completing military service in May 2029.
 
 experiences:
     title: Professional Experience
