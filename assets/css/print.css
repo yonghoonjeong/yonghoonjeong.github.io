@@ -1,0 +1,73 @@
+/* Preserve the desktop composition at a readable size on a landscape sheet. */
+@page { size: A4 landscape; margin: 10mm; }
+
+@media print {
+  html, body { margin: 0 !important; padding: 0 !important; background: #fff !important; }
+  body { font-size: 14px !important; }
+  .wrapper, .wrapper * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  .wrapper {
+    display: grid !important;
+    grid-template-columns: 380px minmax(0, 1fr) !important;
+    width: 1220px !important;
+    max-width: none !important;
+    margin: 0 !important;
+    zoom: .85;
+    overflow: visible !important;
+    border-radius: 0;
+    box-shadow: none !important;
+    background: #315f69 !important;
+  }
+  .wrapper .sidebar-wrapper, .wrapper .main-wrapper {
+    grid-column: auto !important;
+    position: static !important;
+    width: auto !important;
+    min-width: 0;
+  }
+  .wrapper .sidebar-wrapper { order: 1; background: #315f69 !important; }
+  .wrapper .sidebar-wrapper, .wrapper .sidebar-wrapper * { color: #fff !important; }
+  .wrapper .sidebar-wrapper .profile-container {
+    display: block; padding: 38px 26px 34px; text-align: center;
+    background: #2b545c !important;
+  }
+  .wrapper .sidebar-wrapper .profile-container .avatar {
+    width: 180px; height: 180px; max-width: 180px; margin: 0 auto 17px;
+  }
+  .wrapper .sidebar-wrapper .profile-container .name { font-size: 32px; line-height: 1.1; margin: 0 0 10px; }
+  .wrapper .sidebar-wrapper .profile-container .tagline { font-size: 15px; margin: 0; color: #d2dee1 !important; }
+  .wrapper .sidebar-wrapper .container-block { padding: 28px 26px; }
+  .wrapper .sidebar-wrapper .contact-list { display: block; }
+  .wrapper .sidebar-wrapper .contact-list li { margin-bottom: 15px; font-size: 14px; }
+  .wrapper .sidebar-wrapper .interests-list li { white-space: normal; }
+  .wrapper .main-wrapper { order: 2; padding: 56px 64px !important; background: #fff !important; }
+  .wrapper .main-wrapper, .wrapper .main-wrapper * { color: #50636b !important; }
+  .wrapper .main-wrapper .section-title { color: #193035 !important; }
+  .wrapper .main-wrapper .fa-circle { color: #193035 !important; }
+  .wrapper .main-wrapper .fa-inverse, .wrapper .main-wrapper .fa-inverse::before { color: #fff !important; }
+  .wrapper .main-wrapper a { color: #315f69 !important; }
+  .wrapper .main-wrapper .publication-status--published { background: #e4eefb !important; color: #285b91 !important; }
+  .wrapper .main-wrapper .publication-status--review { background: #e2f1e8 !important; color: #25613f !important; }
+  .wrapper .publication-conference:has(.publication-status--published) em,
+  .wrapper .publication-conference:has(.publication-status--published) em * { color: #285b91 !important; }
+  .wrapper .publication-conference:has(.publication-status--review) em,
+  .wrapper .publication-conference:has(.publication-status--review) em * { color: #25613f !important; }
+  .wrapper .main-wrapper .upper-row { display: flex; flex-wrap: nowrap; }
+  .wrapper .main-wrapper .time { position: absolute !important; padding: 0 !important; margin: 0; }
+  .wrapper .review-disclosure { background: #f1f7f3 !important; }
+  .wrapper details::details-content { display: block; content-visibility: visible; }
+  .wrapper .review-content, .wrapper .activities-content { display: block !important; animation: none !important; }
+  .wrapper .section, .wrapper details, .wrapper .sidebar-wrapper, .wrapper .main-wrapper { break-inside: auto; }
+  .wrapper .item, .wrapper .container-block, .wrapper .profile-container,
+  .wrapper .activity-card { break-inside: avoid; page-break-inside: avoid; }
+  .wrapper h1, .wrapper h2, .wrapper h3, .wrapper summary { break-after: avoid; page-break-after: avoid; }
+  .wrapper p { orphans: 3; widows: 3; }
+  .wrapper #activities .activity-card { grid-template-columns: 160px minmax(0,1fr); gap: 22px; align-items: center; }
+  .wrapper #activities .activity-card > img { width: 160px; height: 120px; }
+  .wrapper img { max-width: 100% !important; }
+  .wrapper a[href]::after, .wrapper abbr[title]::after { content: none !important; }
+  .review-toggle, .activities-toggle, .copy-feedback, .analytics-choice,
+  .analytics-footer, .mobile-supporting-info, .print-button, .pdf-button,
+  #back-to-top, .back-to-top, footer { display: none !important; }
+}
