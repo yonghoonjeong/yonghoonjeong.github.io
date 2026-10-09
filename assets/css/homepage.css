@@ -290,3 +290,53 @@
 .pdf-export-status:empty { display:none; }
 @media screen and (max-width:767px) { .homepage-export { top:10px; right:12px; padding:0; } .homepage-export .pdf-button { padding:5px 10px; font-size:12px; } }
 @media print { .homepage-export { display:none!important; } }
+
+/* A compact profile header above a single reading column. */
+@media screen {
+  .wrapper { display:block; max-width:960px; background:#fff; }
+  .wrapper .sidebar-wrapper { width:auto; position:static; }
+  .wrapper .sidebar-wrapper .profile-container {
+    display:grid;
+    grid-template-columns:180px minmax(0,1fr);
+    align-items:center;
+    gap:32px;
+    padding:44px 48px 36px;
+    text-align:left;
+    background:#315f69;
+  }
+  .wrapper .sidebar-wrapper .profile-container .avatar { margin:0; }
+  .profile-info { min-width:0; }
+  .sidebar-wrapper .profile-info .name { margin:0 64px 8px 0; font-size:32px; line-height:1.15; }
+  .sidebar-wrapper .profile-info .tagline { margin:0 0 20px; font-size:calc(15px + 2pt); line-height:1.45; }
+  .sidebar-wrapper .profile-info .container-block { padding:0; }
+  .sidebar-wrapper .profile-info .contact-container .container-block-title {
+    position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip-path:inset(50%); white-space:nowrap;
+  }
+  .sidebar-wrapper .profile-info .contact-list { display:flex; flex-wrap:wrap; gap:10px 22px; margin:0; }
+  .sidebar-wrapper .profile-info .contact-list li { margin:0; font-size:15px; line-height:1.5; white-space:nowrap; }
+  .sidebar-wrapper .profile-info .languages-container { display:flex; flex-wrap:wrap; align-items:baseline; gap:6px 14px; margin-top:18px; }
+  .sidebar-wrapper .profile-info .languages-container .container-block-title { font-size:14px; margin:0; }
+  .sidebar-wrapper .profile-info .languages-container .interests-list { display:flex; flex-wrap:wrap; gap:6px 14px; margin:0; }
+  .sidebar-wrapper .profile-info .languages-container li { margin:0; font-size:14px; line-height:1.5; }
+  .sidebar-wrapper .profile-info .lang-desc { color:#d1dfe2; }
+  .wrapper .main-wrapper { padding:44px 48px; width:auto; }
+  .main-wrapper .upper-row { gap:16px; flex-wrap:nowrap; align-items:baseline; }
+  .main-wrapper .upper-row .job-title, .main-wrapper .upper-row .degree { flex:1 1 0; min-width:0; }
+  .main-wrapper .upper-row .time { position:static; flex:0 0 auto; white-space:nowrap; text-align:right; margin-top:0; }
+}
+@media screen and (max-width:767px) {
+  .wrapper .sidebar-wrapper .profile-container { display:block; padding:24px 22px; text-align:center; }
+  .wrapper .sidebar-wrapper .profile-container .avatar { margin:0 auto 14px; }
+  .sidebar-wrapper .profile-info .name { margin:0 0 8px; font-size:26px; }
+  .sidebar-wrapper .profile-info .tagline { margin:0 0 20px; font-size:calc(14px + 2pt); }
+  .sidebar-wrapper .profile-info .contact-list { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px 16px; text-align:left; }
+  .sidebar-wrapper .profile-info .contact-list li { font-size:14px; }
+  .sidebar-wrapper .profile-info .languages-container { justify-content:center; margin-top:20px; }
+  .sidebar-wrapper .profile-info .languages-container .container-block-title { width:100%; }
+  .sidebar-wrapper .profile-info .languages-container li { font-size:13px; }
+  .wrapper .main-wrapper { padding:32px 24px; }
+  .main-wrapper .upper-row { gap:12px; }
+}
+@media screen and (max-width:359px) {
+  .sidebar-wrapper .profile-info .contact-list { grid-template-columns:1fr; justify-items:center; }
+}
