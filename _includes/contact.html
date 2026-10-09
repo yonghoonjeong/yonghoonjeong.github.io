@@ -4,7 +4,7 @@
 
     {% if sidebar.email %}
     <li class="email"><i class="fas fa-envelope"></i>
-      <a href="mailto:{{ sidebar.email }}">{{ sidebar.email }}</a>
+      <button type="button" class="email-copy" data-copy-email="{{ sidebar.email | escape }}" aria-label="Copy email address: {{ sidebar.email | escape }}" title="Copy email address">{{ sidebar.email }}</button>
     </li>
     {% endif %}
     
