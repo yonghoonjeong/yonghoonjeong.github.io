@@ -1,12 +1,63 @@
 (() => {
   'use strict';
 
+  const emailButtons = document.querySelectorAll('[data-copy-email]');
+  if (emailButtons.length) {
+    const feedback = document.createElement('div');
+    feedback.className = 'copy-feedback';
+    feedback.setAttribute('role', 'status');
+    feedback.setAttribute('aria-live', 'polite');
+    feedback.setAttribute('aria-atomic', 'true');
+    document.body.appendChild(feedback);
+    let feedbackTimer;
+
+    const fallbackCopy = (email) => {
+      const previousFocus = document.activeElement;
+      const field = document.createElement('textarea');
+      field.value = email;
+      field.readOnly = true;
+      field.style.cssText = 'position:fixed;left:-9999px;top:0;font-size:16px;';
+      document.body.appendChild(field);
+      field.select();
+      field.setSelectionRange(0, email.length);
+      try {
+        if (!document.execCommand('copy')) throw new Error('Copy unavailable');
+      } finally {
+        field.remove();
+        previousFocus?.focus({ preventScroll: true });
+      }
+    };
+
+    emailButtons.forEach((button) => button.addEventListener('click', async () => {
+      const email = button.dataset.copyEmail;
+      if (!email) return;
+      let message = 'Email copied!';
+      try {
+        if (navigator.clipboard?.writeText && window.isSecureContext) {
+          try { await navigator.clipboard.writeText(email); }
+          catch { fallbackCopy(email); }
+        } else {
+          fallbackCopy(email);
+        }
+      } catch {
+        message = 'Unable to copy. Please select the email address.';
+      }
+      clearTimeout(feedbackTimer);
+      feedback.textContent = message;
+      feedback.classList.add('is-visible');
+      feedbackTimer = setTimeout(() => {
+        feedback.classList.remove('is-visible');
+        feedback.textContent = '';
+      }, 4000);
+    }));
+  }
+
   const sidebar = document.querySelector('.sidebar-wrapper');
   const main = document.querySelector('.main-wrapper');
   if (!sidebar || !main) return;
 
   const supportingBlocks = Array.from(sidebar.children).filter((element) =>
-    element.matches('.interests-container, .languages-container, .skills-container')
+    element.matches('.languages-container, .skills-container')
   );
   if (!supportingBlocks.length) return;
 
@@ -19,12 +70,6 @@
   }
   supportingInfo.setAttribute('aria-label', 'Languages and technical skills');
 
-  const researchInfo = document.createElement('aside');
-  researchInfo.className = 'mobile-research-interests';
-  researchInfo.setAttribute('aria-label', 'Research interests');
-  researchInfo.hidden = true;
-  main.insertBefore(researchInfo, main.querySelector('.publications-section'));
-
   // Remember each block's original position so resizing restores the desktop sidebar.
   const blocks = supportingBlocks.map((element) => {
     const placeholder = document.createComment('Sidebar supporting information');
@@ -35,15 +80,10 @@
 
   const updateLayout = () => {
     if (mobile.matches) {
-      blocks.forEach(({ element }) => {
-        const destination = element.matches('.interests-container') ? researchInfo : supportingInfo;
-        destination.appendChild(element);
-      });
-      researchInfo.hidden = false;
+      blocks.forEach(({ element }) => supportingInfo.appendChild(element));
       supportingInfo.hidden = false;
     } else {
       blocks.forEach(({ element, placeholder }) => placeholder.after(element));
-      researchInfo.hidden = true;
       supportingInfo.hidden = true;
     }
   };
