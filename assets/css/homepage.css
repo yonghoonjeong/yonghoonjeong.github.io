@@ -19,6 +19,17 @@
   .main-wrapper .time { position: static; flex: 0 0 100%; margin-top: 4px; }
 }
 
+@media screen and (min-width: 768px) {
+  .sidebar-wrapper .profile-container,
+  .sidebar-wrapper .container-block {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+  .sidebar-wrapper .profile-container .tagline {
+    font-size: calc(15px + 1pt);
+  }
+}
+
 /* Keep research near the top on small screens without duplicating sidebar content. */
 .email-copy {
   appearance: none;
@@ -89,7 +100,7 @@
 
   .sidebar-wrapper .profile-container {
     display: block;
-    padding: 24px;
+    padding: 24px 22px;
     text-align: center;
   }
 
@@ -109,18 +120,18 @@
 
   .sidebar-wrapper .profile-container .tagline {
     margin: 8px 0 0;
-    font-size: 14px;
+    font-size: calc(14px + 1pt);
     line-height: 1.45;
     text-align: center;
     white-space: nowrap;
   }
 
   .sidebar-wrapper .contact-container {
-    padding: 20px 24px 22px;
+    padding: 20px 22px 22px;
   }
 
   .sidebar-wrapper .interests-container {
-    padding: 8px 24px 28px;
+    padding: 8px 22px 28px;
   }
 
   .sidebar-wrapper .interests-container .container-block-title {
