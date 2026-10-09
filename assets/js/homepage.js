@@ -59,7 +59,6 @@
   const supportingBlocks = Array.from(sidebar.children).filter((element) =>
     element.matches('.languages-container, .skills-container')
   );
-  if (!supportingBlocks.length) return;
 
   let supportingInfo = main.querySelector('.mobile-supporting-info');
   if (!supportingInfo) {
@@ -77,9 +76,11 @@
     return { element, placeholder };
   });
   const mobile = window.matchMedia('screen and (max-width: 767px)');
+  const printMedia = window.matchMedia('print');
+  let printState = null;
 
   const updateLayout = () => {
-    if (mobile.matches) {
+    if (mobile.matches && !printState && !printMedia.matches) {
       blocks.forEach(({ element }) => supportingInfo.appendChild(element));
       supportingInfo.hidden = false;
     } else {
@@ -91,4 +92,32 @@
   updateLayout();
   if (mobile.addEventListener) mobile.addEventListener('change', updateLayout);
   else mobile.addListener(updateLayout);
+
+  // Browser-menu printing must include disclosures and the desktop sidebar,
+  // while cancelling or finishing print must restore the reader's choices.
+  const preparePrint = () => {
+    if (printState) return;
+    printState = Array.from(document.querySelectorAll('.wrapper details'), (element) => ({
+      element, open: element.open,
+    }));
+    printState.forEach(({ element }) => { element.open = true; });
+    updateLayout();
+  };
+  const restorePrint = () => {
+    if (!printState) { updateLayout(); return; }
+    const previousState = printState;
+    printState = null;
+    previousState.forEach(({ element, open }) => { element.open = open; });
+    updateLayout();
+  };
+  window.addEventListener('beforeprint', preparePrint);
+  window.addEventListener('afterprint', restorePrint);
+  const printChanged = (event) => event.matches ? preparePrint() : restorePrint();
+  if (printMedia.addEventListener) printMedia.addEventListener('change', printChanged);
+  else printMedia.addListener(printChanged);
+
+  // These small thumbnails also need to be ready for immediate browser printing.
+  document.querySelectorAll('.wrapper img[loading="lazy"]').forEach((image) => {
+    image.loading = 'eager';
+  });
 })();
