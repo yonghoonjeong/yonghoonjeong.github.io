@@ -240,12 +240,14 @@
   }
 }
 
-/* A single export action above the page, separate from the CV link. */
-.homepage-export { max-width:1220px; margin:0 auto 10px; display:flex; flex-direction:row-reverse; align-items:center; gap:12px; }
+/* Keep export in the card's corner without adding space above the page. */
+.wrapper { position:relative; }
+.homepage-export { position:absolute; top:12px; right:16px; z-index:5; max-width:calc(100% - 32px); margin:0; display:flex; flex-direction:row-reverse; align-items:center; gap:12px; }
 .homepage-export .pdf-button { position:static; top:auto; right:auto; bottom:auto; left:auto; transform:none; z-index:auto; flex-shrink:0; border:1px solid #b9cbd0; border-radius:7px; padding:7px 14px; background:#fff; color:#315f69; font:600 14px/1.4 Roboto,sans-serif; cursor:pointer; white-space:nowrap; }
 .homepage-export .pdf-button:hover { background:#e6eff1; }
 .homepage-export .pdf-button:focus-visible { outline:2px solid #315f69; outline-offset:3px; }
 .homepage-export .pdf-button:disabled { cursor:wait; opacity:.7; }
-.pdf-export-status { font-size:12px; color:#50636b; }
-@media screen and (max-width:767px) { .homepage-export { margin:0; padding:10px 16px; background:#eef2f3; } }
+.pdf-export-status { position:absolute; top:calc(100% + 6px); right:0; width:max-content; max-width:240px; font-size:12px; color:#50636b; background:#fff; border-radius:5px; padding:5px 8px; box-shadow:0 2px 8px #0002; }
+.pdf-export-status:empty { display:none; }
+@media screen and (max-width:767px) { .homepage-export { top:10px; right:12px; padding:0; } .homepage-export .pdf-button { padding:5px 10px; font-size:12px; } }
 @media print { .homepage-export { display:none!important; } }
