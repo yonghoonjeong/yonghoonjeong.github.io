@@ -1,6 +1,55 @@
 /* Keep research near the top on small screens without duplicating sidebar content. */
-.mobile-supporting-info[hidden],
-.mobile-research-interests[hidden] {
+.email-copy {
+  appearance: none;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  white-space: nowrap;
+  touch-action: manipulation;
+}
+
+.email-copy:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+
+.copy-feedback {
+  position: fixed;
+  bottom: max(24px, env(safe-area-inset-bottom));
+  left: 50%;
+  z-index: 10000;
+  max-width: calc(100% - 32px);
+  padding: 12px 18px;
+  border: 1px solid #a8c2ce;
+  border-radius: 10px;
+  background: #193035;
+  color: #fff;
+  box-shadow: 0 4px 20px #0003;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  opacity: 0;
+  transform: translateX(-50%) translateY(6px);
+  pointer-events: none;
+  transition: opacity .15s ease, transform .15s ease;
+}
+
+.copy-feedback.is-visible {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .copy-feedback { transition: none; }
+}
+
+.mobile-supporting-info[hidden] {
   display: none;
 }
 
@@ -18,36 +67,26 @@
   }
 
   .sidebar-wrapper .profile-container {
-    display: grid;
-    grid-template-columns: 112px minmax(0, 1fr);
-    column-gap: 20px;
-    row-gap: 8px;
-    align-items: center;
-    padding: 28px 24px 24px;
-    text-align: left;
+    display: block;
+    padding: 24px;
+    text-align: center;
   }
 
   .wrapper .sidebar-wrapper .profile-container .avatar {
-    grid-column: 1;
-    grid-row: 1;
-    width: 112px;
-    max-width: 112px;
-    height: 112px;
-    margin: 0;
+    display: block;
+    width: 100px;
+    max-width: 100px;
+    height: 100px;
+    margin: 0 auto 14px;
   }
 
   .sidebar-wrapper .profile-container .name {
-    grid-column: 2;
-    grid-row: 1;
-    align-self: center;
     margin: 0;
     font-size: 26px;
     line-height: 1.12;
   }
 
   .sidebar-wrapper .profile-container .tagline {
-    grid-column: 1 / -1;
-    grid-row: 2;
     margin: 8px 0 0;
     font-size: 14px;
     line-height: 1.45;
@@ -57,6 +96,23 @@
 
   .sidebar-wrapper .contact-container {
     padding: 20px 24px 22px;
+  }
+
+  .sidebar-wrapper .interests-container {
+    padding: 8px 24px 28px;
+  }
+
+  .sidebar-wrapper .interests-container .container-block-title {
+    margin-bottom: 14px;
+  }
+
+  .sidebar-wrapper .interests-list {
+    margin-bottom: 0;
+  }
+
+  .sidebar-wrapper .interests-list li {
+    margin-bottom: 7px;
+    line-height: 1.5;
   }
 
   .sidebar-wrapper .contact-container .container-block-title {
@@ -96,49 +152,34 @@
     color: #50636b;
   }
 
-  .mobile-research-interests {
-    margin: 0 0 42px;
-    color: #50636b;
-  }
 
-  .mobile-supporting-info .container-block,
-  .mobile-research-interests .container-block {
+  .mobile-supporting-info .container-block {
     padding: 0;
     margin: 0 0 28px;
   }
 
-  .mobile-supporting-info .container-block:last-child,
-  .mobile-research-interests .container-block:last-child {
+  .mobile-supporting-info .container-block:last-child {
     margin-bottom: 0;
   }
 
-  .mobile-supporting-info .container-block-title,
-  .mobile-research-interests .container-block-title {
+  .mobile-supporting-info .container-block-title {
     margin: 0 0 14px;
     color: #193035;
     font-size: 18px;
     line-height: 1.35;
   }
 
-  .mobile-research-interests .container-block-title {
-    font-size: 20px;
-    padding-bottom: 14px;
-    border-bottom: 1px solid #e3e8eb;
-  }
 
-  .mobile-supporting-info .interests-list,
-  .mobile-research-interests .interests-list {
+  .mobile-supporting-info .interests-list {
     margin: 0;
   }
 
-  .mobile-supporting-info .interests-list li,
-  .mobile-research-interests .interests-list li {
+  .mobile-supporting-info .interests-list li {
     margin-bottom: 8px;
     line-height: 1.55;
   }
 
-  .mobile-supporting-info .interests-list li:last-child,
-  .mobile-research-interests .interests-list li:last-child {
+  .mobile-supporting-info .interests-list li:last-child {
     margin-bottom: 0;
   }
 
