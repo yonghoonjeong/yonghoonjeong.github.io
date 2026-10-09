@@ -22,17 +22,18 @@
     .wrapper .profile-container .name{font-size:32px!important;line-height:1.15!important;margin:0 0 8px!important}
     .wrapper .profile-container .tagline{font-size:17.667px!important;line-height:1.4!important;white-space:normal!important;margin:0 0 20px!important;text-align:left!important}
     .wrapper .profile-info .container-block{padding:0!important}
-    .wrapper .profile-info .contact-container .container-block-title{display:none!important}
-    .wrapper .profile-info .contact-list{display:flex!important;flex-wrap:wrap;gap:10px 22px!important;margin:0!important}
+    .wrapper .profile-info .contact-container .container-block-title{display:block!important;position:static!important;width:auto!important;height:auto!important;overflow:visible!important;clip-path:none!important;font-size:18px!important;line-height:1.3!important;margin:0 0 10px!important}
+    .wrapper .profile-info .contact-list{display:grid!important;grid-template-columns:1fr 1fr!important;gap:10px 24px!important;max-width:500px!important;margin:0!important;text-align:left!important;justify-items:start!important}
     .wrapper .profile-info .contact-list li{font-size:15px!important;margin:0!important}
-    .wrapper .profile-info .languages-container{display:flex!important;flex-wrap:wrap;gap:6px 14px!important;margin-top:18px!important}
-    .wrapper .profile-info .languages-container .container-block-title{font-size:14px!important;width:auto!important;margin:0!important}
-    .wrapper .profile-info .languages-container .interests-list{display:flex!important;gap:14px!important;margin:0!important}
-    .wrapper .profile-info .languages-container li{font-size:14px!important;margin:0!important}
+    .wrapper .profile-info .languages-container{display:block!important;margin-top:20px!important}
+    .wrapper .profile-info .languages-container .container-block-title{font-size:18px!important;line-height:1.3!important;width:auto!important;margin:0 0 10px!important}
+    .wrapper .profile-info .languages-container .interests-list{display:grid!important;grid-template-columns:1fr 1fr!important;gap:10px 24px!important;max-width:500px!important;margin:0!important;justify-items:start!important}
+    .wrapper .profile-info .languages-container li{font-size:15px!important;margin:0!important}
     .wrapper .upper-row,.wrapper .second-upper-row{display:flex!important;flex-wrap:wrap!important;gap:3px 12px}
     .wrapper .time{position:static!important;flex:0 0 auto!important;margin:0 0 0 auto!important;padding:0!important}
     .wrapper .upper-row .job-title,.wrapper .upper-row .degree{flex:1;min-width:0}
     .wrapper a,.wrapper u{text-decoration:none!important}
+    .wrapper .contact-list a{display:inline-block!important;text-decoration:none!important;border-bottom:1px solid currentColor!important;padding-bottom:1px!important;line-height:1.3!important}
     .wrapper .section{margin-bottom:30px!important}.wrapper .item{margin-bottom:20px!important}
     .wrapper details::details-content{display:block!important;content-visibility:visible!important}
     .wrapper .review-content,.wrapper .activities-content{display:block!important}
@@ -70,6 +71,7 @@
       doc.close();
       const clone = wrapper.cloneNode(true);
       clone.querySelectorAll('script,.homepage-export').forEach(e => e.remove());
+      clone.querySelectorAll('.email-copy').forEach(button => { const link = doc.createElement('a'); link.href = 'mailto:' + button.dataset.copyEmail; link.textContent = button.textContent; button.replaceWith(link); });
       clone.querySelectorAll('details').forEach(e => { e.open = true; });
       clone.querySelectorAll('img').forEach(e => { e.loading = 'eager'; e.src = new URL(e.getAttribute('src'), document.baseURI).href; });
       clone.querySelectorAll('a[href]').forEach(e => { e.href = new URL(e.getAttribute('href'), 'https://yonghoonjeong.github.io/').href; });
