@@ -57,7 +57,7 @@
   if (!sidebar || !main) return;
 
   const supportingBlocks = Array.from(sidebar.children).filter((element) =>
-    element.matches('.languages-container, .skills-container')
+    element.matches('.languages-container')
   );
 
   let supportingInfo = main.querySelector('.mobile-supporting-info');
@@ -67,7 +67,7 @@
     supportingInfo.hidden = true;
     main.insertBefore(supportingInfo, main.querySelector('#activities'));
   }
-  supportingInfo.setAttribute('aria-label', 'Languages and technical skills');
+  supportingInfo.setAttribute('aria-label', 'Languages');
 
   // Remember each block's original position so resizing restores the desktop sidebar.
   const blocks = supportingBlocks.map((element) => {
