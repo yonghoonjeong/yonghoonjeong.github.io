@@ -1,3 +1,24 @@
+/* Give the desktop information column room for the full research-interest labels. */
+@media screen and (min-width: 1024px) {
+  .wrapper {
+    max-width: 1220px;
+    grid-template-columns: 380px minmax(0, 1fr);
+  }
+
+  .sidebar-wrapper,
+  .main-wrapper {
+    grid-column: auto;
+    min-width: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  .main-wrapper { padding: 48px 36px; }
+  .main-wrapper .upper-row,
+  .main-wrapper .second-upper-row { flex-wrap: wrap; }
+  .main-wrapper .time { position: static; flex: 0 0 100%; margin-top: 4px; }
+}
+
 /* Keep research near the top on small screens without duplicating sidebar content. */
 .email-copy {
   appearance: none;
