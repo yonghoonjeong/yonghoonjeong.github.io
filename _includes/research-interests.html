@@ -1,0 +1,17 @@
+{% assign interests = site.data.data.sidebar.interests %}
+{% if interests %}
+<section class="section research-interests-section" aria-labelledby="research-interests-title">
+  <h2 class="section-title" id="research-interests-title">
+    <span class="fa-stack fa-xs" aria-hidden="true">
+      <i class="fas fa-circle fa-stack-2x"></i>
+      <i class="fas fa-flask fa-stack-1x fa-inverse"></i>
+    </span>
+    {{ interests.title }}
+  </h2>
+  <ul class="list-unstyled research-interests-list">
+    {% for interest in interests.info %}
+    <li>{% if interest.link %}<a href="{{ interest.link }}">{{ interest.item }}</a>{% else %}{{ interest.item }}{% endif %}</li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}
