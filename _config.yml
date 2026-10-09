@@ -14,7 +14,7 @@ theme_skin: teal # blue turquoise green berry orange ceramic teal oceanstale
 chrome_mobile_color: #use hex colors (ex:#1976d2) or leave empty if you don't want a color for chrome mobile searchbar
 
 # Tracker
-analytics: # Legacy template tracking disabled; owned GA4 loads with visitor consent.
+analytics: # Visitor analytics is disabled.
 
 # Sass/SCSS
 sass:
