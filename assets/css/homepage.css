@@ -222,7 +222,7 @@
 
 /* A single export action above the page, separate from the CV link. */
 .homepage-export { max-width:1220px; margin:0 auto 10px; display:flex; flex-direction:row-reverse; align-items:center; gap:12px; }
-.homepage-export .pdf-button { border:1px solid #b9cbd0; border-radius:7px; padding:7px 14px; background:#fff; color:#315f69; font:600 14px/1.4 Roboto,sans-serif; cursor:pointer; white-space:nowrap; }
+.homepage-export .pdf-button { position:static; top:auto; right:auto; bottom:auto; left:auto; transform:none; z-index:auto; flex-shrink:0; border:1px solid #b9cbd0; border-radius:7px; padding:7px 14px; background:#fff; color:#315f69; font:600 14px/1.4 Roboto,sans-serif; cursor:pointer; white-space:nowrap; }
 .homepage-export .pdf-button:hover { background:#e6eff1; }
 .homepage-export .pdf-button:focus-visible { outline:2px solid #315f69; outline-offset:3px; }
 .homepage-export .pdf-button:disabled { cursor:wait; opacity:.7; }
