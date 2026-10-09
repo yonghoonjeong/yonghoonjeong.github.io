@@ -14,15 +14,21 @@
   const MAX_HEIGHT = Math.floor(276 / MM_WIDTH * WIDTH);
   const exportStyles = `
     html,body{margin:0!important;padding:0!important;background:white!important;color-scheme:only light}
-    .wrapper{display:flex!important;align-items:stretch;width:1000px!important;max-width:none!important;margin:0!important;border-radius:0!important;box-shadow:none!important;overflow:visible!important;zoom:1!important}
-    .wrapper .sidebar-wrapper{flex:0 0 290px!important;width:290px!important;order:1;position:static!important;background:#315f69!important}
-    .wrapper .main-wrapper{flex:0 0 710px!important;width:710px!important;order:2;padding:32px!important;background:white!important;font-size:16px!important}
-    .wrapper .profile-container{display:block!important;padding:28px 16px!important;text-align:center!important}
-    .wrapper .profile-container .avatar{display:block!important;width:160px!important;height:160px!important;max-width:160px!important;margin:0 auto 18px!important}
-    .wrapper .profile-container .name{font-size:28px!important;line-height:1.15!important;margin:0 0 10px!important}
-    .wrapper .profile-container .tagline{font-size:14px!important;line-height:1.4!important;white-space:normal!important;margin:0!important}
-    .wrapper .container-block{padding:24px 20px!important}
-    .wrapper .contact-list{display:block!important}.wrapper .contact-list li{font-size:14px!important;margin:0 0 14px!important}
+    .wrapper{display:block!important;width:1000px!important;max-width:none!important;margin:0!important;border-radius:0!important;box-shadow:none!important;overflow:visible!important;zoom:1!important}
+    .wrapper .sidebar-wrapper{width:100%!important;position:static!important;background:#315f69!important}
+    .wrapper .main-wrapper{width:100%!important;padding:40px 48px!important;background:white!important;font-size:16px!important}
+    .wrapper .profile-container{display:grid!important;grid-template-columns:180px minmax(0,1fr)!important;align-items:center;gap:32px!important;padding:36px 48px!important;text-align:left!important;background:#315f69!important;break-inside:avoid}
+    .wrapper .profile-container .avatar{display:block!important;width:180px!important;height:180px!important;max-width:180px!important;margin:0!important}
+    .wrapper .profile-container .name{font-size:32px!important;line-height:1.15!important;margin:0 0 8px!important}
+    .wrapper .profile-container .tagline{font-size:17.667px!important;line-height:1.4!important;white-space:normal!important;margin:0 0 20px!important;text-align:left!important}
+    .wrapper .profile-info .container-block{padding:0!important}
+    .wrapper .profile-info .contact-container .container-block-title{display:none!important}
+    .wrapper .profile-info .contact-list{display:flex!important;flex-wrap:wrap;gap:10px 22px!important;margin:0!important}
+    .wrapper .profile-info .contact-list li{font-size:15px!important;margin:0!important}
+    .wrapper .profile-info .languages-container{display:flex!important;flex-wrap:wrap;gap:6px 14px!important;margin-top:18px!important}
+    .wrapper .profile-info .languages-container .container-block-title{font-size:14px!important;width:auto!important;margin:0!important}
+    .wrapper .profile-info .languages-container .interests-list{display:flex!important;gap:14px!important;margin:0!important}
+    .wrapper .profile-info .languages-container li{font-size:14px!important;margin:0!important}
     .wrapper .upper-row,.wrapper .second-upper-row{display:flex!important;flex-wrap:wrap!important;gap:3px 12px}
     .wrapper .time{position:static!important;flex:0 0 auto!important;margin:0 0 0 auto!important;padding:0!important}
     .wrapper .upper-row .job-title,.wrapper .upper-row .degree{flex:1;min-width:0}
@@ -65,8 +71,6 @@
       const clone = wrapper.cloneNode(true);
       clone.querySelectorAll('script,.homepage-export').forEach(e => e.remove());
       clone.querySelectorAll('details').forEach(e => { e.open = true; });
-      const sidebar = clone.querySelector('.sidebar-wrapper');
-      clone.querySelectorAll('.mobile-supporting-info > .languages-container,.mobile-supporting-info > .skills-container').forEach(e => sidebar.append(e));
       clone.querySelectorAll('img').forEach(e => { e.loading = 'eager'; e.src = new URL(e.getAttribute('src'), document.baseURI).href; });
       clone.querySelectorAll('a[href]').forEach(e => { e.href = new URL(e.getAttribute('href'), 'https://yonghoonjeong.github.io/').href; });
       doc.body.append(clone);

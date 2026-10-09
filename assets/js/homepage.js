@@ -56,44 +56,11 @@
   const main = document.querySelector('.main-wrapper');
   if (!sidebar || !main) return;
 
-  const supportingBlocks = Array.from(sidebar.children).filter((element) =>
-    element.matches('.languages-container')
-  );
-
-  let supportingInfo = main.querySelector('.mobile-supporting-info');
-  if (!supportingInfo) {
-    supportingInfo = document.createElement('aside');
-    supportingInfo.className = 'mobile-supporting-info';
-    supportingInfo.hidden = true;
-    main.insertBefore(supportingInfo, main.querySelector('#activities'));
-  }
-  supportingInfo.setAttribute('aria-label', 'Languages');
-
-  // Remember each block's original position so resizing restores the desktop sidebar.
-  const blocks = supportingBlocks.map((element) => {
-    const placeholder = document.createComment('Sidebar supporting information');
-    element.before(placeholder);
-    return { element, placeholder };
-  });
-  const mobile = window.matchMedia('screen and (max-width: 767px)');
+  main.querySelector('.mobile-supporting-info')?.remove();
   const printMedia = window.matchMedia('print');
   let printState = null;
 
-  const updateLayout = () => {
-    if (mobile.matches && !printState && !printMedia.matches) {
-      blocks.forEach(({ element }) => supportingInfo.appendChild(element));
-      supportingInfo.hidden = false;
-    } else {
-      blocks.forEach(({ element, placeholder }) => placeholder.after(element));
-      supportingInfo.hidden = true;
-    }
-  };
-
-  updateLayout();
-  if (mobile.addEventListener) mobile.addEventListener('change', updateLayout);
-  else mobile.addListener(updateLayout);
-
-  // Browser-menu printing must include disclosures and the desktop sidebar,
+  // Browser-menu printing must include disclosures and all page content,
   // while cancelling or finishing print must restore the reader's choices.
   const preparePrint = () => {
     if (printState) return;
@@ -101,14 +68,12 @@
       element, open: element.open,
     }));
     printState.forEach(({ element }) => { element.open = true; });
-    updateLayout();
   };
   const restorePrint = () => {
-    if (!printState) { updateLayout(); return; }
+    if (!printState) return;
     const previousState = printState;
     printState = null;
     previousState.forEach(({ element, open }) => { element.open = open; });
-    updateLayout();
   };
   window.addEventListener('beforeprint', preparePrint);
   window.addEventListener('afterprint', restorePrint);
