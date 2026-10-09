@@ -5,7 +5,7 @@
   const bar = document.createElement('div');
   bar.className = 'homepage-export';
   bar.innerHTML = '<button type="button" class="pdf-button" aria-label="Download homepage as A4 PDF" title="Save the complete homepage as A4 PDF">↓ PDF</button><span class="pdf-export-status" role="status" aria-live="polite"></span>';
-  wrapper.before(bar);
+  wrapper.prepend(bar);
   const button = bar.querySelector('button');
   const status = bar.querySelector('[role="status"]');
   let previousBlobUrl;
