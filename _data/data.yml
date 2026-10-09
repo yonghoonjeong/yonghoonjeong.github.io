@@ -30,7 +30,7 @@ sidebar:
   #mastodon: # Please include your full Mastodon link here.
   #hackerrank: # Please provide your HackerRank username.
   #leetcode: # Please provide your LeetCode username.
-  pdf: https://yonghoonjeong.github.io/Yonghoon_Jeong_CV_261002.pdf # Current CV.
+  pdf: https://yonghoonjeong.github.io/Yonghoon_Jeong_CV.pdf # Current CV.
 
   interests:
     title: Research Interests
@@ -68,13 +68,13 @@ career-profile:
 experiences:
     title: Professional Experience
     info:
-      - role: "<b>Republic of Korea Naval Academy</b>"
+      - role: "<b>Republic of Korea Naval Academy (ROKNA)</b>"
         time: "2026 - Present"
         company: Jinhae-gu, Changwon, Republic of Korea
         details: |
           Faculty Member, Department of Cyber Science <br>
           Researcher, Institute of Naval Research<br>
-          Commissioned as a Republic of Korea Navy officer.
+          Commissioned as a Republic of Korea Navy officer; mandatory military service ends in May 2029.
 
       - role: "<b>Seoul National University (SNU)</b>"
         time: 2024 - 2026
