@@ -361,8 +361,8 @@
 }
 
 /* Match all contact underlines to the Scholar and CV links. */
-.sidebar-wrapper .profile-info .contact-list a,
-.sidebar-wrapper .profile-info .contact-list .email-copy {
+.wrapper .sidebar-wrapper .profile-info .contact-list li a,
+.wrapper .sidebar-wrapper .profile-info .contact-list li .email-copy {
   text-decoration-line:underline;
   text-decoration-thickness:1px;
   text-underline-offset:5px;
