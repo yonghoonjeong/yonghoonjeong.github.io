@@ -1,20 +1,7 @@
 {% assign publications = site.data.data.publications %}
 {% if publications %}
 <style>
-/* Soft fills and outlines distinguish publication states. */
-.main-wrapper .publications-section .publication-status {
-  font-size: 13px;
-  font-weight: 600;
-  background: #eef0f2;
-  border: 1px solid currentColor;
-  padding: 2px 7px;
-}
-.main-wrapper .publications-section .publication-status--published { background: #e4eefb; color: #285b91; }
-.main-wrapper .publications-section .publication-status--review { background: #e2f1e8; color: #25613f; }
-.main-wrapper .publications-section .publication-status--preparation { background: #eceff3; color: #525b65; }
-
-.publications-section .publication-conference:has(.publication-status--published) em { color: #285b91; }
-.publications-section .publication-conference:has(.publication-status--review) em { color: #25613f; }
+/* Keep citation prose continuous; color only status and venue. */
 .publications-section .review-disclosure { margin: 18px 0 24px; border: 1px solid #cbded2; border-radius: 8px; }
 .publications-section .review-disclosure summary { cursor: pointer; padding: 12px 14px; color: #25613f; font-weight: 600; background: #f1f7f3; border-radius: 8px; }
 .publications-section .review-disclosure summary:focus-visible { outline: 2px solid #25613f; outline-offset: 3px; }
@@ -62,19 +49,10 @@
       {% for publication in publication_group.papers %}
         {% if publication.conference contains 'publication-status--review' or publication.conference contains 'publication-status--revision' %}
 
-    <div class="item">
-      <div style="font-size: 15px; font-style: normal;">
-        {{ publication.title }}{% if publication.link %} <a href="{{ publication.link }}" aria-label="Read paper: {{ publication.title | strip_html | escape }}" style="display: inline-block; font-size: 15px; font-weight: 700; margin-left: 0; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; color: {{ publication.link_color | default: "#285b91" }}; white-space: nowrap;">(Paper)</a>{% endif %}
-      </div>
-      {% if publication.authors %}
-      <div class="publication-authors" style="font-style: normal;">
-        {{ publication.authors }}
-      </div>
-      {% endif %}
-      <div class="publication-conference">
-        {{ publication.conference }}
-      </div>
-    </div><!--//item-->
+    <div class="item"><p class="publication-citation">
+      {% if publication.authors %}<span class="publication-authors">{{ publication.authors | remove: '<u>' | remove: '</u>' }}</span>, {% endif %}“{{ publication.title | strip_html }},”
+      <span class="publication-conference">{% if publication.conference contains 'publication-status--review' %}{{ publication.conference | replace: 'Under review</span>', 'under review</span> at' }}{% else %}{{ publication.conference | replace: 'Published</span>', 'published</span> in' }}{% endif %}</span>{% if publication.link %} <a class="paper-link" href="{{ publication.link }}" aria-label="Read paper: {{ publication.title | strip_html | escape }}">(Paper)</a>{% endif %}
+    </p></div><!--//item-->
             {% endif %}
       {% endfor %}
       </div>
@@ -82,19 +60,10 @@
     {% endif %}
     {% for publication in publication_group.papers %}
       {% unless publication.conference contains 'publication-status--review' or publication.conference contains 'publication-status--revision' %}
-    <div class="item">
-      <div style="font-size: 15px; font-style: normal;">
-        {{ publication.title }}{% if publication.link %} <a href="{{ publication.link }}" aria-label="Read paper: {{ publication.title | strip_html | escape }}" style="display: inline-block; font-size: 15px; font-weight: 700; margin-left: 0; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; color: {{ publication.link_color | default: "#285b91" }}; white-space: nowrap;">(Paper)</a>{% endif %}
-      </div>
-      {% if publication.authors %}
-      <div class="publication-authors" style="font-style: normal;">
-        {{ publication.authors }}
-      </div>
-      {% endif %}
-      <div class="publication-conference">
-        {{ publication.conference }}
-      </div>
-    </div><!--//item-->
+    <div class="item"><p class="publication-citation">
+      {% if publication.authors %}<span class="publication-authors">{{ publication.authors | remove: '<u>' | remove: '</u>' }}</span>, {% endif %}“{{ publication.title | strip_html }},”
+      <span class="publication-conference">{% if publication.conference contains 'publication-status--review' %}{{ publication.conference | replace: 'Under review</span>', 'under review</span> at' }}{% else %}{{ publication.conference | replace: 'Published</span>', 'published</span> in' }}{% endif %}</span>{% if publication.link %} <a class="paper-link" href="{{ publication.link }}" aria-label="Read paper: {{ publication.title | strip_html | escape }}">(Paper)</a>{% endif %}
+    </p></div><!--//item-->
       {% endunless %}
     {% endfor %}
 
