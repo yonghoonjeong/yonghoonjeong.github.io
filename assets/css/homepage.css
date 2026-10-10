@@ -365,9 +365,9 @@
 .wrapper .sidebar-wrapper .profile-info .contact-list li .email-copy { color:#b9ddff; text-decoration:none; }
 .wrapper .main-wrapper a:not(.activity-card) { color:#285b91; text-decoration:none!important; }
 .wrapper .main-wrapper .activity-link { text-decoration:none; }
-.main-wrapper .publications-section .publication-citation { color:#000; font-size:15px; line-height:1.6; margin:0; }
-.main-wrapper .publications-section .publication-authors { color:#000; font-style:normal; }
-.wrapper .main-wrapper .publications-section .publication-status { display:inline; font-size:inherit!important; font-weight:600; padding:0!important; border:0!important; background:none!important; }
+.main-wrapper .publications-section .publication-status { display:inline-block; font-size:13px; font-weight:600; line-height:1.4; border:1px solid currentColor; border-radius:4px; padding:2px 7px; margin-right:6px; }
+.main-wrapper .publications-section .publication-status--published { background:#e4eefb; color:#285b91; }
+.main-wrapper .publications-section .publication-status--review { background:#e2f1e8; color:#25613f; }
 .publications-section .publication-status--published,
 .publications-section .publication-conference:has(.publication-status--published) em { color:#285b91; }
 .publications-section .publication-status--review,
