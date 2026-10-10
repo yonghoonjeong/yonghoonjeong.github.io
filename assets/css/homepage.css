@@ -467,3 +467,30 @@
   .wrapper #activities .activity-date { font-size:15px; }
   .wrapper #activities .activity-link { font-size:15px; }
 }
+
+/* Mobile contact groups use the full header width for readable two-column lists. */
+@media screen and (max-width:767px) {
+  .wrapper .sidebar-wrapper .profile-info .contact-container,
+  .wrapper .sidebar-wrapper .profile-info .languages-container { display:block; }
+  .wrapper .sidebar-wrapper .profile-info .contact-container { margin-top:18px; }
+  .wrapper .sidebar-wrapper .profile-info .languages-container { margin-top:14px; }
+  .wrapper .sidebar-wrapper .profile-info .contact-container .container-block-title,
+  .wrapper .sidebar-wrapper .profile-info .languages-container .container-block-title { margin:0 0 7px; font-size:16px; line-height:1.4; text-align:left; }
+  .wrapper .sidebar-wrapper .profile-info .contact-list,
+  .wrapper .sidebar-wrapper .profile-info .languages-container .interests-list { display:grid; grid-template-columns:minmax(0,1.15fr) minmax(0,1fr); gap:8px 12px; }
+  .wrapper .sidebar-wrapper .profile-info .contact-list li,
+  .wrapper .sidebar-wrapper .profile-info .languages-container li { margin:0; font-size:15px; line-height:1.5; }
+  .wrapper .sidebar-wrapper .profile-info .contact-list li { gap:6px; }
+  .wrapper .sidebar-wrapper .profile-info .contact-list i,
+  .wrapper .sidebar-wrapper .profile-info .contact-list img { flex:0 0 16px; width:16px!important; height:16px!important; font-size:16px; }
+}
+@media screen and (max-width:359px) {
+  .wrapper .sidebar-wrapper .profile-info .contact-list,
+  .wrapper .sidebar-wrapper .profile-info .languages-container .interests-list { column-gap:8px; }
+  .wrapper .sidebar-wrapper .profile-info .contact-list li,
+  .wrapper .sidebar-wrapper .profile-info .languages-container li { font-size:14px; }
+  .wrapper .sidebar-wrapper .profile-info .contact-list li { gap:4px; }
+}@media screen and (max-width:339px) {
+  .wrapper .sidebar-wrapper .profile-info .contact-list li,
+  .wrapper .sidebar-wrapper .profile-info .languages-container li { font-size:13px; }
+}
