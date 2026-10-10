@@ -3,11 +3,9 @@
 
   <!-- Meta -->
   <meta charset="utf-8">
-  <meta name="color-scheme" content="only light">
-  <style>:root { color-scheme: only light; }</style>
-  {% if site.chrome_mobile_color %}
-  <meta name="theme-color" content="{{ site.chrome_mobile_color }}">
-  {% endif%}
+  <meta name="color-scheme" content="dark">
+  <style>@media screen { :root { color-scheme: dark; } } @media print { :root { color-scheme: light; } }</style>
+  <meta name="theme-color" content="#102b3a">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="{{ site.description |default: "Yonghoon Jeong — Faculty Member and Researcher at the Republic of Korea Naval Academy, working on wireless communication systems, wireless sensing, and low-power networks." }}">
@@ -26,7 +24,7 @@
 
 <!-- Theme CSS -->
   <link id="theme-style" rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css?v=publication-colors-swapped-20260907">
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/homepage.css?v=publication-cards-20261010">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/homepage.css?v=dark-20261011">
   <script defer src="{{ site.baseurl }}/assets/js/homepage.js?v=profile-header-20261010"></script>
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/print.css?v=compact-contact-20261010" media="print">
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
