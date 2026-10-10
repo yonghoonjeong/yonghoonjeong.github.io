@@ -306,17 +306,17 @@
   }
   .wrapper .sidebar-wrapper .profile-container .avatar { margin:0; }
   .profile-info { min-width:0; }
-  .sidebar-wrapper .profile-info .name { margin:0 0 8px; font-size:32px; line-height:1.15; }
-  .sidebar-wrapper .profile-info .tagline { margin:0 0 20px; font-size:calc(15px + 2pt); line-height:1.45; }
+  .sidebar-wrapper .profile-info .name { margin:0 0 8px; font-size:36px; line-height:1.15; }
+  .sidebar-wrapper .profile-info .tagline { margin:0 0 20px; font-size:20px; line-height:1.45; }
   .sidebar-wrapper .profile-info .container-block { padding:0; }
   .sidebar-wrapper .profile-info .contact-container { display:grid; grid-template-columns:90px minmax(0,1fr); align-items:baseline; gap:12px; }
-  .sidebar-wrapper .profile-info .contact-container .container-block-title { position:static; width:auto; height:auto; padding:0; margin:0; overflow:visible; clip-path:none; font-size:16px; line-height:1.5; }
+  .sidebar-wrapper .profile-info .contact-container .container-block-title { position:static; width:auto; height:auto; padding:0; margin:0; overflow:visible; clip-path:none; font-size:17px; line-height:1.5; }
   .sidebar-wrapper .profile-info .contact-list { display:flex; flex-wrap:wrap; gap:10px 14px; margin:0; }
-  .sidebar-wrapper .profile-info .contact-list li { margin:0; font-size:15px; line-height:1.5; white-space:nowrap; }
+  .sidebar-wrapper .profile-info .contact-list li { margin:0; font-size:16px; line-height:1.5; white-space:nowrap; }
   .sidebar-wrapper .profile-info .languages-container { display:grid; grid-template-columns:90px minmax(0,1fr); align-items:baseline; gap:12px; margin-top:16px; }
-  .sidebar-wrapper .profile-info .languages-container .container-block-title { font-size:16px; line-height:1.5; margin:0; }
+  .sidebar-wrapper .profile-info .languages-container .container-block-title { font-size:17px; line-height:1.5; margin:0; }
   .sidebar-wrapper .profile-info .languages-container .interests-list { display:flex; flex-wrap:wrap; gap:6px 14px; margin:0; }
-  .sidebar-wrapper .profile-info .languages-container li { margin:0; font-size:14px; line-height:1.5; }
+  .sidebar-wrapper .profile-info .languages-container li { margin:0; font-size:15px; line-height:1.5; }
   .sidebar-wrapper .profile-info .lang-desc { color:#d1dfe2; }
   .wrapper .main-wrapper { padding:44px 48px; width:auto; }
   .main-wrapper .upper-row { gap:16px; flex-wrap:nowrap; align-items:baseline; }
