@@ -347,8 +347,8 @@
   .sidebar-wrapper .profile-info .tagline { font-size:13px; }
 }
 
-/* Align reviewer details with other subordinate descriptions. */
-.academic-service-section .details { padding-left:16px; }
+/* Italicize the journal title under Journal Reviewer. */
+.academic-service-section .details { font-style:italic; }
 @media screen and (max-width:767px) {
   .sidebar-wrapper .profile-info .contact-list { display:grid; grid-template-columns:max-content max-content; gap:8px 12px; }
   .sidebar-wrapper .profile-info .contact-list li { display:flex; align-items:center; gap:5px; }
