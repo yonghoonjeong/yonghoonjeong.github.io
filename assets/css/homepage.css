@@ -447,7 +447,7 @@
   .wrapper .main-wrapper .publications-section .publication-status { font-size:14px; }
   .wrapper .main-wrapper .publications-section .item { margin-bottom:24px; }
   .wrapper .main-wrapper .job-title,
-  .wrapper .main-wrapper .degree { font-size:19px; line-height:1.4; }
+  .wrapper .main-wrapper .degree { font-size:19px !important; line-height:1.4; }
   .wrapper .main-wrapper .time,
   .wrapper .main-wrapper .company,
   .wrapper .main-wrapper .university { font-size:16px; }
