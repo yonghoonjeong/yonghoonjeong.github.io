@@ -460,9 +460,9 @@
   .wrapper .sidebar-wrapper .profile-info .languages-container { grid-template-columns:100px minmax(0,1fr); gap:14px; }
   .wrapper .sidebar-wrapper .profile-info .name { font-size:40px; }
   .wrapper .sidebar-wrapper .profile-info .tagline { font-size:22px; }
-  .wrapper .sidebar-wrapper .profile-info .container-block-title { font-size:18px; }
+  .wrapper .sidebar-wrapper .profile-info .container-block-title { font-size:19px; }
   .wrapper .sidebar-wrapper .profile-info .contact-list li,
-  .wrapper .sidebar-wrapper .profile-info .languages-container li { font-size:17px; }
+  .wrapper .sidebar-wrapper .profile-info .languages-container li { font-size:18px; }
   .wrapper #activities .activity-copy h3 { font-size:19px; }
   .wrapper #activities .activity-date { font-size:15px; }
   .wrapper #activities .activity-link { font-size:15px; }
