@@ -16,11 +16,12 @@
   .wrapper .sidebar-wrapper .profile-container .name { font-size:32px; line-height:1.15; margin:0 0 8px; }
   .wrapper .sidebar-wrapper .profile-container .tagline { font-size:17.667px; margin:0 0 20px; color:#d2dee1!important; }
   .wrapper .sidebar-wrapper .container-block { padding:0; }
-  .wrapper .contact-container .container-block-title { display:none; }
-  .wrapper .sidebar-wrapper .contact-list { display:flex; flex-wrap:wrap; gap:10px 22px; }
+  .wrapper .contact-container { display:grid; grid-template-columns:90px minmax(0,1fr); align-items:baseline; gap:12px; }
+  .wrapper .contact-container .container-block-title { display:block; font-size:16px; margin:0; }
+  .wrapper .sidebar-wrapper .contact-list { display:flex; flex-wrap:wrap; gap:10px 14px; }
   .wrapper .sidebar-wrapper .contact-list li { margin:0; font-size:15px; }
-  .wrapper .languages-container { display:flex; flex-wrap:wrap; align-items:baseline; gap:14px; margin-top:18px; }
-  .wrapper .languages-container .container-block-title { font-size:14px; margin:0; }
+  .wrapper .languages-container { display:grid; grid-template-columns:90px minmax(0,1fr); align-items:baseline; gap:12px; margin-top:16px; }
+  .wrapper .languages-container .container-block-title { font-size:16px; margin:0; }
   .wrapper .languages-container .interests-list { display:flex; gap:14px; margin:0; }
   .wrapper .languages-container li { font-size:14px; margin:0; }
   .wrapper .main-wrapper { width:auto!important; padding:40px 48px!important; background:#fff!important; }
