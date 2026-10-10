@@ -1,7 +1,7 @@
 {% assign publications = site.data.data.publications %}
 {% if publications %}
 <style>
-/* Keep citation prose continuous; color only status and venue. */
+/* Keep review papers collapsible in the scan-friendly publication list. */
 .publications-section .review-disclosure { margin: 18px 0 24px; border: 1px solid #cbded2; border-radius: 8px; }
 .publications-section .review-disclosure summary { cursor: pointer; padding: 12px 14px; color: #25613f; font-weight: 600; background: #f1f7f3; border-radius: 8px; }
 .publications-section .review-disclosure summary:focus-visible { outline: 2px solid #25613f; outline-offset: 3px; }
@@ -49,10 +49,15 @@
       {% for publication in publication_group.papers %}
         {% if publication.conference contains 'publication-status--review' or publication.conference contains 'publication-status--revision' %}
 
-    <div class="item"><p class="publication-citation">
-      {% if publication.authors %}<span class="publication-authors">{{ publication.authors | remove: '<u>' | remove: '</u>' }}</span>, {% endif %}“{{ publication.title | strip_html }},”
-      <span class="publication-conference">{% if publication.conference contains 'publication-status--review' %}{{ publication.conference | replace: 'Under review</span>', 'under review</span> at' }}{% else %}{{ publication.conference | replace: 'Published</span>', 'published</span> in' }}{% endif %}</span>{% if publication.link %} <a class="paper-link" href="{{ publication.link }}" aria-label="Read paper: {{ publication.title | strip_html | escape }}">(Paper)</a>{% endif %}
-    </p></div><!--//item-->
+    <div class="item">
+      <div class="publication-title" style="font-size: 15px; font-style: normal;">
+        {{ publication.title }}{% if publication.link %} <a class="paper-link" href="{{ publication.link }}" aria-label="Read paper: {{ publication.title | strip_html | escape }}">(Paper)</a>{% endif %}
+      </div>
+      {% if publication.authors %}
+      <div class="publication-authors" style="font-style: normal;">{{ publication.authors }}</div>
+      {% endif %}
+      <div class="publication-conference">{{ publication.conference }}</div>
+    </div><!--//item-->
             {% endif %}
       {% endfor %}
       </div>
@@ -60,10 +65,15 @@
     {% endif %}
     {% for publication in publication_group.papers %}
       {% unless publication.conference contains 'publication-status--review' or publication.conference contains 'publication-status--revision' %}
-    <div class="item"><p class="publication-citation">
-      {% if publication.authors %}<span class="publication-authors">{{ publication.authors | remove: '<u>' | remove: '</u>' }}</span>, {% endif %}“{{ publication.title | strip_html }},”
-      <span class="publication-conference">{% if publication.conference contains 'publication-status--review' %}{{ publication.conference | replace: 'Under review</span>', 'under review</span> at' }}{% else %}{{ publication.conference | replace: 'Published</span>', 'published</span> in' }}{% endif %}</span>{% if publication.link %} <a class="paper-link" href="{{ publication.link }}" aria-label="Read paper: {{ publication.title | strip_html | escape }}">(Paper)</a>{% endif %}
-    </p></div><!--//item-->
+    <div class="item">
+      <div class="publication-title" style="font-size: 15px; font-style: normal;">
+        {{ publication.title }}{% if publication.link %} <a class="paper-link" href="{{ publication.link }}" aria-label="Read paper: {{ publication.title | strip_html | escape }}">(Paper)</a>{% endif %}
+      </div>
+      {% if publication.authors %}
+      <div class="publication-authors" style="font-style: normal;">{{ publication.authors }}</div>
+      {% endif %}
+      <div class="publication-conference">{{ publication.conference }}</div>
+    </div><!--//item-->
       {% endunless %}
     {% endfor %}
 
