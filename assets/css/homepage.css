@@ -427,3 +427,43 @@
   .copy-feedback { background:#243746; color:#eef4f8; border-color:#506576; }
   ::selection { background:#365d7b; color:#fff; }
 }
+
+/* Override legacy inline subtitle colors on dark screens, including mobile. */
+@media screen {
+  .wrapper .main-wrapper .publication-subtitle { color:#fff !important; }
+}
+
+/* A readable desktop type scale; mobile and print retain their own sizing. */
+@media screen and (min-width:768px) {
+  .wrapper { max-width:1040px; }
+  .wrapper .main-wrapper { font-size:17px; line-height:1.65; }
+  .wrapper .main-wrapper .summary,
+  .wrapper .research-interests-section .research-interests-list { font-size:18px; line-height:1.65; }
+  .wrapper .main-wrapper .section-title { font-size:26px; line-height:1.35; margin-bottom:22px; }
+  .wrapper .main-wrapper .publication-subtitle { font-size:21px !important; line-height:1.4; }
+  .wrapper .main-wrapper .publication-title { font-size:18px !important; line-height:1.5; margin-bottom:5px; }
+  .wrapper .main-wrapper .publication-authors,
+  .wrapper .main-wrapper .publication-conference { font-size:16px; line-height:1.6; }
+  .wrapper .main-wrapper .publications-section .publication-status { font-size:14px; }
+  .wrapper .main-wrapper .publications-section .item { margin-bottom:24px; }
+  .wrapper .main-wrapper .job-title,
+  .wrapper .main-wrapper .degree { font-size:19px; line-height:1.4; }
+  .wrapper .main-wrapper .time,
+  .wrapper .main-wrapper .company,
+  .wrapper .main-wrapper .university { font-size:16px; }
+  .wrapper .main-wrapper .details { font-size:17px; line-height:1.65; }
+  .wrapper .academic-service-section h3 { font-size:19px !important; }
+  .wrapper .publications-section .review-disclosure summary { font-size:17px; }
+  .wrapper .publications-section .review-toggle,
+  .wrapper .activities-toggle { font-size:14px; }
+  .wrapper .sidebar-wrapper .profile-info .contact-container,
+  .wrapper .sidebar-wrapper .profile-info .languages-container { grid-template-columns:100px minmax(0,1fr); gap:14px; }
+  .wrapper .sidebar-wrapper .profile-info .name { font-size:40px; }
+  .wrapper .sidebar-wrapper .profile-info .tagline { font-size:22px; }
+  .wrapper .sidebar-wrapper .profile-info .container-block-title { font-size:18px; }
+  .wrapper .sidebar-wrapper .profile-info .contact-list li,
+  .wrapper .sidebar-wrapper .profile-info .languages-container li { font-size:17px; }
+  .wrapper #activities .activity-copy h3 { font-size:19px; }
+  .wrapper #activities .activity-date { font-size:15px; }
+  .wrapper #activities .activity-link { font-size:15px; }
+}
