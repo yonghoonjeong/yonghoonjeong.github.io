@@ -328,7 +328,7 @@
   .wrapper .sidebar-wrapper .profile-container .avatar { grid-column:1; grid-row:1 / 3; width:76px; height:76px; max-width:76px; margin:0; }
   .sidebar-wrapper .profile-info { display:contents; }
   .sidebar-wrapper .profile-info .name { grid-column:2; align-self:end; margin:0; font-size:22px; line-height:1.2; }
-  .sidebar-wrapper .profile-info .tagline { grid-column:2; align-self:start; margin:0; font-size:13px; line-height:1.4; }
+  .sidebar-wrapper .profile-info .tagline { grid-column:2; align-self:start; margin:0; font-size:13px; line-height:1.4; text-align:left; white-space:normal; }
   .sidebar-wrapper .profile-info .contact-container, .sidebar-wrapper .profile-info .languages-container { grid-column:1 / -1; display:grid; grid-template-columns:70px minmax(0,1fr); align-items:baseline; gap:10px; margin:0; }
   .sidebar-wrapper .profile-info .contact-container { margin-top:16px; }
   .sidebar-wrapper .profile-info .languages-container { margin-top:10px; }
@@ -345,4 +345,17 @@
   .wrapper .sidebar-wrapper .profile-container .avatar { width:64px; height:64px; max-width:64px; }
   .sidebar-wrapper .profile-info .name { font-size:20px; }
   .sidebar-wrapper .profile-info .tagline { font-size:12px; }
+}
+
+/* Align reviewer details with other subordinate descriptions. */
+.academic-service-section .details { padding-left:16px; }
+@media screen and (max-width:767px) {
+  .sidebar-wrapper .profile-info .contact-list { display:grid; grid-template-columns:max-content max-content; gap:8px 12px; }
+  .sidebar-wrapper .profile-info .contact-list li { display:flex; align-items:center; gap:5px; }
+  .sidebar-wrapper .profile-info .contact-list i, .sidebar-wrapper .profile-info .contact-list img { flex:0 0 14px; width:14px; margin-right:0!important; text-align:center; }
+}
+@media screen and (max-width:374px) {
+  .sidebar-wrapper .profile-info .contact-container { grid-template-columns:54px minmax(0,1fr); gap:8px; }
+  .sidebar-wrapper .profile-info .contact-list { column-gap:8px; }
+  .sidebar-wrapper .profile-info .contact-list li { font-size:11px; gap:4px; }
 }
