@@ -57,11 +57,11 @@ sidebar:
 
 
 career-profile:
-  title: About
+  title: About Me
   summary: |
-    Yonghoon Jeong is a faculty member and researcher at the Republic of Korea Naval Academy. His research focuses on performance analysis and waveform design for low-power communication systems. He studies how waveform design, interference, multipath, and Doppler affect communication reliability, with an emphasis on chirp modulation and LoRa.
+    I am a faculty member in the Department of Cyber Science at the [Republic of Korea Naval Academy (ROKNA)](https://www.navy.ac.kr:4443/sites/english/index..do), serving as a naval officer during my mandatory military service. Before joining ROKNA as faculty, I helped prepare for the [Indy Autonomous Challenge (IAC)](https://www.indyautonomouschallenge.com/) with [USRG](https://unmanned.kaist.ac.kr/) at [KAIST EE](https://ee.kaist.ac.kr/en/), then worked on AI hardware research at [ETRI](https://www.etri.re.kr/eng/main/main.etri). I subsequently focused on wireless communications and networking in [NETLAB](https://sites.google.com/netlab.snu.ac.kr/netlabhome) at [SNU ECE](https://ece.snu.ac.kr/en), studying waveform design and performance analysis for LoRa.
 
-    Building on this work, he is investigating underwater acoustic communications and backscatter for low-power sensing and data collection in Ocean IoT. He plans to pursue a Ph.D. abroad after completing military service in May 2029.
+    My research now centers on reliable, low-power wireless communications and networking. Building on my work in waveform design and performance analysis for chirp-based communications, particularly interference resilience in LoRa, I am extending my research to underwater acoustic communications and backscatter for Ocean IoT, exploring how different channel conditions affect communication reliability. I plan to pursue a Ph.D. abroad after completing my military service in May 2029.
 
 experiences:
     title: Professional Experience
