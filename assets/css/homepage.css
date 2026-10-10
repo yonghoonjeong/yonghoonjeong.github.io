@@ -494,3 +494,21 @@
   .wrapper .sidebar-wrapper .profile-info .contact-list li,
   .wrapper .sidebar-wrapper .profile-info .languages-container li { font-size:13px; }
 }
+
+/* Give the mobile portrait and identity a stronger visual hierarchy. */
+@media screen and (max-width:767px) {
+  .wrapper .sidebar-wrapper .profile-container { grid-template-columns:100px minmax(0,1fr); column-gap:12px; }
+  .wrapper .sidebar-wrapper .profile-container .avatar { width:100px; height:100px; max-width:100px; }
+  .wrapper .sidebar-wrapper .profile-info .name { font-size:26px; line-height:1.15; letter-spacing:-.2px; }
+  .wrapper .sidebar-wrapper .profile-info .tagline { font-size:16px; line-height:1.4; }
+}
+@media screen and (max-width:359px) {
+  .wrapper .sidebar-wrapper .profile-container { grid-template-columns:84px minmax(0,1fr); column-gap:10px; padding-left:14px; padding-right:14px; }
+  .wrapper .sidebar-wrapper .profile-container .avatar { width:84px; height:84px; max-width:84px; }
+  .wrapper .sidebar-wrapper .profile-info .name { font-size:22px; }
+  .wrapper .sidebar-wrapper .profile-info .tagline { font-size:14px; }
+}@media screen and (min-width:360px) and (max-width:389px) {
+  .wrapper .sidebar-wrapper .profile-container { grid-template-columns:96px minmax(0,1fr); column-gap:10px; padding-left:14px; padding-right:14px; }
+  .wrapper .sidebar-wrapper .profile-container .avatar { width:96px; height:96px; max-width:96px; }
+  .wrapper .sidebar-wrapper .profile-info .name { font-size:25px; }
+}
