@@ -42,3 +42,18 @@ a.activity-card, a.activity-card:hover, a.activity-card:focus, a.activity-card:a
 #activities .activity-card:hover{box-shadow:none;outline:none}#activities .activity-card:hover h3{color:#24758a}
 #activities .activity-card:focus-visible{outline:2px solid #397b91;outline-offset:5px;box-shadow:none;border-radius:4px}
 @media(max-width:600px){#activities .activity-card{grid-template-columns:100px minmax(0,1fr);gap:14px;align-items:start}#activities .activity-card > img{width:100px;height:80px}#activities .activity-copy h3{font-size:15px}#activities .activity-date{font-size:11px}}
+
+/* Standalone photo pages share the site's dark screen theme. */
+@media screen {
+  html:has(.photo-page) { color-scheme:dark; background:#101820; }
+  .photo-page { background:#101820; color:#d5dfe7; }
+  .photo-page .photo-header h1 { color:#eef4f8; }
+  .photo-page .back-link, .photo-page .photo-header .eyebrow,
+  .photo-page a { color:#99ceff; }
+  .photo-page .photo-figure figcaption { color:#bac9d5; }
+  .photo-page .graduation-photo img { background:#1b252f; }
+  .photo-page a:focus-visible { outline:2px solid #99ceff; outline-offset:4px; }
+}
+@media print {
+  html:has(.photo-page), .photo-page { color-scheme:light; background:#fff; color:#30424e; }
+}
