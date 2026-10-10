@@ -127,34 +127,34 @@ publications:
       - title: "<b>On the Interference Resilience of Non-Linear Chirp Modulation for LoRa: An Analytical Insight into Energy Scattering Effect</b>"
         link: "https://ieeexplore.ieee.org/document/11550153"
         contribution: "Introduces an energy-scattering metric and analytical interference model to explain the interference resilience of non-linear chirp modulation in LoRa."
-        authors: "<strong><u>Yonghoon Jeong</u></strong>, Youngwook Son, and Saewoong Bahk"
+        authors: "<strong>Yonghoon Jeong</strong>, Youngwook Son, and Saewoong Bahk"
         conference: "<span class='publication-status publication-status--published'>Published</span> <em><b>IEEE Communications Letters</b></em>, vol. 30, pp. 2238-2242, Jun. 2026."
 
       - title: "<b>D²-PLC: Holistic Design and Implementation of High-Data-Rate Duplex DC Power Line Communication Network</b>"
         link: "https://ieeexplore.ieee.org/document/11127183"
         contribution: "Develops and validates a duplex DC power-line communication system with custom physical-layer modulation and MAC protocols for simultaneous power and data transfer."
-        authors: "Dongrack Choi, Yubin Choi, <strong><u>Yonghoon Jeong</u></strong>, Jeongyeup Paek, and Saewoong Bahk"
+        authors: "Dongrack Choi, Yubin Choi, <strong>Yonghoon Jeong</strong>, Jeongyeup Paek, and Saewoong Bahk"
         conference: "<span class='publication-status publication-status--published'>Published</span> <em><b>IEEE Internet of Things Journal</b></em>, vol. 12, pp. 45325-45340, Nov. 2025."
 
       - title: "<b>Demo: A Programmable High-Throughput Duplex DC-PLC Testbed for Power and Data Integration</b>"
         link: "https://ieeexplore.ieee.org/document/11192329"
-        authors: "Dongrak Choi, <strong><u>Yonghoon Jeong</u></strong>, Yubin Choi, and Saewoong Bahk"
+        authors: "Dongrak Choi, <strong>Yonghoon Jeong</strong>, Yubin Choi, and Saewoong Bahk"
         conference: "<span class='publication-status publication-status--published'>Published</span> <em><b>IEEE ICNP 2025</b></em>, Seoul, Republic of Korea, Sep. 22-25, 2025."
 
       - title: "<b>Diffusion-Phys: Noise-Robust Heart Rate Estimation from Facial Videos via Diffusion Models</b>"
         link: "https://link.springer.com/article/10.1007/s13534-025-00472-w"
-        authors: "<strong><u>Yonghoon Jeong</u></strong> and Youngseok Choi"
+        authors: "<strong>Yonghoon Jeong</strong> and Youngseok Choi"
         conference: "<span class='publication-status publication-status--published'>Published</span> <em><b>Biomedical Engineering Letters</b></em>, vol. 15, pp. 575-585, Apr. 2025."
 
   domestic:
     title: Domestic Papers
     papers:
       - title: "<b>A Study on Direct Current Power Line Communication (DC-PLC) with Applications in Automotive, Maritime, and Aviation</b>"
-        authors: "<strong><u>Yonghoon Jeong</u></strong> and Saewoong Bahk"
+        authors: "<strong>Yonghoon Jeong</strong> and Saewoong Bahk"
         conference: "<span class='publication-status publication-status--published'>Published</span> <em><b>The Conference of the Korea Institute of Communications and Information Sciences (KICS)</b></em>, Gyeongju, Republic of Korea, Nov. 20-22, 2024."
 
       - title: "<b>Development of Non-contact Heart Rate Measurement Technology Based on Facial Video</b>"
-        authors: "<strong><u>Yonghoon Jeong</u></strong>"
+        authors: "<strong>Yonghoon Jeong</strong>"
         conference: "<span class='publication-status publication-status--published'>Published</span> <em><b>The Conference of the Korean Institute of Information Scientists and Engineers (KIISE)</b></em>, Jeju, Republic of Korea, Jun. 23-25, 2021."
 recommendations:
   title: Recommendations
