@@ -1,0 +1,49 @@
+name: Apply reviewed homepage cleanup
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: master
+          fetch-depth: 0
+      - name: Verify and apply the reviewed file manifest
+        shell: python
+        run: |
+          import base64, hashlib, json, os, pathlib, subprocess
+          root = pathlib.Path.cwd().resolve()
+          manifest = json.loads((root / '.repository-cleanup.json').read_text())
+          assert os.environ['GITHUB_REPOSITORY'] == manifest['repository']
+          subprocess.run(['git', 'merge-base', '--is-ancestor', manifest['base'], 'HEAD'], check=True)
+          def checked_path(name):
+              p = root / name
+              assert not p.is_symlink() and p.resolve().is_relative_to(root)
+              assert '.git' not in p.relative_to(root).parts
+              return p
+          entries = manifest['delete'] + manifest['write']
+          assert len({e['path'] for e in entries}) == len(entries)
+          for e in entries:
+              p = checked_path(e['path'])
+              actual = subprocess.check_output(['git', 'hash-object', str(p)], text=True).strip()
+              assert actual == e['blob'], 'File changed since review: ' + e['path']
+          cv = root / 'Yonghoon_Jeong_CV.pdf'
+          assert hashlib.sha256(cv.read_bytes()).hexdigest() == manifest['cvSha256']
+          for e in manifest['delete']:
+              checked_path(e['path']).unlink()
+          for e in manifest['write']:
+              checked_path(e['path']).write_bytes(base64.b64decode(e['base64'], validate=True))
+          assert hashlib.sha256(cv.read_bytes()).hexdigest() == manifest['cvSha256']
+          for name in ['.repository-cleanup.json', '.github/workflows/repository-cleanup.yml']:
+              checked_path(name).unlink()
+          print('Applied', len(manifest['delete']), 'reviewed deletions and', len(manifest['write']), 'updates; current CV preserved.')
+      - name: Commit the cleaned site and remove this one-time workflow
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          git commit -m 'Apply blue anchor-wave favicon and remove unused site files'
+          git push origin HEAD:master
