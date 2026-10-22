@@ -2,13 +2,19 @@
 layout: default
 ---
 
-<nav class="section-nav" aria-label="Page sections">
-  <a href="#about">About</a>
-  <a href="#research">Research</a>
-  <a href="#publications">Publications</a>
-  <a href="#experience">Experience</a>
-  <a href="#activities">Activities</a>
-</nav>
+<details class="page-navigation" open>
+  <summary>On this page<svg class="navigation-chevron" width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="m4 6 4 4 4-4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <nav class="section-nav" aria-label="Page sections">
+    <a href="#about">About Me</a>
+    <a href="#research">Research Interests</a>
+    <a href="#publications">Publications</a>
+    <a href="#experience">Professional Experience</a>
+    <a href="#education">Education</a>
+    <a href="#academic-service">Academic Service</a>
+    <a href="#awards">Awards &amp; Scholarships</a>
+    <a href="#activities">Activities &amp; Photos</a>
+  </nav>
+</details>
 
 <div id="about" class="section-anchor" tabindex="-1">
 {% include career-profile.html %}
@@ -26,9 +32,11 @@ layout: default
 {% include experiences.html %}
 </div>
 
+<div id="education" class="section-anchor" tabindex="-1">
 {% include education.html %}
+</div>
 
-<section class="section academic-service-section">
+<section class="section academic-service-section section-anchor" id="academic-service" tabindex="-1">
   <h2 class="section-title">
     <span class="fa-stack fa-xs" aria-hidden="true">
       <i class="fas fa-circle fa-stack-2x"></i>
@@ -44,12 +52,14 @@ layout: default
   </div>
 </section>
 
+<div id="awards" class="section-anchor" tabindex="-1">
 {% include awards.html %}
+</div>
 
 <aside class="mobile-supporting-info" aria-label="Research interests and skills" hidden></aside>
 
 <link rel="stylesheet" href="assets/css/activities.css?v=compact-20260908">
-<section class="section" id="activities" aria-labelledby="activities-title">
+<section class="section" id="activities" tabindex="-1" aria-labelledby="activities-title">
 <h2 class="section-title" id="activities-title"><span class="fa-stack fa-xs" aria-hidden="true"><i class="fas fa-circle fa-stack-2x"></i><i class="fas fa-camera fa-stack-1x fa-inverse"></i></span> Activities &amp; Photos</h2>
 <div class="activities-content activities-recent">
 <a class="activity-card" href="activities/meals-with-colleagues-2026.html"><img src="assets/images/colleagues-dinner-2026-08-28-thumb.webp" width="2048" height="1536" alt="Dinner with Jisu Hong, a fellow naval officer and faculty member" loading="lazy"><div class="activity-copy"><p class="activity-date">August 2026</p><h3>Meals with Fellow Naval Faculty</h3><p class="activity-date">Meals with fellow junior naval officers serving on the Academy faculty.</p><span class="activity-link">View photos →</span></div></a>
