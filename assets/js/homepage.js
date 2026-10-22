@@ -57,6 +57,20 @@
   if (!sidebar || !main) return;
 
   main.querySelector('.mobile-supporting-info')?.remove();
+  // Keep all sections available without crowding the mobile profile header.
+  const navigation = document.querySelector('.page-navigation');
+  if (navigation) {
+    const desktopNavigation = window.matchMedia('(min-width:768px)');
+    const syncNavigation = () => { navigation.open = desktopNavigation.matches; };
+    syncNavigation();
+    if (desktopNavigation.addEventListener) desktopNavigation.addEventListener('change', syncNavigation);
+    else desktopNavigation.addListener(syncNavigation);
+    navigation.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener('click', () => {
+        if (!desktopNavigation.matches) navigation.open = false;
+      });
+    });
+  }
   const printMedia = window.matchMedia('print');
   let printState = null;
 
