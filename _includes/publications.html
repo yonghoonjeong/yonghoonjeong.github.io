@@ -27,7 +27,7 @@
   </div><!--//intro-->
   {% endif %}
 
-  {% assign publication_groups = "international,domestic,technical,work_in_progress" | split: "," %}
+  {% assign publication_groups = "technical,international,domestic,work_in_progress" | split: "," %}
   {% for group_name in publication_groups %}
     {% assign publication_group = publications[group_name] %}
     {% if publication_group %}
