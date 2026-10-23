@@ -11,7 +11,7 @@
   </h2>
 
   {% for award in awards.info %}
-  <div class="item">
+  <div class="item{% if award.id %} section-anchor{% endif %}"{% if award.id %} id="{{ award.id }}" tabindex="-1"{% endif %}>
 
     <div class="meta">
 
