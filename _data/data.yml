@@ -161,7 +161,7 @@ publications:
   technical:
     title: Technical Articles
     papers:
-      - title: "<b>Underwater Backscatter Networks: Technology Trends and Naval Applications</b>"
+      - title: "<b>Underwater Backscatter Networks: A Survey of Technologies and Naval Applications</b>"
         authors: "<strong>Yonghoon Jeong</strong>"
         award: "<a class='publication-award' href='#awards'>Best&nbsp;Paper&nbsp;Award</a>"
         conference: "<span class='publication-status publication-status--to-appear'>To appear</span> <em><b>Naval Ship Technology Journal</b></em>, vol. 95, Dec. 2026."
