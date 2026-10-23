@@ -448,7 +448,7 @@
   .wrapper .main-wrapper .publication-subtitle { color:#8fd3e0; }
   .wrapper .publications-section .publication-status--to-appear { background:#382c2c; color:#c7a5a5; }
   .wrapper .publications-section .publication-conference:has(.publication-status--to-appear) em { color:#c7a5a5; }
-  .wrapper .publications-section .publication-award { color:#f0d18a; font-weight:600; }
+  .wrapper .publications-section a.publication-award { color:#f0d18a; font-weight:600; }
 }
 
 /* A readable desktop type scale; mobile and print retain their own sizing. */
