@@ -179,11 +179,10 @@ recommendations:
 awards:
   title: Awards & Scholarships
   info:
-    - title: Commander’s Commendation, ROK Navy Logistics Command (Selected)
+    - title: Rear Admiral’s Commendation, ROK Navy Logistics Command (Selected)
       time: 2026
       organization: 1st place, Naval Technology Research Institute technical journal.
-      details: |
-        “Underwater Backscatter Networks: Technology Trends and Naval Applications.”
+      paper_title: "Underwater Backscatter Networks: Technology Trends and Naval Applications"
 
     - title: BK21 Scholarship
       time: 2024–2025
