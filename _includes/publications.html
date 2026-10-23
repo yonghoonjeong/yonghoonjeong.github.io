@@ -49,18 +49,13 @@
         {% if publication.conference contains 'publication-status--review' or publication.conference contains 'publication-status--revision' %}
 
     <div class="item">
-      <div class="publication-title{% if publication.award %} publication-title--awarded{% endif %}" style="font-size: 15px; font-style: normal;">
-        {% if publication.award and publication.link == nil %}
-          {% assign title_words = publication.title | strip_html | split: " " %}{% assign title_lead_count = title_words.size | minus: 2 %}
-          <b>{{ title_words | slice: 0, title_lead_count | join: " " | escape }}</b> <span class="publication-title-ending"><b>{{ title_words | slice: -2, 2 | join: " " | escape }}</b> {{ publication.award }}</span>
-        {% else %}
-          {% if publication.link %}<a class="publication-title-link" href="{{ publication.link }}" aria-label="Read paper: {{ publication.title | strip_html | escape }}">{{ publication.title }} <span class="paper-link">(Paper)</span></a>{% else %}{{ publication.title }}{% endif %}{% if publication.award %} {{ publication.award }}{% endif %}
-        {% endif %}
+      <div class="publication-title" style="font-size: 15px; font-style: normal;">
+        {% if publication.link %}<a class="publication-title-link" href="{{ publication.link }}" aria-label="Read paper: {{ publication.title | strip_html | escape }}">{{ publication.title }} <span class="paper-link">(Paper)</span></a>{% else %}{{ publication.title }}{% endif %}
       </div>
       {% if publication.authors %}
       <div class="publication-authors" style="font-style: normal;">{{ publication.authors }}</div>
       {% endif %}
-      <div class="publication-conference">{{ publication.conference }}</div>
+      <div class="publication-conference">{{ publication.conference }}{% if publication.award %} {{ publication.award }}{% endif %}</div>
       {% if publication.publisher %}<div class="publication-publisher">Published by {{ publication.publisher }}.</div>{% endif %}
     </div><!--//item-->
             {% endif %}
@@ -71,18 +66,13 @@
     {% for publication in publication_group.papers %}
       {% unless publication.conference contains 'publication-status--review' or publication.conference contains 'publication-status--revision' %}
     <div class="item">
-      <div class="publication-title{% if publication.award %} publication-title--awarded{% endif %}" style="font-size: 15px; font-style: normal;">
-        {% if publication.award and publication.link == nil %}
-          {% assign title_words = publication.title | strip_html | split: " " %}{% assign title_lead_count = title_words.size | minus: 2 %}
-          <b>{{ title_words | slice: 0, title_lead_count | join: " " | escape }}</b> <span class="publication-title-ending"><b>{{ title_words | slice: -2, 2 | join: " " | escape }}</b> {{ publication.award }}</span>
-        {% else %}
-          {% if publication.link %}<a class="publication-title-link" href="{{ publication.link }}" aria-label="Read paper: {{ publication.title | strip_html | escape }}">{{ publication.title }} <span class="paper-link">(Paper)</span></a>{% else %}{{ publication.title }}{% endif %}{% if publication.award %} {{ publication.award }}{% endif %}
-        {% endif %}
+      <div class="publication-title" style="font-size: 15px; font-style: normal;">
+        {% if publication.link %}<a class="publication-title-link" href="{{ publication.link }}" aria-label="Read paper: {{ publication.title | strip_html | escape }}">{{ publication.title }} <span class="paper-link">(Paper)</span></a>{% else %}{{ publication.title }}{% endif %}
       </div>
       {% if publication.authors %}
       <div class="publication-authors" style="font-style: normal;">{{ publication.authors }}</div>
       {% endif %}
-      <div class="publication-conference">{{ publication.conference }}</div>
+      <div class="publication-conference">{{ publication.conference }}{% if publication.award %} {{ publication.award }}{% endif %}</div>
       {% if publication.publisher %}<div class="publication-publisher">Published by {{ publication.publisher }}.</div>{% endif %}
     </div><!--//item-->
       {% endunless %}
