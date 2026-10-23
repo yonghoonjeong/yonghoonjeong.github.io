@@ -55,7 +55,7 @@
       {% if publication.authors %}
       <div class="publication-authors" style="font-style: normal;">{{ publication.authors }}</div>
       {% endif %}
-      <div class="publication-conference">{{ publication.conference }}{% if publication.award %} {{ publication.award }}{% endif %}</div>
+      <div class="publication-conference">{{ publication.conference }}{% if publication.award %} <span class="publication-award-note">({{ publication.award }})</span>{% endif %}</div>
       {% if publication.publisher %}<div class="publication-publisher">Published by {{ publication.publisher }}.</div>{% endif %}
     </div><!--//item-->
             {% endif %}
@@ -72,7 +72,7 @@
       {% if publication.authors %}
       <div class="publication-authors" style="font-style: normal;">{{ publication.authors }}</div>
       {% endif %}
-      <div class="publication-conference">{{ publication.conference }}{% if publication.award %} {{ publication.award }}{% endif %}</div>
+      <div class="publication-conference">{{ publication.conference }}{% if publication.award %} <span class="publication-award-note">({{ publication.award }})</span>{% endif %}</div>
       {% if publication.publisher %}<div class="publication-publisher">Published by {{ publication.publisher }}.</div>{% endif %}
     </div><!--//item-->
       {% endunless %}
