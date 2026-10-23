@@ -446,8 +446,8 @@
 }
 @media screen {
   .wrapper .main-wrapper .publication-subtitle { color:#8fd3e0; }
-  .wrapper .publications-section .publication-status--to-appear { background:#352746; color:#d5b7ff; }
-  .wrapper .publications-section .publication-conference:has(.publication-status--to-appear) em { color:#d5b7ff; }
+  .wrapper .publications-section .publication-status--to-appear { background:#382c2c; color:#c7a5a5; }
+  .wrapper .publications-section .publication-conference:has(.publication-status--to-appear) em { color:#c7a5a5; }
   .wrapper .publications-section .publication-award { color:#f0d18a; font-weight:600; }
 }
 
