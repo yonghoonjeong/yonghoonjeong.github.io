@@ -410,9 +410,9 @@
   .wrapper .publications-section .review-disclosure { border-color:#3c6456; }
   .wrapper .publications-section .review-disclosure summary { background:#203b34; color:#a1e3bb; }
   .wrapper .publications-section .review-disclosure summary:focus-visible { outline-color:#a1e3bb; }
-  .wrapper .publications-section .publication-status--published { background:#203950; color:#99ceff; }
+  .wrapper .publications-section .publication-status--published { background:#30373e; color:#c5cbd3; }
   .wrapper .publications-section .publication-status--review { background:#203b34; color:#a1e3bb; }
-  .wrapper .publications-section .publication-conference:has(.publication-status--published) em { color:#99ceff; }
+  .wrapper .publications-section .publication-conference:has(.publication-status--published) em { color:#c5cbd3; }
   .wrapper .publications-section .publication-conference:has(.publication-status--review) em { color:#a1e3bb; }
   .wrapper .activities-summary,
   .wrapper #activities .activity-card { border-color:#3a4856; }
