@@ -159,11 +159,11 @@ publications:
         authors: "<strong>Yonghoon Jeong</strong>"
         conference: "<span class='publication-status publication-status--published'>Published</span> <em><b>The Conference of the Korean Institute of Information Scientists and Engineers (KIISE)</b></em>, Jeju, Republic of Korea, Jun. 23-25, 2021."
   technical:
-    title: Military Papers
+    title: Technical Articles
     papers:
       - title: "<b>Underwater Backscatter Networks: Technology Trends and Naval Applications</b>"
         authors: "<strong>Yonghoon Jeong</strong>"
-        conference: "<span class='publication-status publication-status--to-appear'>To appear</span> <em><b>Naval Ship Technology Journal</b></em>, vol. 95, 2026. <a class='publication-award' href='#award-best-paper-2026'>(Best Paper Award)</a><br>Naval Technology Research Institute, Republic of Korea Navy."
+        conference: "<span class='publication-status publication-status--to-appear'>To appear</span> <em><b>Naval Ship Technology Journal</b></em>, vol. 95, 2026. <a class='publication-award' href='#awards'>(Best Paper Award)</a><br>Naval Technology Research Institute, Republic of Korea Navy."
 
 recommendations:
   title: Recommendations
