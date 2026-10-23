@@ -378,7 +378,13 @@
 @media screen {
   :root { color-scheme: dark !important; }
   html, body { background:#101820; color:#d5dfe7; }
-  .wrapper { background:#1b252f; box-shadow:0 12px 40px #0003; }
+  .wrapper {
+    --publication-published:#f4c76b;
+    --publication-to-appear:#e4a7ba;
+    --publication-review:#93b49e;
+    background:#1b252f;
+    box-shadow:0 12px 40px #0003;
+  }
   .wrapper .main-wrapper { background:#1b252f; color:#d5dfe7; }
   .wrapper .sidebar-wrapper,
   .wrapper .sidebar-wrapper .profile-container { background:#102b3a; }
@@ -407,13 +413,13 @@
   .wrapper .main-wrapper .company,
   .wrapper .main-wrapper .university,
   .wrapper .main-wrapper .publication-authors { color:#bac9d5; }
-  .wrapper .publications-section .review-disclosure { border-color:#3c6456; }
-  .wrapper .publications-section .review-disclosure summary { background:#203b34; color:#a1e3bb; }
-  .wrapper .publications-section .review-disclosure summary:focus-visible { outline-color:#a1e3bb; }
-  .wrapper .publications-section .publication-status--published { background:#3e3026; color:#efb077; }
-  .wrapper .publications-section .publication-status--review { background:#203b34; color:#a1e3bb; }
-  .wrapper .publications-section .publication-conference:has(.publication-status--published) em { color:#efb077; }
-  .wrapper .publications-section .publication-conference:has(.publication-status--review) em { color:#a1e3bb; }
+  .wrapper .publications-section .review-disclosure { border-color:#3d5849; }
+  .wrapper .publications-section .review-disclosure summary { background:#23332c; color:var(--publication-review); }
+  .wrapper .publications-section .review-disclosure summary:focus-visible { outline-color:var(--publication-review); }
+  .wrapper .publications-section .publication-status--published { background:#43351f; color:var(--publication-published); }
+  .wrapper .publications-section .publication-status--review { background:#23332c; color:var(--publication-review); }
+  .wrapper .publications-section .publication-conference:has(.publication-status--published) em { color:var(--publication-published); }
+  .wrapper .publications-section .publication-conference:has(.publication-status--review) em { color:var(--publication-review); }
   .wrapper .activities-summary,
   .wrapper #activities .activity-card { border-color:#3a4856; }
   .wrapper #activities .activity-copy h3 { color:#eef4f8; }
@@ -446,9 +452,11 @@
 }
 @media screen {
   .wrapper .main-wrapper .publication-subtitle { color:#8fd3e0; }
-  .wrapper .publications-section .publication-status--to-appear { background:#382c2c; color:#c7a5a5; }
-  .wrapper .publications-section .publication-conference:has(.publication-status--to-appear) em { color:#c7a5a5; }
-  .wrapper .publications-section a.publication-award { color:#f0d18a; font-weight:600; }
+  .wrapper .publications-section .publication-status--to-appear { background:#3d2c35; color:var(--publication-to-appear); }
+  .wrapper .publications-section .publication-conference:has(.publication-status--to-appear) em { color:var(--publication-to-appear); }
+  .wrapper .publications-section a.publication-award,
+  .wrapper .publications-section a.publication-award:hover,
+  .wrapper .publications-section a.publication-award:focus-visible { color:var(--publication-to-appear); font-weight:600; outline-color:var(--publication-to-appear); }
 }
 
 /* A readable desktop type scale; mobile and print retain their own sizing. */
@@ -535,8 +543,9 @@
 .wrapper .publication-title-link:focus-visible,
 .wrapper .activities-more > summary:focus-visible { outline:2px solid #99ceff; outline-offset:4px; border-radius:3px; }
 .wrapper .main-wrapper a.publication-title-link { color:inherit; text-decoration:none; }
-.wrapper .main-wrapper a.publication-title-link:hover { color:#b9ddff; }
-.wrapper .publication-title-link .paper-link { color:#efb077; white-space:nowrap; }
+.wrapper .main-wrapper a.publication-title-link:hover,
+.wrapper .main-wrapper a.publication-title-link:focus-visible { color:var(--publication-published, #99ceff); outline-color:var(--publication-published, #99ceff); }
+.wrapper .publication-title-link .paper-link { color:var(--publication-published, #99ceff); white-space:nowrap; }
 .wrapper #activities .activities-recent { padding-top:0; }
 .wrapper .activities-more { margin-top:22px; }
 .wrapper .activities-more > summary {
