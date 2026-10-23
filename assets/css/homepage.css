@@ -565,10 +565,16 @@
   text-decoration-skip-ink:auto;
 }
 
-/* Give the title, author line, and publication details equal breathing room. */
+/* Balance the visible title-to-author and underline-to-status-border gaps. */
 @media screen {
-  .wrapper .main-wrapper .publications-section { --publication-line-gap:5px; }
-  .wrapper .main-wrapper .publication-title,
-  .wrapper .main-wrapper .publication-authors { margin:0 0 var(--publication-line-gap); }
+  .wrapper .main-wrapper .publications-section {
+    --publication-title-gap:5px;
+    --publication-details-gap:9px;
+  }
+  .wrapper .main-wrapper .publication-title { margin:0 0 var(--publication-title-gap); }
+  .wrapper .main-wrapper .publication-authors { margin:0 0 var(--publication-details-gap); }
   .wrapper .main-wrapper .publication-conference { margin:0; }
+}
+@media screen and (max-width:767px) {
+  .wrapper .main-wrapper .publications-section { --publication-details-gap:7px; }
 }
