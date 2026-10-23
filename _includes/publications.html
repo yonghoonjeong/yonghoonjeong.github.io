@@ -27,12 +27,11 @@
   </div><!--//intro-->
   {% endif %}
 
-  {% assign publication_groups = "international,domestic,work_in_progress" | split: "," %}
+  {% assign publication_groups = "international,domestic,technical,work_in_progress" | split: "," %}
   {% for group_name in publication_groups %}
     {% assign publication_group = publications[group_name] %}
     {% if publication_group %}
-    <h3 class="publication-subtitle"
-        style="color: #3E464A; font-size: 17px; margin-top: 18px; margin-bottom: 10px; font-weight: 700;">
+    <h3 class="publication-subtitle">
       {{ publication_group.title }}
     </h3>
 
