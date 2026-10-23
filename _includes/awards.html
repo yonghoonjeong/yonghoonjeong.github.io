@@ -22,7 +22,7 @@
         <div class="time">{{ award.time }}</div>
       </div>
 
-      <div class="company">{{ award.organization }}{% if award.paper_title %}<br>Title: {{ award.paper_title }}{% endif %}</div>
+      <div class="company">{{ award.organization }}{% if award.commendation %}<br>{{ award.commendation }}{% endif %}{% if award.paper_title %}<br>Title: {{ award.paper_title }}{% endif %}</div>
 
     </div>
 
