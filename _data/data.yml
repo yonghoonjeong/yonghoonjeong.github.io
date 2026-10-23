@@ -186,10 +186,9 @@ recommendations:
 awards:
   title: Awards & Scholarships
   info:
-    - title: Best Paper Award
+    - title: Best Paper Award (Rear Admiral’s Commendation)
       time: 2026
-      organization: Naval Technology Research Institute
-      commendation: Rear Admiral’s Commendation, ROK Navy Logistics Command (Selected)
+      organization: "<em>Naval Ship Technology Journal</em>, Naval Technology Research Institute"
 
     - title: BK21 Scholarship
       time: 2024–2025
