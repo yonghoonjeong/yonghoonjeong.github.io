@@ -50,7 +50,7 @@
 
     <div class="item">
       <div class="publication-title" style="font-size: 15px; font-style: normal;">
-        {% if publication.link %}<a class="publication-title-link" href="{{ publication.link }}" aria-label="Read article: {{ publication.title | strip_html | escape }}">{{ publication.title }} <span class="paper-link">(Article)</span></a>{% else %}{{ publication.title }}{% endif %}
+        {% if publication.link %}<a class="publication-title-link" href="{{ publication.link }}" aria-label="Read paper: {{ publication.title | strip_html | escape }}">{{ publication.title }} <span class="paper-link">(Paper)</span></a>{% else %}{{ publication.title }}{% endif %}
       </div>
       {% if publication.authors %}
       <div class="publication-authors" style="font-style: normal;">{{ publication.authors }}</div>
@@ -66,7 +66,7 @@
       {% unless publication.conference contains 'publication-status--review' or publication.conference contains 'publication-status--revision' %}
     <div class="item">
       <div class="publication-title" style="font-size: 15px; font-style: normal;">
-        {% if publication.link %}<a class="publication-title-link" href="{{ publication.link }}" aria-label="Read article: {{ publication.title | strip_html | escape }}">{{ publication.title }} <span class="paper-link">(Article)</span></a>{% else %}{{ publication.title }}{% endif %}
+        {% if publication.link %}<a class="publication-title-link" href="{{ publication.link }}" aria-label="Read paper: {{ publication.title | strip_html | escape }}">{{ publication.title }} <span class="paper-link">(Paper)</span></a>{% else %}{{ publication.title }}{% endif %}
       </div>
       {% if publication.authors %}
       <div class="publication-authors" style="font-style: normal;">{{ publication.authors }}</div>
