@@ -458,29 +458,17 @@
   .wrapper .publications-section a.publication-award,
   .wrapper .publications-section a.publication-award:hover,
   .wrapper .publications-section a.publication-award:focus-visible { color:var(--publication-award); font-weight:600; outline-color:var(--publication-award); }
-  .wrapper .publications-section a.publication-award {
-    display:inline-block;
-    margin-left:5px;
-    padding:2px 7px;
-    border:1px solid #bd6269;
-    border-radius:4px;
-    background:#45282d;
-    font-size:13px;
-    line-height:1.4;
+  .wrapper .publications-section .publication-award-note {
+    color:var(--publication-award);
+    font-weight:600;
     white-space:nowrap;
-    text-decoration:none;
   }
-  .wrapper .publications-section a.publication-award:hover,
-  .wrapper .publications-section a.publication-award:focus-visible { background:#593139; }
   .wrapper .main-wrapper .publication-publisher {
     margin-top:3px;
     color:#bac9d5;
     font-size:14px;
     line-height:1.5;
   }
-}
-@media screen and (max-width:767px) {
-  .wrapper .publications-section a.publication-award { font-size:12px; padding:2px 6px; }
 }
 
 /* A readable desktop type scale; mobile and print retain their own sizing. */
