@@ -158,6 +158,13 @@ publications:
       - title: "<b>Development of Non-contact Heart Rate Measurement Technology Based on Facial Video</b>"
         authors: "<strong>Yonghoon Jeong</strong>"
         conference: "<span class='publication-status publication-status--published'>Published</span> <em><b>The Conference of the Korean Institute of Information Scientists and Engineers (KIISE)</b></em>, Jeju, Republic of Korea, Jun. 23-25, 2021."
+  technical:
+    title: Technical Articles
+    papers:
+      - title: "<b>Underwater Backscatter Networks: Technology Trends and Naval Applications</b>"
+        authors: "<strong>Yonghoon Jeong</strong>"
+        conference: "<span class='publication-status publication-status--forthcoming'>Forthcoming</span> <em><b>Naval Technology Research Institute technical journal</b></em> (in Korean). <span class='publication-award'>(Best Paper Award)</span>"
+
 recommendations:
   title: Recommendations
   list:
@@ -179,9 +186,10 @@ recommendations:
 awards:
   title: Awards & Scholarships
   info:
-    - title: Rear Admiral’s Commendation, ROK Navy Logistics Command (Selected)
+    - title: Best Paper Award
       time: 2026
-      organization: 1st place, Naval Technology Research Institute technical journal.
+      organization: Naval Technology Research Institute technical journal
+      commendation: Rear Admiral’s Commendation, ROK Navy Logistics Command (Selected)
       paper_title: "Underwater Backscatter Networks: Technology Trends and Naval Applications"
 
     - title: BK21 Scholarship
