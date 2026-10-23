@@ -163,7 +163,7 @@ publications:
     papers:
       - title: "<b>Underwater Backscatter Networks: Technology Trends and Naval Applications</b>"
         authors: "<strong>Yonghoon Jeong</strong>"
-        conference: "<span class='publication-status publication-status--forthcoming'>Forthcoming</span> <em><b>Naval Technology Research Institute technical journal</b></em> (in Korean). <span class='publication-award'>(Best Paper Award)</span>"
+        conference: "<span class='publication-status publication-status--forthcoming'>Forthcoming</span> <em><b>Naval Technology Research Institute technical journal</b></em>. <span class='publication-award'>(Best Paper Award)</span>"
 
 recommendations:
   title: Recommendations
@@ -188,9 +188,8 @@ awards:
   info:
     - title: Best Paper Award
       time: 2026
-      organization: Naval Technology Research Institute technical journal
+      organization: Naval Technology Research Institute
       commendation: Rear Admiral’s Commendation, ROK Navy Logistics Command (Selected)
-      paper_title: "Underwater Backscatter Networks: Technology Trends and Naval Applications"
 
     - title: BK21 Scholarship
       time: 2024–2025
