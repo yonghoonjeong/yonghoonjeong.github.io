@@ -428,9 +428,27 @@
   ::selection { background:#365d7b; color:#fff; }
 }
 
-/* Override legacy inline subtitle colors on dark screens, including mobile. */
+/* Distinguish publication groups from paper titles on every screen size. */
+.wrapper .main-wrapper .publication-subtitle {
+  display:flex;
+  align-items:center;
+  gap:14px;
+  margin:30px 0 16px;
+  font-size:17px;
+  font-weight:700;
+  line-height:1.4;
+}
+.wrapper .main-wrapper .publication-subtitle::after {
+  content:"";
+  flex:1;
+  min-width:24px;
+  border-top:1px solid #506576;
+}
 @media screen {
-  .wrapper .main-wrapper .publication-subtitle { color:#fff !important; }
+  .wrapper .main-wrapper .publication-subtitle { color:#8fd3e0; }
+  .wrapper .publications-section .publication-status--forthcoming { background:#203b42; color:#8fd3e0; }
+  .wrapper .publications-section .publication-conference:has(.publication-status--forthcoming) em { color:#8fd3e0; }
+  .wrapper .publications-section .publication-award { color:#f0d18a; font-weight:600; }
 }
 
 /* A readable desktop type scale; mobile and print retain their own sizing. */
@@ -543,6 +561,14 @@
   font-weight:400;
   text-decoration-line:underline;
   text-decoration-thickness:1px;
-  text-underline-offset:0.22em;
+  text-underline-offset:0.32em;
   text-decoration-skip-ink:auto;
+}
+
+/* Give the title, author line, and publication details equal breathing room. */
+@media screen {
+  .wrapper .main-wrapper .publications-section { --publication-line-gap:8px; }
+  .wrapper .main-wrapper .publication-title,
+  .wrapper .main-wrapper .publication-authors { margin:0 0 var(--publication-line-gap); }
+  .wrapper .main-wrapper .publication-conference { margin:0; }
 }
