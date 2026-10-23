@@ -49,13 +49,14 @@
         {% if publication.conference contains 'publication-status--review' or publication.conference contains 'publication-status--revision' %}
 
     <div class="item">
-      <div class="publication-title" style="font-size: 15px; font-style: normal;">
-        {% if publication.link %}<a class="publication-title-link" href="{{ publication.link }}" aria-label="Read paper: {{ publication.title | strip_html | escape }}">{{ publication.title }} <span class="paper-link">(Paper)</span></a>{% else %}{{ publication.title }}{% endif %}{% if publication.award %} {{ publication.award }}{% endif %}
+      <div class="publication-title{% if publication.award %} publication-title--awarded{% endif %}" style="font-size: 15px; font-style: normal;">
+        <span class="publication-title-text">{% if publication.link %}<a class="publication-title-link" href="{{ publication.link }}" aria-label="Read paper: {{ publication.title | strip_html | escape }}">{{ publication.title }} <span class="paper-link">(Paper)</span></a>{% else %}{{ publication.title }}{% endif %}</span>{% if publication.award %} {{ publication.award }}{% endif %}
       </div>
       {% if publication.authors %}
       <div class="publication-authors" style="font-style: normal;">{{ publication.authors }}</div>
       {% endif %}
       <div class="publication-conference">{{ publication.conference }}</div>
+      {% if publication.publisher %}<div class="publication-publisher">Published by {{ publication.publisher }}.</div>{% endif %}
     </div><!--//item-->
             {% endif %}
       {% endfor %}
@@ -65,13 +66,14 @@
     {% for publication in publication_group.papers %}
       {% unless publication.conference contains 'publication-status--review' or publication.conference contains 'publication-status--revision' %}
     <div class="item">
-      <div class="publication-title" style="font-size: 15px; font-style: normal;">
-        {% if publication.link %}<a class="publication-title-link" href="{{ publication.link }}" aria-label="Read paper: {{ publication.title | strip_html | escape }}">{{ publication.title }} <span class="paper-link">(Paper)</span></a>{% else %}{{ publication.title }}{% endif %}{% if publication.award %} {{ publication.award }}{% endif %}
+      <div class="publication-title{% if publication.award %} publication-title--awarded{% endif %}" style="font-size: 15px; font-style: normal;">
+        <span class="publication-title-text">{% if publication.link %}<a class="publication-title-link" href="{{ publication.link }}" aria-label="Read paper: {{ publication.title | strip_html | escape }}">{{ publication.title }} <span class="paper-link">(Paper)</span></a>{% else %}{{ publication.title }}{% endif %}</span>{% if publication.award %} {{ publication.award }}{% endif %}
       </div>
       {% if publication.authors %}
       <div class="publication-authors" style="font-style: normal;">{{ publication.authors }}</div>
       {% endif %}
       <div class="publication-conference">{{ publication.conference }}</div>
+      {% if publication.publisher %}<div class="publication-publisher">Published by {{ publication.publisher }}.</div>{% endif %}
     </div><!--//item-->
       {% endunless %}
     {% endfor %}
