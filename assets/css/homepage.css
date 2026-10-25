@@ -401,6 +401,11 @@
   .wrapper a:focus-visible { outline:2px solid #99ceff; outline-offset:4px; }
   .wrapper .main-wrapper .summary { font-size:16px; line-height:1.6; }
   .wrapper .main-wrapper .summary p + p { margin-top:16px; }
+  .wrapper .main-wrapper #about .summary .research-topic { color:#e5c386; font-weight:700; }
+  .wrapper .main-wrapper #about .summary .research-method { color:#eef4f8; font-weight:600; }
+  .wrapper .main-wrapper #about .summary a { color:#98b8d0; }
+  .wrapper .main-wrapper #about .summary a:hover,
+  .wrapper .main-wrapper #about .summary a:focus-visible { color:#c3d9ea; outline-color:#98b8d0; }
   .wrapper .main-wrapper .section-title,
   .wrapper .main-wrapper .job-title,
   .wrapper .main-wrapper .degree,
