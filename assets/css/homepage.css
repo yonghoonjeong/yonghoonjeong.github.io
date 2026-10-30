@@ -376,7 +376,8 @@
 
 /* Default screen palette; printed pages retain the existing light stylesheet. */
 @media screen {
-  :root { color-scheme: dark !important; }
+  /* The site supplies its own dark palette; do not auto-darken it again. */
+  :root { color-scheme: only dark !important; }
   html, body { background:#101820; color:#d5dfe7; }
   .wrapper {
     --publication-published:#f4c76b;
@@ -438,6 +439,11 @@
   #back-to-top, .back-to-top { background:#294c60; color:#f2f6fa; }
   .copy-feedback { background:#243746; color:#eef4f8; border-color:#506576; }
   ::selection { background:#365d7b; color:#fff; }
+}
+
+/* Keep the published badge, journal names, Paper links, and title hover in sync. */
+@media screen and (prefers-color-scheme: dark) {
+  .wrapper { --publication-published:#ffdb8a; }
 }
 
 /* Distinguish publication groups from paper titles on every screen size. */
