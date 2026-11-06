@@ -116,8 +116,8 @@ publications:
       - title: "<b>On the Symbol Error Rate of Underwater Acoustic Backscatter Systems</b>"
         conference: '<span class="publication-status publication-status--review">Under review</span> <em><b>IEEE Transactions on Communications</b></em>.'
 
-      - title: "<b>Underwater Backscatter for Ocean Sensing: From Wireless Power to Data Collection</b>"
-        conference: '<span class="publication-status publication-status--review">Under review</span> <em><b>IEEE Wireless Communications</b></em> (Magazine).'
+      - title: "<b>Underwater Acoustic Backscatter: Planning for Complete Data Collection</b>"
+        conference: '<span class="publication-status publication-status--review">Under review</span> <em><b>IEEE Communications Magazine</b></em>.'
 
       - title: "<b>Characterizing the Relation Between the Energy Scattering Effect and Symbol Error Rate in Non-Linear Chirp Modulation for LoRa</b>"
         conference: '<span class="publication-status publication-status--review">Under review</span> <em><b>IEEE Wireless Communications Letters</b></em>.'
