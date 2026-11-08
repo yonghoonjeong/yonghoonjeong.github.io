@@ -10,7 +10,7 @@
   </h2>
 
   {% for experience in experiences.info %}
-  <div class="item">
+  <div class="item{% if experience.id %} navigation-anchor{% endif %}"{% if experience.id %} id="{{ experience.id | escape }}" tabindex="-1"{% endif %}>
 
     <div class="meta">
 
@@ -34,4 +34,3 @@
 
 </section><!--//section-->
 {% endif %}
-

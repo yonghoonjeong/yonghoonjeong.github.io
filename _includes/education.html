@@ -8,7 +8,7 @@
     </h2>
 
     {% for graduation in education.info %}
-    <div class="item">
+    <div class="item{% if graduation.id %} navigation-anchor{% endif %}"{% if graduation.id %} id="{{ graduation.id | escape }}" tabindex="-1"{% endif %}>
       <h4 class="degree">{{ graduation.degree }}</h4>
       <h5 class="meta">{{ graduation.university }}</h5>
       <div class="time">{{ graduation.time }}</div>
@@ -28,7 +28,7 @@
     </h2>
 
     {% for graduation in education.info %}
-    <div class="item">
+    <div class="item{% if graduation.id %} navigation-anchor{% endif %}"{% if graduation.id %} id="{{ graduation.id | escape }}" tabindex="-1"{% endif %}>
 
       <div class="meta">
 
