@@ -66,7 +66,14 @@
     const target = document.getElementById(id);
     return target?.matches('.publications-section .publication-anchor') ? target : null;
   };
+  const selectPublication = (target) => {
+    main.querySelectorAll('.publication-anchor.is-publication-target').forEach((item) => {
+      if (item !== target) item.classList.remove('is-publication-target');
+    });
+    target?.classList.add('is-publication-target');
+  };
   const revealPublication = (target, smooth = false) => {
+    selectPublication(target);
     const disclosure = target.closest('details');
     if (disclosure) disclosure.open = true;
     target.focus({ preventScroll: true });
@@ -89,9 +96,15 @@
   window.addEventListener('hashchange', () => {
     const target = publicationTarget(window.location.hash);
     if (target) revealPublication(target);
+    else selectPublication(null);
+  });
+  // Restored pages keep their scroll/disclosure state; only reconcile the marker.
+  window.addEventListener('pageshow', (event) => {
+    if (event.persisted) selectPublication(publicationTarget(window.location.hash));
   });
   const initialPaperHash = window.location.hash;
   const initialPaper = publicationTarget(initialPaperHash);
+  selectPublication(initialPaper);
   if (initialPaper) {
     revealPublication(initialPaper);
     // Re-align direct links after images and styles above the paper finish loading.
