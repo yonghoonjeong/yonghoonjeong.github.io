@@ -96,7 +96,17 @@
   window.addEventListener('hashchange', () => {
     const target = publicationTarget(window.location.hash);
     if (target) revealPublication(target);
-    else selectPublication(null);
+    else {
+      selectPublication(null);
+      const previousFocus = document.activeElement;
+      if (previousFocus?.closest('.publications-section .publication-anchor')) {
+        let destination;
+        try { destination = document.getElementById(decodeURIComponent(window.location.hash.slice(1))); }
+        catch { /* A malformed fragment should simply release stale paper focus. */ }
+        if (destination?.matches('[tabindex="-1"]')) destination.focus({ preventScroll: true });
+        if (document.activeElement === previousFocus) previousFocus.blur();
+      }
+    }
   });
   // Restored pages keep their scroll/disclosure state; only reconcile the marker.
   window.addEventListener('pageshow', (event) => {
