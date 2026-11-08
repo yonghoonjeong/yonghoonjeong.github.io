@@ -56,6 +56,50 @@
   const main = document.querySelector('.main-wrapper');
   if (!sidebar || !main) return;
 
+  // About links lead to the matching paper, including papers in closed disclosures.
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const publicationTarget = (hash) => {
+    if (!hash.startsWith('#paper-')) return null;
+    let id;
+    try { id = decodeURIComponent(hash.slice(1)); }
+    catch { return null; }
+    const target = document.getElementById(id);
+    return target?.matches('.publications-section .publication-anchor') ? target : null;
+  };
+  const revealPublication = (target, smooth = false) => {
+    const disclosure = target.closest('details');
+    if (disclosure) disclosure.open = true;
+    target.focus({ preventScroll: true });
+    target.scrollIntoView({
+      block: 'start',
+      behavior: smooth && !reducedMotion.matches ? 'smooth' : 'instant',
+    });
+  };
+  main.querySelectorAll('a.research-paper-link[href^="#paper-"]').forEach((link) => {
+    link.addEventListener('click', (event) => {
+      if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey ||
+          event.shiftKey || event.altKey || (link.target && link.target !== '_self')) return;
+      const target = publicationTarget(link.hash);
+      if (!target) return;
+      event.preventDefault();
+      if (window.location.hash !== link.hash) window.history.pushState(null, '', link.hash);
+      revealPublication(target, true);
+    });
+  });
+  window.addEventListener('hashchange', () => {
+    const target = publicationTarget(window.location.hash);
+    if (target) revealPublication(target);
+  });
+  const initialPaperHash = window.location.hash;
+  const initialPaper = publicationTarget(initialPaperHash);
+  if (initialPaper) {
+    revealPublication(initialPaper);
+    // Re-align direct links after images and styles above the paper finish loading.
+    window.addEventListener('load', () => {
+      if (window.location.hash === initialPaperHash) revealPublication(initialPaper);
+    }, { once: true });
+  }
+
   main.querySelector('.mobile-supporting-info')?.remove();
   const printMedia = window.matchMedia('print');
   let printState = null;
