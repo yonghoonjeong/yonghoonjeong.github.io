@@ -27,13 +27,28 @@
   </div><!--//intro-->
   {% endif %}
 
-  {% assign publication_groups = "technical,international,domestic,work_in_progress" | split: "," %}
+  {% assign publication_groups = "international,technical,domestic,work_in_progress" | split: "," %}
   {% for group_name in publication_groups %}
     {% assign publication_group = publications[group_name] %}
     {% if publication_group %}
     <h3 class="publication-subtitle">
       {{ publication_group.title }}
     </h3>
+
+    {% for publication in publication_group.papers %}
+      {% unless publication.conference contains 'publication-status--review' or publication.conference contains 'publication-status--revision' %}
+    <div class="item">
+      <div class="publication-title" style="font-size: 15px; font-style: normal;">
+        {% if publication.link %}<a class="publication-title-link" href="{{ publication.link }}" aria-label="Read paper: {{ publication.title | strip_html | escape }}">{{ publication.title }} <span class="paper-link">(Paper)</span></a>{% else %}{{ publication.title }}{% endif %}
+      </div>
+      {% if publication.authors %}
+      <div class="publication-authors" style="font-style: normal;">{{ publication.authors }}</div>
+      {% endif %}
+      <div class="publication-conference">{{ publication.conference }}{% if publication.award %} <span class="publication-award-note">({{ publication.award }})</span>{% endif %}</div>
+      {% if publication.publisher %}<div class="publication-publisher">Published by {{ publication.publisher }}.</div>{% endif %}
+    </div><!--//item-->
+      {% endunless %}
+    {% endfor %}
 
     {% assign review_count = 0 %}
     {% for publication in publication_group.papers %}
@@ -63,20 +78,7 @@
       </div>
     </details>
     {% endif %}
-    {% for publication in publication_group.papers %}
-      {% unless publication.conference contains 'publication-status--review' or publication.conference contains 'publication-status--revision' %}
-    <div class="item">
-      <div class="publication-title" style="font-size: 15px; font-style: normal;">
-        {% if publication.link %}<a class="publication-title-link" href="{{ publication.link }}" aria-label="Read paper: {{ publication.title | strip_html | escape }}">{{ publication.title }} <span class="paper-link">(Paper)</span></a>{% else %}{{ publication.title }}{% endif %}
-      </div>
-      {% if publication.authors %}
-      <div class="publication-authors" style="font-style: normal;">{{ publication.authors }}</div>
-      {% endif %}
-      <div class="publication-conference">{{ publication.conference }}{% if publication.award %} <span class="publication-award-note">({{ publication.award }})</span>{% endif %}</div>
-      {% if publication.publisher %}<div class="publication-publisher">Published by {{ publication.publisher }}.</div>{% endif %}
-    </div><!--//item-->
-      {% endunless %}
-    {% endfor %}
+
 
     {% endif %}
   {% endfor %}
