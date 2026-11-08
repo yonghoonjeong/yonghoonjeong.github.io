@@ -55,7 +55,7 @@ sidebar:
 career-profile:
   title: About Me
   summary: |
-    I am a faculty member in [CS at ROKNA](https://www.navy.ac.kr:4443/sites/english/index..do) and a naval officer. My research focuses on <span class="research-topic">wireless and mobile system design</span> for reliable, low-power communication. My earlier work included [remote photoplethysmography (rPPG)](https://link.springer.com/article/10.1007/s13534-025-00472-w), autonomous racing with the [Unmanned Systems Research Group (USRG)](https://unmanned.kaist.ac.kr/) at [KAIST](https://ee.kaist.ac.kr/en/) for the [Indy Autonomous Challenge (IAC)](https://www.indyautonomouschallenge.com/), and AI hardware at [ETRI](https://www.etri.re.kr/eng/main/main.etri).
+    I am a faculty member in [CS at ROKNA](https://www.navy.ac.kr:4443/sites/english/index..do) and a naval officer. My research focuses on <span class="research-topic">wireless and mobile system design</span> for reliable, low-power communication. My earlier work included <a class="research-paper-link" href="#paper-rppg" title="View the rPPG paper in Publications">remote photoplethysmography (rPPG)</a>, autonomous racing with the [Unmanned Systems Research Group (USRG)](https://unmanned.kaist.ac.kr/) at [KAIST](https://ee.kaist.ac.kr/en/) for the [Indy Autonomous Challenge (IAC)](https://www.indyautonomouschallenge.com/), and AI hardware at [ETRI](https://www.etri.re.kr/eng/main/main.etri).
 
     At [SNU](https://ece.snu.ac.kr/en)’s [Network Laboratory (NETLAB)](https://sites.google.com/netlab.snu.ac.kr/netlabhome), my master’s research focused on the <a class="research-paper-link" href="#paper-lora-interference" title="View the LoRa paper in Publications">theoretical analysis of interference resilience in LoRa</a>, explaining how non-linear chirps redistribute interference energy. Alongside this work, I contributed to <a class="research-paper-link" href="#paper-d2-plc" title="View the D²-PLC paper in Publications">D²-PLC</a>, a collaborative project on low-power DC power-line communication and hardware prototyping. I am now extending this work in theoretical analysis and system design to <a class="research-paper-link" href="#paper-underwater-backscatter" title="View the related manuscript in Publications (under review)" aria-label="Underwater acoustic backscatter: view related manuscript (under review)">underwater acoustic backscatter</a> for <span class="research-topic">Ocean IoT</span>.
 
@@ -143,6 +143,7 @@ publications:
         conference: "<span class='publication-status publication-status--published'>Published</span> <em><b>IEEE ICNP 2025</b></em>, Seoul, Republic of Korea, Sep. 22-25, 2025."
 
       - title: "<b>Diffusion-Phys: Noise-Robust Heart Rate Estimation from Facial Videos via Diffusion Models</b>"
+        id: paper-rppg
         link: "https://link.springer.com/article/10.1007/s13534-025-00472-w"
         authors: "<strong>Yonghoon Jeong</strong> and Youngseok Choi"
         conference: "<span class='publication-status publication-status--published'>Published</span> <em><b>Biomedical Engineering Letters</b></em>, vol. 15, pp. 575-585, Apr. 2025."
@@ -162,7 +163,7 @@ publications:
     papers:
       - title: "<b>A Survey of Underwater Backscatter Networks and Their Naval Applications</b>"
         authors: "<strong>Yonghoon Jeong</strong>"
-        award: "<a class='publication-award' href='#awards'>Best&nbsp;Paper&nbsp;Award</a>"
+        award: "<a class='publication-award' href='#awards' data-highlight-target='award-best-paper-2026'>Best&nbsp;Paper&nbsp;Award</a>"
         conference: "<span class='publication-status publication-status--to-appear'>To appear</span> <em><b>Naval Ship Technology Journal</b></em>, vol. 95, Dec. 2026."
 
 recommendations:
