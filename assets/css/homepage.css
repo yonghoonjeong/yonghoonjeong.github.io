@@ -407,6 +407,25 @@
   .wrapper .main-wrapper #about .summary a { color:#98b8d0; }
   .wrapper .main-wrapper #about .summary a:hover,
   .wrapper .main-wrapper #about .summary a:focus-visible { color:#c3d9ea; outline-color:#98b8d0; }
+  /* Research links are warmer than institutional links, with a quiet visible underline. */
+  .wrapper .main-wrapper #about .summary a.research-paper-link {
+    color:#e5c386;
+    font-weight:inherit;
+    text-decoration:underline;
+    text-decoration-color:#86724f;
+    text-decoration-thickness:1px;
+    text-underline-offset:.2em;
+    text-decoration-skip-ink:auto;
+  }
+  .wrapper .main-wrapper #about .summary a.research-paper-link:hover,
+  .wrapper .main-wrapper #about .summary a.research-paper-link:focus-visible {
+    color:#ffdf9f;
+    text-decoration-color:currentColor;
+    outline-color:#e5c386;
+  }
+  .wrapper .publications-section .publication-anchor { scroll-margin-top:24px; }
+  .wrapper .publications-section .publication-anchor:focus { outline:none; }
+  .wrapper .publications-section .publication-anchor:focus-visible { outline:2px solid #98b8d0; outline-offset:8px; }
   .wrapper .main-wrapper .section-title,
   .wrapper .main-wrapper .job-title,
   .wrapper .main-wrapper .degree,
