@@ -106,15 +106,21 @@
       behavior: smooth && !reducedMotion.matches ? 'smooth' : 'instant',
     });
   };
+  const highlightTargets = (ids) => Array.from(new Set(ids))
+    .map((id) => document.getElementById(id))
+    .filter((item) => item && wrapper.contains(item));
   const navigateTo = (target, record, smooth = false) => {
     clearHighlight();
     prepareTarget(target);
-    const highlight = record && document.getElementById(record.targetId);
-    const highlightedItem = highlight && wrapper.contains(highlight) ? highlight : null;
+    const highlightedItems = record ? highlightTargets(record.targetIds) : [];
+    // Reveal all related papers before measuring the primary destination.
+    highlightedItems.forEach((item) => {
+      prepareTarget(item);
+      item.style.setProperty('--navigation-accent', record.color);
+      item.classList.add('is-navigation-target');
+    });
+    const highlightedItem = highlightedItems.includes(target) ? target : highlightedItems[0];
     if (highlightedItem) {
-      prepareTarget(highlightedItem);
-      highlightedItem.style.setProperty('--navigation-accent', record.color);
-      highlightedItem.classList.add('is-navigation-target');
       highlightedItem.focus({ preventScroll: true });
     } else releaseStaleFocus(target);
     scrollToTarget(highlightedItem || target, smooth);
@@ -130,11 +136,12 @@
         url.search !== window.location.search) return;
     const target = fragmentTarget(url.hash);
     if (!target) return;
-    const requestedHighlight = document.getElementById(link.dataset.highlightTarget || '');
-    const highlight = requestedHighlight && wrapper.contains(requestedHighlight) ? requestedHighlight : target;
+    let highlights = highlightTargets((link.dataset.highlightTargets || '').split(/\s+/).filter(Boolean));
+    if (!highlights.length) highlights = highlightTargets([link.dataset.highlightTarget || '']);
+    if (!highlights.length) highlights = [target];
     const style = window.getComputedStyle(link);
     const record = {
-      targetId: highlight.id,
+      targetIds: highlights.map((item) => item.id),
       color: style.getPropertyValue('--navigation-accent').trim() || style.color,
     };
     event.preventDefault();
