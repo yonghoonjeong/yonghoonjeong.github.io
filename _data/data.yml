@@ -35,17 +35,11 @@ sidebar:
   interests:
     title: Research Interests
     info:
-      - item: Wireless Communication Systems
+      - item: Wireless Waveforms and Performance Analysis
         link:
-      - item: Performance Analysis and Modeling
+      - item: Low-Power Communication and Networking
         link:
-      - item: Physical-Layer Wireless Sensing and Networking
-        link:
-      - item: Low-Power Wide-Area Networks (LPWANs)
-        link:
-      - item: Backscatter Communication and Networking
-        link:
-      - item: Ocean Internet of Things (Ocean IoT)
+      - item: Underwater Communications and Ocean IoT
         link:
 
   languages:
