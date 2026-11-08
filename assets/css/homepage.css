@@ -363,7 +363,7 @@
 /* Links use color rather than underlines. */
 .wrapper .sidebar-wrapper .profile-info .contact-list li a,
 .wrapper .sidebar-wrapper .profile-info .contact-list li .email-copy { color:#b9ddff; text-decoration:none; }
-.wrapper .main-wrapper a:not(.activity-card):not(.research-paper-link) { color:#285b91; text-decoration:none!important; }
+.wrapper .main-wrapper a:not(.activity-card) { color:#285b91; text-decoration:none; }
 .wrapper .main-wrapper .activity-link { text-decoration:none; }
 .main-wrapper .publications-section .publication-status { display:inline-block; font-size:13px; font-weight:600; line-height:1.4; border:1px solid currentColor; border-radius:4px; padding:2px 7px; margin-right:6px; }
 .main-wrapper .publications-section .publication-status--published { background:#e4eefb; color:#285b91; }
@@ -425,7 +425,8 @@
   }
   .wrapper .publications-section .publication-anchor { scroll-margin-top:24px; }
   .wrapper .publications-section .publication-anchor:focus { outline:none; }
-  .wrapper .publications-section .publication-anchor:focus-visible { outline:2px solid #98b8d0; outline-offset:8px; }
+  .wrapper .publications-section .publication-anchor.is-publication-target,
+  .wrapper .publications-section .publication-anchor:focus-visible { outline:2px solid #98b8d0; outline-offset:8px; border-radius:3px; }
   .wrapper .main-wrapper .section-title,
   .wrapper .main-wrapper .job-title,
   .wrapper .main-wrapper .degree,
