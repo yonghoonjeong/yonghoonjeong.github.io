@@ -55,16 +55,17 @@ sidebar:
 career-profile:
   title: About Me
   summary: |
-    I am a faculty member in [CS at ROKNA](https://www.navy.ac.kr:4443/sites/english/index..do) and a naval officer. My research focuses on <span class="research-topic">wireless and mobile system design</span> for reliable, low-power communication. My earlier work included <a class="research-paper-link" href="#paper-rppg" title="View the rPPG paper in Publications">remote photoplethysmography (rPPG)</a>, autonomous racing with the [Unmanned Systems Research Group (USRG)](https://unmanned.kaist.ac.kr/) at [KAIST](https://ee.kaist.ac.kr/en/) for the [Indy Autonomous Challenge (IAC)](https://www.indyautonomouschallenge.com/), and AI hardware at [ETRI](https://www.etri.re.kr/eng/main/main.etri).
+    I am a faculty member in <a class="context-link" href="#experience-rokna" title="View my ROKNA appointment in Professional Experience">CS at ROKNA</a> and a naval officer. My research focuses on <span class="research-topic">wireless and mobile system design</span> for reliable, low-power communication. My earlier work included <a class="context-link" href="#paper-rppg" title="View the rPPG paper in Publications">remote photoplethysmography (rPPG)</a>, autonomous racing with the <a class="context-link" href="#experience-kaist" title="View my KAIST research internship in Professional Experience">Unmanned Systems Research Group (USRG)</a> at <a class="context-link" href="#experience-kaist" title="View my KAIST research internship in Professional Experience">KAIST</a> for the [Indy Autonomous Challenge (IAC)](https://www.indyautonomouschallenge.com/), and AI hardware at <a class="context-link" href="#experience-etri" title="View my ETRI research experience in Professional Experience">ETRI</a>.
 
-    At [SNU](https://ece.snu.ac.kr/en)’s [Network Laboratory (NETLAB)](https://sites.google.com/netlab.snu.ac.kr/netlabhome), my master’s research focused on the <a class="research-paper-link" href="#paper-lora-interference" title="View the LoRa paper in Publications">theoretical analysis of interference resilience in LoRa</a>, explaining how non-linear chirps redistribute interference energy. Alongside this work, I contributed to <a class="research-paper-link" href="#paper-d2-plc" title="View the D²-PLC paper in Publications">D²-PLC</a>, a collaborative project on low-power DC power-line communication and hardware prototyping. I am now extending this work in theoretical analysis and system design to <a class="research-paper-link" href="#paper-underwater-backscatter" title="View the related manuscript in Publications (under review)" aria-label="Underwater acoustic backscatter: view related manuscript (under review)">underwater acoustic backscatter</a> for <span class="research-topic">Ocean IoT</span>.
+    At <a class="context-link" href="#experience-snu" title="View my SNU research experience in Professional Experience">SNU</a>’s <a class="context-link" href="#experience-snu" title="View my NETLAB research experience in Professional Experience">Network Laboratory (NETLAB)</a>, my master’s research focused on the <a class="context-link" href="#paper-lora-interference" title="View the LoRa paper in Publications">theoretical analysis of interference resilience in LoRa</a>, explaining how non-linear chirps redistribute interference energy. Alongside this work, I contributed to <a class="context-link" href="#paper-d2-plc" title="View the D²-PLC paper in Publications">D²-PLC</a>, a collaborative project on low-power DC power-line communication and hardware prototyping. I am now extending this work in theoretical analysis and system design to <a class="research-paper-link" href="#paper-underwater-backscatter" title="View the related manuscript in Publications (under review)" aria-label="Underwater acoustic backscatter: view related manuscript (under review)">underwater acoustic backscatter</a> for <span class="research-topic">Ocean IoT</span>.
 
-    I received my B.S. in [ECE at KWU](https://www.kw.ac.kr/en/index.jsp) and M.S. in [ECE at SNU](https://ece.snu.ac.kr/en). After completing my mandatory military service in May 2029, I plan to pursue a Ph.D. abroad.
+    I received my B.S. in <a class="context-link" href="#education-kwu-bs" title="View my bachelor’s degree in Education">ECE at KWU</a> and M.S. in <a class="context-link" href="#education-snu-ms" title="View my master’s degree in Education">ECE at SNU</a>. After completing my mandatory military service in May 2029, I plan to pursue a Ph.D. abroad.
 
 experiences:
     title: Professional Experience
     info:
       - role: "<b>Republic of Korea Naval Academy (ROKNA)</b>"
+        id: experience-rokna
         time: "2026 - Present"
         company: Jinhae-gu, Changwon, Republic of Korea
         details: |
@@ -73,18 +74,21 @@ experiences:
           Commissioned as a Republic of Korea Navy officer; mandatory military service ends in May 2029.
 
       - role: "<b>Seoul National University (SNU)</b>"
+        id: experience-snu
         time: 2024 - 2026
         company: Gwanak-gu, Seoul, Republic of Korea
         details: | 
           Researcher, [Network Laboratory (NETLAB)](https://sites.google.com/netlab.snu.ac.kr/netlabhome), [Institute of New Media and Communications (INMC)](https://inmc.snu.ac.kr/en/) <br>
           
       - role: "<b>Electronics and Telecommunications Research Institute (ETRI)</b>"
+        id: experience-etri
         time: 2023 
         company: Pangyo, Seongnam, Republic of Korea
         details: |
           Researcher, AI-SoC Infrastructure Research Section
         
       - role: "<b>Korea Advanced Institute of Science and Technology (KAIST)</b>"
+        id: experience-kaist
         time: 2022
         company: Yuseong-gu, Daejeon, Republic of Korea
         details: |
@@ -94,11 +98,13 @@ education:
     title: Education
     info:
       - degree: "<b>M.S. in Electrical and Computer Engineering</b>"
+        id: education-snu-ms
         university: Seoul National University, Seoul, Republic of Korea
         time: 2024 - 2026
         details: |
             Advisor: [Prof. Saewoong Bahk](https://sites.google.com/netlab.snu.ac.kr/netlabhome/people/faculty?authuser=0) (currently President of ETRI) <br>
       - degree: "<b>B.S. in Electronics and Communications Engineering</b>"
+        id: education-kwu-bs
         university: Kwangwoon University, Seoul, Republic of Korea
         time: 2018 - 2023
 
