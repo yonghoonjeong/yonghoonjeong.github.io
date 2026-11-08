@@ -92,8 +92,17 @@
     if (document.activeElement === previousFocus) previousFocus.blur();
   };
   const scrollToTarget = (target, smooth = false) => {
-    target.scrollIntoView({
-      block: 'start',
+    const rect = target.getBoundingClientRect();
+    const viewportHeight = window.visualViewport?.height || window.innerHeight;
+    const viewportTop = window.visualViewport?.offsetTop || 0;
+    // Center the actual item, without inheriting an asymmetric CSS scroll margin.
+    // Long sections remain readable from their beginning rather than their midpoint.
+    const inset = rect.height <= viewportHeight - 48 ? (viewportHeight - rect.height) / 2 : 24;
+    const desiredTop = window.scrollY + rect.top - viewportTop - inset;
+    const scroller = document.scrollingElement || document.documentElement;
+    const maxTop = Math.max(0, scroller.scrollHeight - window.innerHeight);
+    window.scrollTo({
+      top: Math.max(0, Math.min(desiredTop, maxTop)),
       behavior: smooth && !reducedMotion.matches ? 'smooth' : 'instant',
     });
   };
@@ -101,13 +110,14 @@
     clearHighlight();
     prepareTarget(target);
     const highlight = record && document.getElementById(record.targetId);
-    if (highlight && wrapper.contains(highlight)) {
-      prepareTarget(highlight);
-      highlight.style.setProperty('--navigation-accent', record.color);
-      highlight.classList.add('is-navigation-target');
-      highlight.focus({ preventScroll: true });
+    const highlightedItem = highlight && wrapper.contains(highlight) ? highlight : null;
+    if (highlightedItem) {
+      prepareTarget(highlightedItem);
+      highlightedItem.style.setProperty('--navigation-accent', record.color);
+      highlightedItem.classList.add('is-navigation-target');
+      highlightedItem.focus({ preventScroll: true });
     } else releaseStaleFocus(target);
-    scrollToTarget(target, smooth);
+    scrollToTarget(highlightedItem || target, smooth);
   };
   wrapper.addEventListener('click', (event) => {
     if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey ||
