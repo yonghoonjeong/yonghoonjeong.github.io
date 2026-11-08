@@ -407,7 +407,7 @@
   .wrapper .main-wrapper #about .summary a { color:#98b8d0; }
   .wrapper .main-wrapper #about .summary a:hover,
   .wrapper .main-wrapper #about .summary a:focus-visible { color:#c3d9ea; outline-color:#98b8d0; }
-  /* Research links are warmer than institutional links, with a quiet visible underline. */
+  /* Current research links share the warm research-interest accent. */
   .wrapper .main-wrapper #about .summary a.research-paper-link {
     --navigation-accent:#e5c386;
     color:#e5c386;
@@ -423,6 +423,23 @@
     color:#ffdf9f;
     text-decoration-color:currentColor;
     outline-color:#e5c386;
+  }
+  /* Previous work and profile details stay blue; current research stays warm. */
+  .wrapper .main-wrapper #about .summary a.context-link {
+    --navigation-accent:#98b8d0;
+    color:#98b8d0;
+    font-weight:inherit;
+    text-decoration:underline;
+    text-decoration-color:#647c8e;
+    text-decoration-thickness:1px;
+    text-underline-offset:.2em;
+    text-decoration-skip-ink:auto;
+  }
+  .wrapper .main-wrapper #about .summary a.context-link:hover,
+  .wrapper .main-wrapper #about .summary a.context-link:focus-visible {
+    color:#c3d9ea;
+    text-decoration-color:currentColor;
+    outline-color:#98b8d0;
   }
   /* Destination boxes reflect explicit link activation, never a page refresh. */
   .wrapper .main-wrapper .navigation-anchor,
