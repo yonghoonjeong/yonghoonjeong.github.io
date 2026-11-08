@@ -56,70 +56,112 @@
   const main = document.querySelector('.main-wrapper');
   if (!sidebar || !main) return;
 
-  // About links lead to the matching paper, including papers in closed disclosures.
+  // Same-page links share navigation behavior; click highlights live only in memory.
+  const wrapper = document.querySelector('.wrapper');
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-  const publicationTarget = (hash) => {
-    if (!hash.startsWith('#paper-')) return null;
+  const clickedFragments = new Map();
+  let navigatedByClick = false;
+  const fragmentTarget = (hash) => {
+    if (!hash || hash === '#') return null;
     let id;
     try { id = decodeURIComponent(hash.slice(1)); }
     catch { return null; }
     const target = document.getElementById(id);
-    return target?.matches('.publications-section .publication-anchor') ? target : null;
+    return target && wrapper.contains(target) ? target : null;
   };
-  const selectPublication = (target) => {
-    main.querySelectorAll('.publication-anchor.is-publication-target').forEach((item) => {
-      if (item !== target) item.classList.remove('is-publication-target');
+  const prepareTarget = (target) => {
+    target.classList.add('navigation-anchor');
+    if (!target.hasAttribute('tabindex')) target.setAttribute('tabindex', '-1');
+    for (let details = target.closest('details'); details; details = details.parentElement?.closest('details')) {
+      details.open = true;
+    }
+  };
+  const clearHighlight = () => {
+    wrapper.querySelectorAll('.is-navigation-target, .is-publication-target').forEach((item) => {
+      item.classList.remove('is-navigation-target', 'is-publication-target');
+      item.style.removeProperty('--navigation-accent');
     });
-    target?.classList.add('is-publication-target');
   };
-  const revealPublication = (target, smooth = false) => {
-    selectPublication(target);
-    const disclosure = target.closest('details');
-    if (disclosure) disclosure.open = true;
-    target.focus({ preventScroll: true });
+  const releaseStaleFocus = (destination) => {
+    const previousFocus = document.activeElement;
+    if (!previousFocus?.closest('.navigation-anchor, .publication-anchor')) return;
+    if (destination && destination !== previousFocus) {
+      prepareTarget(destination);
+      destination.focus({ preventScroll: true });
+    }
+    if (document.activeElement === previousFocus) previousFocus.blur();
+  };
+  const scrollToTarget = (target, smooth = false) => {
     target.scrollIntoView({
       block: 'start',
       behavior: smooth && !reducedMotion.matches ? 'smooth' : 'instant',
     });
   };
-  main.querySelectorAll('a.research-paper-link[href^="#paper-"]').forEach((link) => {
-    link.addEventListener('click', (event) => {
-      if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey ||
-          event.shiftKey || event.altKey || (link.target && link.target !== '_self')) return;
-      const target = publicationTarget(link.hash);
-      if (!target) return;
-      event.preventDefault();
-      if (window.location.hash !== link.hash) window.history.pushState(null, '', link.hash);
-      revealPublication(target, true);
-    });
+  const navigateTo = (target, record, smooth = false) => {
+    clearHighlight();
+    prepareTarget(target);
+    const highlight = record && document.getElementById(record.targetId);
+    if (highlight && wrapper.contains(highlight)) {
+      prepareTarget(highlight);
+      highlight.style.setProperty('--navigation-accent', record.color);
+      highlight.classList.add('is-navigation-target');
+      highlight.focus({ preventScroll: true });
+    } else releaseStaleFocus(target);
+    scrollToTarget(target, smooth);
+  };
+  wrapper.addEventListener('click', (event) => {
+    if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey ||
+        event.shiftKey || event.altKey) return;
+    const link = event.target.closest('a[href]');
+    if (!link || !wrapper.contains(link) || link.hasAttribute('download') ||
+        (link.target && link.target !== '_self')) return;
+    const url = new URL(link.href, window.location.href);
+    if (url.origin !== window.location.origin || url.pathname !== window.location.pathname ||
+        url.search !== window.location.search) return;
+    const target = fragmentTarget(url.hash);
+    if (!target) return;
+    const requestedHighlight = document.getElementById(link.dataset.highlightTarget || '');
+    const highlight = requestedHighlight && wrapper.contains(requestedHighlight) ? requestedHighlight : target;
+    const style = window.getComputedStyle(link);
+    const record = {
+      targetId: highlight.id,
+      color: style.getPropertyValue('--navigation-accent').trim() || style.color,
+    };
+    event.preventDefault();
+    clickedFragments.set(url.hash, record);
+    navigatedByClick = true;
+    if (window.location.hash !== url.hash) window.history.pushState(null, '', url.hash);
+    navigateTo(target, record, true);
   });
   window.addEventListener('hashchange', () => {
-    const target = publicationTarget(window.location.hash);
-    if (target) revealPublication(target);
+    const target = fragmentTarget(window.location.hash);
+    if (target) navigateTo(target, clickedFragments.get(window.location.hash));
     else {
-      selectPublication(null);
-      const previousFocus = document.activeElement;
-      if (previousFocus?.closest('.publications-section .publication-anchor')) {
-        let destination;
-        try { destination = document.getElementById(decodeURIComponent(window.location.hash.slice(1))); }
-        catch { /* A malformed fragment should simply release stale paper focus. */ }
-        if (destination?.matches('[tabindex="-1"]')) destination.focus({ preventScroll: true });
-        if (document.activeElement === previousFocus) previousFocus.blur();
-      }
+      clearHighlight();
+      releaseStaleFocus(null);
     }
   });
-  // Restored pages keep their scroll/disclosure state; only reconcile the marker.
+  // Restored pages keep their scroll/disclosure state, without reviving an old box.
   window.addEventListener('pageshow', (event) => {
-    if (event.persisted) selectPublication(publicationTarget(window.location.hash));
+    if (event.persisted) {
+      clearHighlight();
+      releaseStaleFocus(null);
+    }
   });
-  const initialPaperHash = window.location.hash;
-  const initialPaper = publicationTarget(initialPaperHash);
-  selectPublication(initialPaper);
-  if (initialPaper) {
-    revealPublication(initialPaper);
-    // Re-align direct links after images and styles above the paper finish loading.
+  const initialHash = window.location.hash;
+  const initialTarget = fragmentTarget(initialHash);
+  clearHighlight();
+  if (initialTarget) {
+    prepareTarget(initialTarget);
+    releaseStaleFocus(null);
+    scrollToTarget(initialTarget);
+    // Direct entry/reload reveals the fragment, but never highlights or focuses it.
     window.addEventListener('load', () => {
-      if (window.location.hash === initialPaperHash) revealPublication(initialPaper);
+      if (!navigatedByClick && window.location.hash === initialHash) {
+        clearHighlight();
+        releaseStaleFocus(null);
+        scrollToTarget(initialTarget);
+      }
     }, { once: true });
   }
 
