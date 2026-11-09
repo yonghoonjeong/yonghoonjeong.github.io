@@ -52,6 +52,22 @@
     }));
   }
 
+  // Keep the homepage available while opening papers, documents, and other pages.
+  // Same-page fragments retain the in-page highlighting and navigation below.
+  document.querySelectorAll('a[href]').forEach((link) => {
+    if (link.hasAttribute('download')) return;
+    let url;
+    try { url = new URL(link.getAttribute('href'), window.location.href); }
+    catch { return; }
+    if (url.protocol !== 'http:' && url.protocol !== 'https:') return;
+    if (url.origin === window.location.origin && url.pathname === window.location.pathname &&
+        url.search === window.location.search) return;
+    link.target = '_blank';
+    const rel = new Set((link.getAttribute('rel') || '').split(/\s+/).filter(Boolean));
+    rel.add('noopener');
+    link.setAttribute('rel', Array.from(rel).join(' '));
+  });
+
   const sidebar = document.querySelector('.sidebar-wrapper');
   const main = document.querySelector('.main-wrapper');
   if (!sidebar || !main) return;
