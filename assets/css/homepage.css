@@ -655,3 +655,15 @@
 @media screen and (max-width:767px) {
   .wrapper .main-wrapper .publications-section { --publication-title-gap:6px; }
 }
+
+/* A quiet, persistent cue for profile navigation. */
+@media screen {
+  .wrapper .main-wrapper .about-link-hint {
+    margin: -8px 0 18px;
+    color: #b6c7d1;
+    font-size: 13px;
+    line-height: 1.5;
+    font-weight: 400;
+  }
+}
+@media print { .about-link-hint { display: none; } }
