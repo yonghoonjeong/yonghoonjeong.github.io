@@ -114,23 +114,23 @@ publications:
     papers:
       - title: "<b>On the Symbol Error Rate of Underwater Acoustic Backscatter Systems</b>"
         id: paper-underwater-backscatter
-        conference: '<span class="publication-status publication-status--review">Under review</span> <em><b>IEEE Transactions on Communications (TCOM)</b></em>.'
+        conference: '<span class="publication-status publication-status--review">Under review</span> <em><b>IEEE Transactions on Communications (TCOM)</b></em>, submitted Oct. 1, 2026.'
 
       - title: "<b>Underwater Acoustic Backscatter: Planning for Complete Data Collection</b>"
         id: paper-underwater-data-collection
-        conference: '<span class="publication-status publication-status--review">Under review</span> <em><b>IEEE Communications Magazine (ComMag)</b></em>.'
+        conference: '<span class="publication-status publication-status--review">Under review</span> <em><b>IEEE Communications Magazine (ComMag)</b></em>, submitted Nov. 3, 2026.'
 
       - title: "<b>Characterizing the Relation Between the Energy Scattering Effect and Symbol Error Rate in Non-Linear Chirp Modulation for LoRa</b>"
         id: paper-lora-energy-scattering
-        conference: '<span class="publication-status publication-status--review">Under review</span> <em><b>IEEE Wireless Communications Letters (WCL)</b></em>.'
+        conference: '<span class="publication-status publication-status--review">Under review</span> <em><b>IEEE Wireless Communications Letters (WCL)</b></em>, submitted Sep. 20, 2026.'
 
       - title: "<b>Symbol Error Rate Analysis and Approximation for Arbitrary Chirp Modulation Under Multipath, Doppler, and Interference</b>"
         id: paper-arbitrary-chirp-ser
-        conference: '<span class="publication-status publication-status--review">Under review</span> <em><b>IEEE Transactions on Communications (TCOM)</b></em>.'
+        conference: '<span class="publication-status publication-status--review">Under review</span> <em><b>IEEE Transactions on Communications (TCOM)</b></em>, submitted Sep. 11, 2026.'
 
       - title: "<b>On the Symbol Error Rate of Non-Linear Chirp Modulation for LoRa Under Asynchronous Interference</b>"
         id: paper-lora-asynchronous-interference
-        conference: '<span class="publication-status publication-status--review">Under review</span> <em><b>IEEE Wireless Communications Letters (WCL)</b></em>.'
+        conference: '<span class="publication-status publication-status--review">Under review</span> <em><b>IEEE Wireless Communications Letters (WCL)</b></em>, submitted Sep. 3, 2026.'
 
       - title: "<b>On the Interference Resilience of Non-Linear Chirp Modulation for LoRa: An Analytical Insight into Energy Scattering Effect</b>"
         id: paper-lora-interference
@@ -144,7 +144,7 @@ publications:
         link: "https://ieeexplore.ieee.org/document/11127183"
         contribution: "Develops and validates a duplex DC power-line communication system with custom physical-layer modulation and MAC protocols for simultaneous power and data transfer."
         authors: "Dongrak Choi, Yubin Choi, <strong>Yonghoon Jeong</strong>, Jeongyeup Paek, and Saewoong Bahk"
-        conference: "<span class='publication-status publication-status--published'>Published</span> <em><b>IEEE Internet of Things Journal (IoT-J)</b></em>, vol. 12, pp. 45325-45340, Nov. 2025."
+        conference: "<span class='publication-status publication-status--published'>Published</span> <em><b>IEEE Internet of Things Journal (IoTJ)</b></em>, vol. 12, pp. 45325-45340, Nov. 2025."
 
       - title: "<b>Demo: A Programmable High-Throughput Duplex DC-PLC Testbed for Power and Data Integration</b>"
         id: paper-dc-plc-demo
