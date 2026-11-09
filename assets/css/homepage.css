@@ -429,17 +429,18 @@
     --navigation-accent:#98b8d0;
     color:#98b8d0;
     font-weight:inherit;
-    text-decoration:underline;
-    text-decoration-color:#647c8e;
-    text-decoration-thickness:1px;
-    text-underline-offset:.2em;
-    text-decoration-skip-ink:auto;
+    text-decoration:none;
   }
   .wrapper .main-wrapper #about .summary a.context-link:hover,
   .wrapper .main-wrapper #about .summary a.context-link:focus-visible {
     color:#c3d9ea;
-    text-decoration-color:currentColor;
     outline-color:#98b8d0;
+  }
+  /* Reserve underlines for current research; other profile links retain their color and focus outline. */
+  .wrapper .main-wrapper #about .summary a:not(.research-paper-link),
+  .wrapper .main-wrapper #about .summary a:not(.research-paper-link):hover,
+  .wrapper .main-wrapper #about .summary a:not(.research-paper-link):focus-visible {
+    text-decoration:none;
   }
   /* Destination boxes reflect explicit link activation, never a page refresh. */
   .wrapper .main-wrapper .navigation-anchor,
