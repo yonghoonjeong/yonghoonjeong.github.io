@@ -114,37 +114,37 @@ publications:
     papers:
       - title: "<b>On the Symbol Error Rate of Underwater Acoustic Backscatter Systems</b>"
         id: paper-underwater-backscatter
-        conference: '<span class="publication-status publication-status--review">Under review</span> <em><b>IEEE Transactions on Communications</b></em>.'
+        conference: '<span class="publication-status publication-status--review">Under review</span> <em><b>IEEE Transactions on Communications (TCOM)</b></em>.'
 
       - title: "<b>Underwater Acoustic Backscatter: Planning for Complete Data Collection</b>"
         id: paper-underwater-data-collection
-        conference: '<span class="publication-status publication-status--review">Under review</span> <em><b>IEEE Communications Magazine</b></em>.'
+        conference: '<span class="publication-status publication-status--review">Under review</span> <em><b>IEEE Communications Magazine (ComMag)</b></em>.'
 
       - title: "<b>Characterizing the Relation Between the Energy Scattering Effect and Symbol Error Rate in Non-Linear Chirp Modulation for LoRa</b>"
         id: paper-lora-energy-scattering
-        conference: '<span class="publication-status publication-status--review">Under review</span> <em><b>IEEE Wireless Communications Letters</b></em>.'
+        conference: '<span class="publication-status publication-status--review">Under review</span> <em><b>IEEE Wireless Communications Letters (WCL)</b></em>.'
 
       - title: "<b>Symbol Error Rate Analysis and Approximation for Arbitrary Chirp Modulation Under Multipath, Doppler, and Interference</b>"
         id: paper-arbitrary-chirp-ser
-        conference: '<span class="publication-status publication-status--review">Under review</span> <em><b>IEEE Transactions on Communications</b></em>.'
+        conference: '<span class="publication-status publication-status--review">Under review</span> <em><b>IEEE Transactions on Communications (TCOM)</b></em>.'
 
       - title: "<b>On the Symbol Error Rate of Non-Linear Chirp Modulation for LoRa Under Asynchronous Interference</b>"
         id: paper-lora-asynchronous-interference
-        conference: '<span class="publication-status publication-status--review">Under review</span> <em><b>IEEE Wireless Communications Letters</b></em>.'
+        conference: '<span class="publication-status publication-status--review">Under review</span> <em><b>IEEE Wireless Communications Letters (WCL)</b></em>.'
 
       - title: "<b>On the Interference Resilience of Non-Linear Chirp Modulation for LoRa: An Analytical Insight into Energy Scattering Effect</b>"
         id: paper-lora-interference
         link: "https://ieeexplore.ieee.org/document/11550153"
         contribution: "Introduces an energy-scattering metric and analytical interference model to explain the interference resilience of non-linear chirp modulation in LoRa."
         authors: "<strong>Yonghoon Jeong</strong>, Youngwook Son, and Saewoong Bahk"
-        conference: "<span class='publication-status publication-status--published'>Published</span> <em><b>IEEE Communications Letters</b></em>, vol. 30, pp. 2238-2242, Jun. 2026."
+        conference: "<span class='publication-status publication-status--published'>Published</span> <em><b>IEEE Communications Letters (CL)</b></em>, vol. 30, pp. 2238-2242, Jun. 2026."
 
       - title: "<b>D²-PLC: Holistic Design and Implementation of High-Datarate Duplex DC Power Line Communication Network</b>"
         id: paper-d2-plc
         link: "https://ieeexplore.ieee.org/document/11127183"
         contribution: "Develops and validates a duplex DC power-line communication system with custom physical-layer modulation and MAC protocols for simultaneous power and data transfer."
         authors: "Dongrak Choi, Yubin Choi, <strong>Yonghoon Jeong</strong>, Jeongyeup Paek, and Saewoong Bahk"
-        conference: "<span class='publication-status publication-status--published'>Published</span> <em><b>IEEE Internet of Things Journal</b></em>, vol. 12, pp. 45325-45340, Nov. 2025."
+        conference: "<span class='publication-status publication-status--published'>Published</span> <em><b>IEEE Internet of Things Journal (IoT-J)</b></em>, vol. 12, pp. 45325-45340, Nov. 2025."
 
       - title: "<b>Demo: A Programmable High-Throughput Duplex DC-PLC Testbed for Power and Data Integration</b>"
         id: paper-dc-plc-demo
@@ -156,7 +156,7 @@ publications:
         id: paper-rppg
         link: "https://link.springer.com/article/10.1007/s13534-025-00472-w"
         authors: "<strong>Yonghoon Jeong</strong> and Youngseok Choi"
-        conference: "<span class='publication-status publication-status--published'>Published</span> <em><b>Biomedical Engineering Letters</b></em>, vol. 15, pp. 575-585, Apr. 2025."
+        conference: "<span class='publication-status publication-status--published'>Published</span> <em><b>Biomedical Engineering Letters (BMEL)</b></em>, vol. 15, pp. 575-585, Apr. 2025."
 
   domestic:
     title: Domestic Papers
