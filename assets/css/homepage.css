@@ -656,14 +656,42 @@
   .wrapper .main-wrapper .publications-section { --publication-title-gap:6px; }
 }
 
-/* A quiet, persistent cue for profile navigation. */
+/* Keep the profile-navigation cue beside its heading, above the shared rule. */
 @media screen {
+  .wrapper .main-wrapper .about-section-header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px 16px;
+    width: calc(100% + 5px);
+    margin-bottom: 18px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #3a4856;
+    transform: translateX(-5px);
+  }
+  .wrapper .main-wrapper .about-section-header .section-title {
+    flex: 0 1 auto;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transform: none;
+    white-space: nowrap;
+  }
   .wrapper .main-wrapper .about-link-hint {
-    margin: -8px 0 18px;
+    margin: 0 0 0 auto;
     color: #b6c7d1;
     font-size: 13px;
     line-height: 1.5;
     font-weight: 400;
+    text-align: right;
+    white-space: nowrap;
   }
+}
+@media screen and (min-width: 768px) {
+  .wrapper .main-wrapper .about-section-header { margin-bottom: 22px; }
+}
+@media screen and (max-width: 767px) {
+  .wrapper .main-wrapper .about-link-hint { font-size: 12px; }
 }
 @media print { .about-link-hint { display: none; } }
