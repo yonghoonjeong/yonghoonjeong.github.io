@@ -23,7 +23,7 @@
       </div>
 
       {% if award.commendation %}<div class="award-commendation">{{ award.commendation }}</div>{% endif %}
-      <div class="company">{{ award.organization }}{% if award.paper_title %}<br>Title: {{ award.paper_title }}{% endif %}</div>
+      {% if award.organization or award.paper_title %}<div class="company">{{ award.organization }}{% if award.paper_title %}{% if award.organization %}<br>{% endif %}Title: {{ award.paper_title }}{% endif %}</div>{% endif %}
 
     </div>
 
