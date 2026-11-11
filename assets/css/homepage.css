@@ -511,10 +511,20 @@
   .wrapper .main-wrapper .publication-subtitle { color:#8fd3e0; }
   .wrapper .publications-section .publication-status--to-appear { background:#342a48; color:var(--publication-to-appear); }
   .wrapper .publications-section .publication-conference:has(.publication-status--to-appear) em { color:var(--publication-to-appear); }
-  .wrapper .publications-section a.publication-award { --navigation-accent:var(--publication-award); }
+  .wrapper .publications-section a.publication-award {
+    --navigation-accent:var(--publication-award);
+    text-decoration:none;
+  }
   .wrapper .publications-section a.publication-award,
   .wrapper .publications-section a.publication-award:hover,
   .wrapper .publications-section a.publication-award:focus-visible { color:var(--publication-award); font-weight:600; outline-color:var(--publication-award); }
+  .wrapper .publications-section a.publication-award:hover,
+  .wrapper .publications-section a.publication-award:focus-visible {
+    text-decoration-line:underline;
+    text-decoration-color:currentColor;
+    text-decoration-thickness:1px;
+    text-underline-offset:3px;
+  }
   .wrapper .main-wrapper a.award-paper-link {
     --navigation-accent:#eef4f8;
     color:inherit;
