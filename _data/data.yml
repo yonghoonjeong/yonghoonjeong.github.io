@@ -112,13 +112,13 @@ publications:
   international:
     title: International Papers
     papers:
-      - title: "<b>On the Symbol Error Rate of Underwater Acoustic Backscatter Systems</b>"
-        id: paper-underwater-backscatter
-        conference: '<span class="publication-status publication-status--review">Under review</span> <em><b>IEEE Transactions on Communications (TCOM)</b></em>, submitted Oct. 1, 2026.'
-
       - title: "<b>Underwater Acoustic Backscatter: Planning for Complete Data Collection</b>"
         id: paper-underwater-data-collection
         conference: '<span class="publication-status publication-status--review">Under review</span> <em><b>IEEE Communications Magazine (ComMag)</b></em>, submitted Nov. 3, 2026.'
+
+      - title: "<b>On the Symbol Error Rate of Underwater Acoustic Backscatter Systems</b>"
+        id: paper-underwater-backscatter
+        conference: '<span class="publication-status publication-status--review">Under review</span> <em><b>IEEE Transactions on Communications (TCOM)</b></em>, submitted Oct. 1, 2026.'
 
       - title: "<b>Characterizing the Relation Between the Energy Scattering Effect and Symbol Error Rate in Non-Linear Chirp Modulation for LoRa</b>"
         id: paper-lora-energy-scattering
