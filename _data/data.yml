@@ -200,9 +200,11 @@ recommendations:
 awards:
   title: Awards & Scholarships
   info:
-    - title: Best Paper Award (Rear Admiral’s Commendation)
+    - title: Best Paper Award
       id: award-best-paper-2026
+      paper_id: paper-underwater-survey
       time: 2026
+      commendation: "Commendation from the Commander, ROK Navy Logistics Command"
       organization: "<em>Naval Ship Technology Journal</em>, Naval Technology Research Institute, Republic of Korea Navy"
 
     - title: BK21 Scholarship
