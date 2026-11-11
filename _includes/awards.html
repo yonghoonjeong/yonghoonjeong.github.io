@@ -17,12 +17,13 @@
 
       <div class="upper-row">
         <h3 class="job-title" style="font-weight: 700; font-size: 16px;">
-          {{ award.title }}
+          {% if award.paper_id %}<a class="award-paper-link" href="#{{ award.paper_id | escape }}" title="View the award-winning article in Publications">{{ award.title }}</a>{% else %}{{ award.title }}{% endif %}
         </h3>
         <div class="time">{{ award.time }}</div>
       </div>
 
-      <div class="company">{{ award.organization }}{% if award.commendation %}<br>{{ award.commendation }}{% endif %}{% if award.paper_title %}<br>Title: {{ award.paper_title }}{% endif %}</div>
+      {% if award.commendation %}<div class="award-commendation">{{ award.commendation }}</div>{% endif %}
+      <div class="company">{{ award.organization }}{% if award.paper_title %}<br>Title: {{ award.paper_title }}{% endif %}</div>
 
     </div>
 
