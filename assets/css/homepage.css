@@ -516,16 +516,16 @@
   .wrapper .publications-section a.publication-award:hover,
   .wrapper .publications-section a.publication-award:focus-visible { color:var(--publication-award); font-weight:600; outline-color:var(--publication-award); }
   .wrapper .main-wrapper a.award-paper-link {
-    --navigation-accent:var(--publication-award);
-    color:var(--publication-award);
+    --navigation-accent:#eef4f8;
+    color:inherit;
     text-decoration:none;
   }
   .wrapper .main-wrapper a.award-paper-link:hover,
   .wrapper .main-wrapper a.award-paper-link:focus-visible {
-    color:var(--publication-award);
+    color:inherit;
     text-decoration:underline;
     text-underline-offset:3px;
-    outline-color:var(--publication-award);
+    outline-color:currentColor;
   }
   .wrapper .main-wrapper .award-commendation {
     color:#d5dfe7;
