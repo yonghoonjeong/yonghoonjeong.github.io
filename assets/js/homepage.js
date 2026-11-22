@@ -1,6 +1,28 @@
 (() => {
   'use strict';
 
+  // Keep the introduction visible and remember the mobile reader's choice.
+  const aboutDetails = document.getElementById('about-details');
+  const aboutToggle = document.querySelector('.about-toggle');
+  if (aboutDetails && aboutToggle) {
+    const mobileAbout = window.matchMedia('(max-width: 767px)');
+    let mobileExpanded = false;
+    const syncAbout = () => {
+      const expanded = !mobileAbout.matches || mobileExpanded;
+      aboutDetails.hidden = !expanded;
+      aboutToggle.hidden = !mobileAbout.matches;
+      aboutToggle.setAttribute('aria-expanded', String(expanded));
+      aboutToggle.querySelector('.about-toggle-label').textContent = expanded ? 'Show less' : 'Read more';
+    };
+    aboutToggle.addEventListener('click', () => {
+      mobileExpanded = !mobileExpanded;
+      syncAbout();
+    });
+    if (mobileAbout.addEventListener) mobileAbout.addEventListener('change', syncAbout);
+    else mobileAbout.addListener(syncAbout);
+    syncAbout();
+  }
+
   const emailButtons = document.querySelectorAll('[data-copy-email]');
   if (emailButtons.length) {
     const feedback = document.createElement('div');
