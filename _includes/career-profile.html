@@ -14,7 +14,17 @@
   </div>
 
   <div class="summary">
-    {{ career-profile.summary | markdownify }}
+    {% assign about_parts = career-profile.summary | split: '<!--about-more-->' %}
+    {{ about_parts[0] | markdownify }}
+    {% if about_parts.size > 1 %}
+    <div id="about-details" class="about-details">
+      {{ about_parts[1] | markdownify }}
+    </div>
+    <button class="about-toggle" type="button" aria-expanded="true" aria-controls="about-details" hidden>
+      <span class="about-toggle-label">Show less</span>
+      <svg class="about-chevron" width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="m4 6 4 4 4-4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    {% endif %}
   </div><!--//summary-->
     
 </section><!--//section-->
